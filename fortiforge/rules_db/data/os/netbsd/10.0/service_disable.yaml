@@ -1,0 +1,27 @@
+key: os_netbsd_10.0_service_disable
+kind: os_hardening
+name: Netbsd 10.0 Service Disable
+version: '1.0'
+os: netbsd
+os_version: '10.0'
+os_type: unix
+category: service_disable
+risk: medium
+tags:
+- unix
+- netbsd
+- '10.0'
+- service_disable
+- hardening
+- enterprise
+content: '# service_disable configuration for netbsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

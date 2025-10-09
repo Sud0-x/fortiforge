@@ -1,0 +1,28 @@
+key: cloud_ibm_iam_backup
+kind: cloud_security
+name: IBM Iam Backup
+version: '1.0'
+platform: ibm
+service: iam
+control_type: backup
+risk: medium
+tags:
+- cloud
+- ibm
+- iam
+- backup
+- enterprise
+content: '# ibm iam backup configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

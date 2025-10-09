@@ -1,0 +1,8 @@
+key: pf_allow_ssh
+kind: firewall
+engine: pf
+name: Allow SSH
+version: 1
+risk: low
+tags: [firewall, pf, ssh]
+content: "pass in on egress proto tcp from any to any port 22 keep state"

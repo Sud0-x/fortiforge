@@ -1,0 +1,28 @@
+key: cloud_azure_application-gateway_disaster_recovery
+kind: cloud_security
+name: AZURE Application-Gateway Disaster Recovery
+version: '1.0'
+platform: azure
+service: application-gateway
+control_type: disaster_recovery
+risk: medium
+tags:
+- cloud
+- azure
+- application-gateway
+- disaster_recovery
+- enterprise
+content: '# azure application-gateway disaster_recovery configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

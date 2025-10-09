@@ -1,0 +1,28 @@
+key: ids_suricata_network_attacks_port_scanning
+kind: ids_signature
+name: Suricata Port Scanning
+version: '1.0'
+engine: suricata
+category: network_attacks
+signature_type: port_scanning
+risk: high
+tags:
+- ids
+- suricata
+- network_attacks
+- port_scanning
+- detection
+- enterprise
+content: alert tcp any any -> any any (msg:"Port Scanning"; content:"malicious"; sid:1000000;
+  rev:1;)
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

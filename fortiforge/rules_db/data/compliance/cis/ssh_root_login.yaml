@@ -1,0 +1,9 @@
+key: cis_linux_ssh_root_login
+kind: compliance
+benchmark: cis
+name: Ensure SSH root login disabled
+version: 1
+risk: low
+tags: [cis, compliance, ssh]
+content: |
+  PermitRootLogin no

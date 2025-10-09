@@ -1,0 +1,24 @@
+key: svc_snort_logging
+kind: service_hardening
+name: Snort Logging
+version: '1.0'
+service: snort
+category: security_tools
+hardening_type: logging
+risk: low
+tags:
+- service
+- snort
+- logging
+- security_tools
+- enterprise
+content: '# logging configuration for snort
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

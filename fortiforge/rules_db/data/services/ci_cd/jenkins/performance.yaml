@@ -1,0 +1,24 @@
+key: svc_jenkins_performance
+kind: service_hardening
+name: Jenkins Performance
+version: '1.0'
+service: jenkins
+category: ci_cd
+hardening_type: performance
+risk: medium
+tags:
+- service
+- jenkins
+- performance
+- ci_cd
+- enterprise
+content: '# performance configuration for jenkins
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

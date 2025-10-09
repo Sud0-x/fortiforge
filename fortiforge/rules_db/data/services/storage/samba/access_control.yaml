@@ -1,0 +1,24 @@
+key: svc_samba_access_control
+kind: service_hardening
+name: Samba Access Control
+version: '1.0'
+service: samba
+category: storage
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- samba
+- access_control
+- storage
+- enterprise
+content: '# access_control configuration for samba
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,27 @@
+key: os_kali_2023.1_network_interfaces
+kind: os_hardening
+name: Kali 2023.1 Network Interfaces
+version: '1.0'
+os: kali
+os_version: '2023.1'
+os_type: linux
+category: network_interfaces
+risk: medium
+tags:
+- linux
+- kali
+- '2023.1'
+- network_interfaces
+- hardening
+- enterprise
+content: '# network_interfaces configuration for kali'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

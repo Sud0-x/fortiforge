@@ -1,0 +1,28 @@
+key: cloud_oracle_database_monitoring
+kind: cloud_security
+name: ORACLE Database Monitoring
+version: '1.0'
+platform: oracle
+service: database
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- oracle
+- database
+- monitoring
+- enterprise
+content: '# oracle database monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

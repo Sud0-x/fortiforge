@@ -1,0 +1,28 @@
+key: cloud_alibaba_oss_performance
+kind: cloud_security
+name: ALIBABA Oss Performance
+version: '1.0'
+platform: alibaba
+service: oss
+control_type: performance
+risk: medium
+tags:
+- cloud
+- alibaba
+- oss
+- performance
+- enterprise
+content: '# alibaba oss performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

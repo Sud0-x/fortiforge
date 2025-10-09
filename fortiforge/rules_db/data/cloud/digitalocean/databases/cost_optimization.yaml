@@ -1,0 +1,28 @@
+key: cloud_digitalocean_databases_cost_optimization
+kind: cloud_security
+name: DIGITALOCEAN Databases Cost Optimization
+version: '1.0'
+platform: digitalocean
+service: databases
+control_type: cost_optimization
+risk: medium
+tags:
+- cloud
+- digitalocean
+- databases
+- cost_optimization
+- enterprise
+content: '# digitalocean databases cost_optimization configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

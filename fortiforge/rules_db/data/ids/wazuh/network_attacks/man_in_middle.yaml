@@ -1,0 +1,29 @@
+key: ids_wazuh_network_attacks_man_in_middle
+kind: ids_signature
+name: Wazuh Man In Middle
+version: '1.0'
+engine: wazuh
+category: network_attacks
+signature_type: man_in_middle
+risk: high
+tags:
+- ids
+- wazuh
+- network_attacks
+- man_in_middle
+- detection
+- enterprise
+content: '# wazuh signature for man_in_middle
+
+  # Detection rule for network_attacks'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

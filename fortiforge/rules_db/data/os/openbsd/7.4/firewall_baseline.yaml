@@ -1,0 +1,29 @@
+key: os_openbsd_7.4_firewall_baseline
+kind: os_hardening
+name: Openbsd 7.4 Firewall Baseline
+version: '1.0'
+os: openbsd
+os_version: '7.4'
+os_type: unix
+category: firewall_baseline
+risk: medium
+tags:
+- unix
+- openbsd
+- '7.4'
+- firewall_baseline
+- hardening
+- enterprise
+content: '# Firewall baseline for openbsd
+
+  # Enable and configure default deny policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

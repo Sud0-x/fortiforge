@@ -1,0 +1,9 @@
+# Firewall templates (iptables)
+key: fw_allow_ssh
+kind: firewall
+engine: iptables
+name: Allow SSH
+version: 1
+risk: low
+tags: [firewall, iptables, ssh]
+content: "-A INPUT -p tcp --dport 22 -j ACCEPT"

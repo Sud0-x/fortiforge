@@ -1,0 +1,28 @@
+key: cloud_linode_instances_compliance
+kind: cloud_security
+name: LINODE Instances Compliance
+version: '1.0'
+platform: linode
+service: instances
+control_type: compliance
+risk: medium
+tags:
+- cloud
+- linode
+- instances
+- compliance
+- enterprise
+content: '# linode instances compliance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

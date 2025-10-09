@@ -1,0 +1,35 @@
+key: os_netbsd_9.3_ssh_hardening
+kind: os_hardening
+name: Netbsd 9.3 Ssh Hardening
+version: '1.0'
+os: netbsd
+os_version: '9.3'
+os_type: unix
+category: ssh_hardening
+risk: medium
+tags:
+- unix
+- netbsd
+- '9.3'
+- ssh_hardening
+- hardening
+- enterprise
+content: '# SSH hardening for netbsd
+
+  PermitRootLogin no
+
+  PasswordAuthentication no
+
+  Protocol 2
+
+  MaxAuthTries 3'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

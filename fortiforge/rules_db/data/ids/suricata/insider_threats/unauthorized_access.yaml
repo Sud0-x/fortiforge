@@ -1,0 +1,28 @@
+key: ids_suricata_insider_threats_unauthorized_access
+kind: ids_signature
+name: Suricata Unauthorized Access
+version: '1.0'
+engine: suricata
+category: insider_threats
+signature_type: unauthorized_access
+risk: high
+tags:
+- ids
+- suricata
+- insider_threats
+- unauthorized_access
+- detection
+- enterprise
+content: alert tcp any any -> any any (msg:"Unauthorized Access"; content:"malicious";
+  sid:1000000; rev:1;)
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

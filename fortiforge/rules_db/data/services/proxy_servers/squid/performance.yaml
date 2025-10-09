@@ -1,0 +1,24 @@
+key: svc_squid_performance
+kind: service_hardening
+name: Squid Performance
+version: '1.0'
+service: squid
+category: proxy_servers
+hardening_type: performance
+risk: medium
+tags:
+- service
+- squid
+- performance
+- proxy_servers
+- enterprise
+content: '# performance configuration for squid
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

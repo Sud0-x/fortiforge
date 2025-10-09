@@ -1,0 +1,23 @@
+key: fw_iptables_web_security_bot_protection
+kind: firewall_rule
+name: Iptables Bot Protection
+version: '1.0'
+engine: iptables
+category: web_security
+rule_type: bot_protection
+risk: high
+tags:
+- firewall
+- iptables
+- web_security
+- bot_protection
+- network_security
+- enterprise
+content: '# iptables rule for bot_protection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

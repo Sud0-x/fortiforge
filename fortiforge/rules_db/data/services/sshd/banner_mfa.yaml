@@ -1,0 +1,11 @@
+key: svc_sshd_mfa_banner
+kind: service_hardening
+service: sshd
+name: SSHD MFA banner notice
+version: 1
+risk: low
+tags: [service, sshd, banner]
+content: |
+  Banner /etc/issue.net
+  # Note: Actual MFA enforcement is out of scope here, banner is informational
+rollback: { content: "" }

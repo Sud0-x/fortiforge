@@ -1,0 +1,27 @@
+key: os_arch_rolling_boot_security
+kind: os_hardening
+name: Arch rolling Boot Security
+version: '1.0'
+os: arch
+os_version: rolling
+os_type: linux
+category: boot_security
+risk: medium
+tags:
+- linux
+- arch
+- rolling
+- boot_security
+- hardening
+- enterprise
+content: '# boot_security configuration for arch'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

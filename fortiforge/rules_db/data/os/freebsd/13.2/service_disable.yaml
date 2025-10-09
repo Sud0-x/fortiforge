@@ -1,0 +1,27 @@
+key: os_freebsd_13.2_service_disable
+kind: os_hardening
+name: Freebsd 13.2 Service Disable
+version: '1.0'
+os: freebsd
+os_version: '13.2'
+os_type: unix
+category: service_disable
+risk: medium
+tags:
+- unix
+- freebsd
+- '13.2'
+- service_disable
+- hardening
+- enterprise
+content: '# service_disable configuration for freebsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,27 @@
+key: os_hpux_11.31_service_disable
+kind: os_hardening
+name: Hpux 11.31 Service Disable
+version: '1.0'
+os: hpux
+os_version: '11.31'
+os_type: unix
+category: service_disable
+risk: medium
+tags:
+- unix
+- hpux
+- '11.31'
+- service_disable
+- hardening
+- enterprise
+content: '# service_disable configuration for hpux'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,29 @@
+key: os_netbsd_10.0_firewall_baseline
+kind: os_hardening
+name: Netbsd 10.0 Firewall Baseline
+version: '1.0'
+os: netbsd
+os_version: '10.0'
+os_type: unix
+category: firewall_baseline
+risk: medium
+tags:
+- unix
+- netbsd
+- '10.0'
+- firewall_baseline
+- hardening
+- enterprise
+content: '# Firewall baseline for netbsd
+
+  # Enable and configure default deny policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

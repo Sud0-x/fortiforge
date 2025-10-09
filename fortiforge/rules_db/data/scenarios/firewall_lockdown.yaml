@@ -1,0 +1,13 @@
+# Harden Firewall lockdown scenario
+key: scenario_firewall_lockdown
+kind: playbook_snippet
+name: Firewall lockdown
+version: 1
+risk: medium
+tags: [scenario, firewall, lockdown]
+content: |
+  - name: Default drop inbound
+    idempotent: true
+    simulate: { show_diff: true }
+    apply: { mode: template, content: "-P INPUT DROP" }
+    rollback: { mode: template, content: "-P INPUT ACCEPT" }

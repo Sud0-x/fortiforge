@@ -1,0 +1,27 @@
+key: os_gentoo_hardened_filesystem_permissions
+kind: os_hardening
+name: Gentoo hardened Filesystem Permissions
+version: '1.0'
+os: gentoo
+os_version: hardened
+os_type: linux
+category: filesystem_permissions
+risk: medium
+tags:
+- linux
+- gentoo
+- hardened
+- filesystem_permissions
+- hardening
+- enterprise
+content: '# filesystem_permissions configuration for gentoo'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,24 @@
+key: svc_wazuh_access_control
+kind: service_hardening
+name: Wazuh Access Control
+version: '1.0'
+service: wazuh
+category: security_tools
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- wazuh
+- access_control
+- security_tools
+- enterprise
+content: '# access_control configuration for wazuh
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

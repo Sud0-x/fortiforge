@@ -1,0 +1,29 @@
+key: os_dragonfly_6.2_audit_rules
+kind: os_hardening
+name: Dragonfly 6.2 Audit Rules
+version: '1.0'
+os: dragonfly
+os_version: '6.2'
+os_type: unix
+category: audit_rules
+risk: medium
+tags:
+- unix
+- dragonfly
+- '6.2'
+- audit_rules
+- hardening
+- enterprise
+content: '# Audit rules for dragonfly
+
+  -a always,exit -F arch=b64 -S adjtimex,settimeofday -k time-change'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

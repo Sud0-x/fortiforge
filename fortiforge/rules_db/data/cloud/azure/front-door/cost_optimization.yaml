@@ -1,0 +1,28 @@
+key: cloud_azure_front-door_cost_optimization
+kind: cloud_security
+name: AZURE Front-Door Cost Optimization
+version: '1.0'
+platform: azure
+service: front-door
+control_type: cost_optimization
+risk: medium
+tags:
+- cloud
+- azure
+- front-door
+- cost_optimization
+- enterprise
+content: '# azure front-door cost_optimization configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

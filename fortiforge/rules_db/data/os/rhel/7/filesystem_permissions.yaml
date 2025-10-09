@@ -1,0 +1,27 @@
+key: os_rhel_7_filesystem_permissions
+kind: os_hardening
+name: Rhel 7 Filesystem Permissions
+version: '1.0'
+os: rhel
+os_version: '7'
+os_type: linux
+category: filesystem_permissions
+risk: medium
+tags:
+- linux
+- rhel
+- '7'
+- filesystem_permissions
+- hardening
+- enterprise
+content: '# filesystem_permissions configuration for rhel'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

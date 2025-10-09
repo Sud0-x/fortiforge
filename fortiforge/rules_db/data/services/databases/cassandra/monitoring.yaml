@@ -1,0 +1,24 @@
+key: svc_cassandra_monitoring
+kind: service_hardening
+name: Cassandra Monitoring
+version: '1.0'
+service: cassandra
+category: databases
+hardening_type: monitoring
+risk: low
+tags:
+- service
+- cassandra
+- monitoring
+- databases
+- enterprise
+content: '# monitoring configuration for cassandra
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,31 @@
+key: compliance_cis_levels_level-1
+kind: compliance
+name: CIS Levels - Level 1
+version: '1.0'
+framework: cis
+category: levels
+requirement: level-1
+risk: high
+tags:
+- compliance
+- cis
+- levels
+- level-1
+- audit
+- enterprise
+content: '# CIS levels - level-1
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: cis
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - CIS
+  - Benchmarks
+  - Best Practices

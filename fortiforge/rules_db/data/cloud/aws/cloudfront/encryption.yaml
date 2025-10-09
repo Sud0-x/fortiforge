@@ -1,0 +1,28 @@
+key: cloud_aws_cloudfront_encryption
+kind: cloud_security
+name: AWS Cloudfront Encryption
+version: '1.0'
+platform: aws
+service: cloudfront
+control_type: encryption
+risk: high
+tags:
+- cloud
+- aws
+- cloudfront
+- encryption
+- enterprise
+content: '{"Rules": [{"Sid": "DenyInsecureConnections", "Effect": "Deny", "Principal":
+  "*", "Action": "s3:*", "Resource": "arn:aws:s3:::bucket/*", "Condition": {"Bool":
+  {"aws:SecureTransport": "false"}}}]}'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

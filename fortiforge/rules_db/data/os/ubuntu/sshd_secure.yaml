@@ -1,0 +1,12 @@
+key: os_ubuntu_sshd_config_secure
+kind: service_hardening
+service: sshd
+name: Ubuntu SSHD secure config
+version: 1
+risk: low
+tags: [os, ubuntu, sshd, hardening]
+content: |
+  PermitRootLogin no
+  PasswordAuthentication no
+  X11Forwarding no
+  AllowUsers admin

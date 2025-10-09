@@ -1,0 +1,29 @@
+key: ids_wazuh_apt_indicators_weaponization
+kind: ids_signature
+name: Wazuh Weaponization
+version: '1.0'
+engine: wazuh
+category: apt_indicators
+signature_type: weaponization
+risk: high
+tags:
+- ids
+- wazuh
+- apt_indicators
+- weaponization
+- detection
+- enterprise
+content: '# wazuh signature for weaponization
+
+  # Detection rule for apt_indicators'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

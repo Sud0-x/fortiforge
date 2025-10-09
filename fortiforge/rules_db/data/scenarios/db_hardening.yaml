@@ -1,0 +1,13 @@
+# Harden DB hosts (Postgres)
+key: scenario_db_hardening
+kind: playbook_snippet
+name: DB hardening snippet
+version: 1
+risk: low
+tags: [scenario, db, postgres]
+content: |
+  - name: Postgres secure settings
+    idempotent: true
+    simulate: { show_diff: true }
+    apply: { mode: template, content: "ssl=on" }
+    rollback: { mode: template, content: "" }

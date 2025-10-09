@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fortiforge"
+version = "0.1.0"
+description = "FortiForge: Defensive security automation & orchestration platform (strictly defensive)."
+readme = "README.md"
+authors = [{name = "Sud0-x", email = "maintainers@fortiforge.local"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.9"
+keywords = ["security", "automation", "orchestration", "defensive", "rbac", "audit", "simulation"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: POSIX :: Linux",
+  "Topic :: Security",
+]
+
+[project.urls]
+Homepage = "https://example.com/fortiforge"
+Issues = "https://example.com/fortiforge/issues"
+
+[project.scripts]
+fortiforge = "fortiforge.cli:cli"
+
+[tool.setuptools]
+packages = {find = {where = ["."]}}
+
+[tool.setuptools.package-data]
+fortiforge = [
+  "rules_db/data/**/*.yaml",
+  "rules_db/data/**/*.yml",
+  "rules_db/data/**/*.json",
+  "playbooks/samples/*.yaml",
+  "ui/templates/*.html",
+  "ui/static/*",
+]

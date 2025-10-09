@@ -1,0 +1,23 @@
+key: fw_ufw_web_security_block_sql_injection
+kind: firewall_rule
+name: Ufw Block Sql Injection
+version: '1.0'
+engine: ufw
+category: web_security
+rule_type: block_sql_injection
+risk: high
+tags:
+- firewall
+- ufw
+- web_security
+- block_sql_injection
+- network_security
+- enterprise
+content: '# ufw rule for block_sql_injection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

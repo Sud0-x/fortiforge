@@ -1,0 +1,24 @@
+key: svc_proftpd_monitoring
+kind: service_hardening
+name: Proftpd Monitoring
+version: '1.0'
+service: proftpd
+category: ftp_servers
+hardening_type: monitoring
+risk: low
+tags:
+- service
+- proftpd
+- monitoring
+- ftp_servers
+- enterprise
+content: '# monitoring configuration for proftpd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

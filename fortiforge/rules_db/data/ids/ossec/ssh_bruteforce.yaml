@@ -1,0 +1,13 @@
+key: ids_ossec_ssh_bruteforce
+kind: ids_signature
+engine: ossec
+name: OSSEC SSH bruteforce detection
+version: 1
+risk: low
+tags: [ids, ossec, ssh]
+content: |
+  <rule id="5710" level="10">
+    <if_sid>5700</if_sid>
+    <match>authentication failure</match>
+    <description>SSH authentication failure brute force</description>
+  </rule>

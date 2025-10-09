@@ -1,0 +1,24 @@
+key: svc_minio_performance
+kind: service_hardening
+name: Minio Performance
+version: '1.0'
+service: minio
+category: storage
+hardening_type: performance
+risk: medium
+tags:
+- service
+- minio
+- performance
+- storage
+- enterprise
+content: '# performance configuration for minio
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

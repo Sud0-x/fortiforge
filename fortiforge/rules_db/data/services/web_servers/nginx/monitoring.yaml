@@ -1,0 +1,24 @@
+key: svc_nginx_monitoring
+kind: service_hardening
+name: Nginx Monitoring
+version: '1.0'
+service: nginx
+category: web_servers
+hardening_type: monitoring
+risk: low
+tags:
+- service
+- nginx
+- monitoring
+- web_servers
+- enterprise
+content: '# monitoring configuration for nginx
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

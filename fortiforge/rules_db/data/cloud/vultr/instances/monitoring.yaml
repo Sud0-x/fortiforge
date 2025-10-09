@@ -1,0 +1,28 @@
+key: cloud_vultr_instances_monitoring
+kind: cloud_security
+name: VULTR Instances Monitoring
+version: '1.0'
+platform: vultr
+service: instances
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- vultr
+- instances
+- monitoring
+- enterprise
+content: '# vultr instances monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

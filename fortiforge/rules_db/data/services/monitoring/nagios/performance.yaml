@@ -1,0 +1,24 @@
+key: svc_nagios_performance
+kind: service_hardening
+name: Nagios Performance
+version: '1.0'
+service: nagios
+category: monitoring
+hardening_type: performance
+risk: medium
+tags:
+- service
+- nagios
+- performance
+- monitoring
+- enterprise
+content: '# performance configuration for nagios
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

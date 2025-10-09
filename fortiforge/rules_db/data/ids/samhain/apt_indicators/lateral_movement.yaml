@@ -1,0 +1,29 @@
+key: ids_samhain_apt_indicators_lateral_movement
+kind: ids_signature
+name: Samhain Lateral Movement
+version: '1.0'
+engine: samhain
+category: apt_indicators
+signature_type: lateral_movement
+risk: high
+tags:
+- ids
+- samhain
+- apt_indicators
+- lateral_movement
+- detection
+- enterprise
+content: '# samhain signature for lateral_movement
+
+  # Detection rule for apt_indicators'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

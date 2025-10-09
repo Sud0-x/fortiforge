@@ -1,0 +1,11 @@
+key: cis_linux_kernel_module_blacklist
+kind: compliance
+benchmark: cis
+name: CIS kernel module blacklist snippet
+version: 1
+risk: low
+tags: [cis, compliance, kernel]
+content: |
+  install cramfs /bin/true
+  install freevxfs /bin/true
+  install jffs2 /bin/true

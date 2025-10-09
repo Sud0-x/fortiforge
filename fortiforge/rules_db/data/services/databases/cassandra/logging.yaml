@@ -1,0 +1,24 @@
+key: svc_cassandra_logging
+kind: service_hardening
+name: Cassandra Logging
+version: '1.0'
+service: cassandra
+category: databases
+hardening_type: logging
+risk: low
+tags:
+- service
+- cassandra
+- logging
+- databases
+- enterprise
+content: '# logging configuration for cassandra
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

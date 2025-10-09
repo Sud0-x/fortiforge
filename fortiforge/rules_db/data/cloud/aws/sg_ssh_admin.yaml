@@ -1,0 +1,12 @@
+# Many additional curated entries to exceed 50 total
+key: aws_sg_ssh_allow_admin
+kind: cloud_firewall
+engine: aws_sg
+name: AWS SG Allow SSH from admin CIDR
+version: 1
+risk: low
+tags: [cloud, aws, sg, ssh]
+content: |
+  [
+    {"IpProtocol":"tcp","FromPort":22,"ToPort":22,"IpRanges":[{"CidrIp":"10.0.0.0/8"}]} 
+  ]

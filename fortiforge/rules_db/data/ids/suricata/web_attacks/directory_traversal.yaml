@@ -1,0 +1,28 @@
+key: ids_suricata_web_attacks_directory_traversal
+kind: ids_signature
+name: Suricata Directory Traversal
+version: '1.0'
+engine: suricata
+category: web_attacks
+signature_type: directory_traversal
+risk: high
+tags:
+- ids
+- suricata
+- web_attacks
+- directory_traversal
+- detection
+- enterprise
+content: alert tcp any any -> any any (msg:"Directory Traversal"; content:"malicious";
+  sid:1000000; rev:1;)
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

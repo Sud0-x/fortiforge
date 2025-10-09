@@ -1,0 +1,27 @@
+key: os_opensuse_15.3_cron_restrictions
+kind: os_hardening
+name: Opensuse 15.3 Cron Restrictions
+version: '1.0'
+os: opensuse
+os_version: '15.3'
+os_type: linux
+category: cron_restrictions
+risk: medium
+tags:
+- linux
+- opensuse
+- '15.3'
+- cron_restrictions
+- hardening
+- enterprise
+content: '# cron_restrictions configuration for opensuse'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

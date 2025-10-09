@@ -1,0 +1,28 @@
+key: cloud_oracle_database_backup
+kind: cloud_security
+name: ORACLE Database Backup
+version: '1.0'
+platform: oracle
+service: database
+control_type: backup
+risk: medium
+tags:
+- cloud
+- oracle
+- database
+- backup
+- enterprise
+content: '# oracle database backup configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

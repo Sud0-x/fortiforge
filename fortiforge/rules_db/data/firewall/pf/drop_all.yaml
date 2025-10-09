@@ -1,0 +1,9 @@
+# Additional pf templates
+key: pf_drop_all
+kind: firewall
+engine: pf
+name: Block all inbound (explicit)
+version: 1
+risk: medium
+tags: [firewall, pf]
+content: "block in all"

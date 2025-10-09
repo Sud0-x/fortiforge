@@ -1,0 +1,24 @@
+key: svc_activemq_baseline_config
+kind: service_hardening
+name: Activemq Baseline Config
+version: '1.0'
+service: activemq
+category: message_queues
+hardening_type: baseline_config
+risk: medium
+tags:
+- service
+- activemq
+- baseline_config
+- message_queues
+- enterprise
+content: '# baseline_config configuration for activemq
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

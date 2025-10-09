@@ -1,0 +1,31 @@
+key: compliance_nist_categories_protect
+kind: compliance
+name: NIST Categories - Protect
+version: '1.0'
+framework: nist
+category: categories
+requirement: protect
+risk: high
+tags:
+- compliance
+- nist
+- categories
+- protect
+- audit
+- enterprise
+content: '# NIST categories - protect
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: nist
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - NIST
+  - Federal
+  - Cybersecurity Framework

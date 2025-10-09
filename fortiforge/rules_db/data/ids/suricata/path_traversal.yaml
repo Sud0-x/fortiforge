@@ -1,0 +1,9 @@
+key: ids_suricata_path_traversal
+kind: ids_signature
+engine: suricata
+name: Suricata path traversal pattern
+version: 1
+risk: low
+tags: [ids, suricata, traversal]
+content: |
+  alert http any any -> any any (msg:"Path traversal ../"; content:"../"; http_uri; sid:1000003; rev:1;)

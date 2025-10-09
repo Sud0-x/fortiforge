@@ -1,0 +1,12 @@
+key: nginx_tls_hsts
+kind: service_hardening
+service: nginx
+name: Nginx TLS + HSTS
+version: 1
+risk: low
+tags: [service, nginx, tls, hsts]
+content: |
+  ssl_protocols TLSv1.2 TLSv1.3;
+  ssl_prefer_server_ciphers on;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+rollback: { content: "" }

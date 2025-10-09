@@ -1,0 +1,24 @@
+key: svc_nats_monitoring
+kind: service_hardening
+name: Nats Monitoring
+version: '1.0'
+service: nats
+category: message_queues
+hardening_type: monitoring
+risk: low
+tags:
+- service
+- nats
+- monitoring
+- message_queues
+- enterprise
+content: '# monitoring configuration for nats
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

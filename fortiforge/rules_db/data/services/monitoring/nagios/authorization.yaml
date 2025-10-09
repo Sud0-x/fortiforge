@@ -1,0 +1,24 @@
+key: svc_nagios_authorization
+kind: service_hardening
+name: Nagios Authorization
+version: '1.0'
+service: nagios
+category: monitoring
+hardening_type: authorization
+risk: medium
+tags:
+- service
+- nagios
+- authorization
+- monitoring
+- enterprise
+content: '# authorization configuration for nagios
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

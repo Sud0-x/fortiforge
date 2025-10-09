@@ -1,0 +1,29 @@
+key: ids_ossec_network_attacks_dns_poisoning
+kind: ids_signature
+name: Ossec Dns Poisoning
+version: '1.0'
+engine: ossec
+category: network_attacks
+signature_type: dns_poisoning
+risk: high
+tags:
+- ids
+- ossec
+- network_attacks
+- dns_poisoning
+- detection
+- enterprise
+content: '# ossec signature for dns_poisoning
+
+  # Detection rule for network_attacks'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

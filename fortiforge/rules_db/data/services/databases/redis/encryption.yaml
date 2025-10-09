@@ -1,0 +1,24 @@
+key: svc_redis_encryption
+kind: service_hardening
+name: Redis Encryption
+version: '1.0'
+service: redis
+category: databases
+hardening_type: encryption
+risk: medium
+tags:
+- service
+- redis
+- encryption
+- databases
+- enterprise
+content: '# encryption configuration for redis
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

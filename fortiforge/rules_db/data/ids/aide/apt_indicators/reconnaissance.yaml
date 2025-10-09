@@ -1,0 +1,29 @@
+key: ids_aide_apt_indicators_reconnaissance
+kind: ids_signature
+name: Aide Reconnaissance
+version: '1.0'
+engine: aide
+category: apt_indicators
+signature_type: reconnaissance
+risk: high
+tags:
+- ids
+- aide
+- apt_indicators
+- reconnaissance
+- detection
+- enterprise
+content: '# aide signature for reconnaissance
+
+  # Detection rule for apt_indicators'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

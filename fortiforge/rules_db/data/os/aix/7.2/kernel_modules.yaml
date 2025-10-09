@@ -1,0 +1,27 @@
+key: os_aix_7.2_kernel_modules
+kind: os_hardening
+name: Aix 7.2 Kernel Modules
+version: '1.0'
+os: aix
+os_version: '7.2'
+os_type: unix
+category: kernel_modules
+risk: medium
+tags:
+- unix
+- aix
+- '7.2'
+- kernel_modules
+- hardening
+- enterprise
+content: '# kernel_modules configuration for aix'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

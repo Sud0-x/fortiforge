@@ -1,0 +1,10 @@
+# Additional nftables templates
+key: nft_drop_all
+kind: firewall
+engine: nftables
+name: Drop all inbound (explicit)
+version: 1
+risk: medium
+tags: [firewall, nftables]
+content: |
+  add rule inet filter input drop

@@ -1,0 +1,28 @@
+key: cloud_aws_api-gateway_monitoring
+kind: cloud_security
+name: AWS Api-Gateway Monitoring
+version: '1.0'
+platform: aws
+service: api-gateway
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- aws
+- api-gateway
+- monitoring
+- enterprise
+content: '# aws api-gateway monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

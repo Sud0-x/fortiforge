@@ -1,0 +1,28 @@
+key: cloud_oracle_network_disaster_recovery
+kind: cloud_security
+name: ORACLE Network Disaster Recovery
+version: '1.0'
+platform: oracle
+service: network
+control_type: disaster_recovery
+risk: medium
+tags:
+- cloud
+- oracle
+- network
+- disaster_recovery
+- enterprise
+content: '# oracle network disaster_recovery configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

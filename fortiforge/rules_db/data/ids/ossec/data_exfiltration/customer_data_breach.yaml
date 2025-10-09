@@ -1,0 +1,29 @@
+key: ids_ossec_data_exfiltration_customer_data_breach
+kind: ids_signature
+name: Ossec Customer Data Breach
+version: '1.0'
+engine: ossec
+category: data_exfiltration
+signature_type: customer_data_breach
+risk: high
+tags:
+- ids
+- ossec
+- data_exfiltration
+- customer_data_breach
+- detection
+- enterprise
+content: '# ossec signature for customer_data_breach
+
+  # Detection rule for data_exfiltration'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

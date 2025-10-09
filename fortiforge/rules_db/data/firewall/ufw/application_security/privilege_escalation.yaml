@@ -1,0 +1,23 @@
+key: fw_ufw_application_security_privilege_escalation
+kind: firewall_rule
+name: Ufw Privilege Escalation
+version: '1.0'
+engine: ufw
+category: application_security
+rule_type: privilege_escalation
+risk: medium
+tags:
+- firewall
+- ufw
+- application_security
+- privilege_escalation
+- network_security
+- enterprise
+content: '# ufw rule for privilege_escalation'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

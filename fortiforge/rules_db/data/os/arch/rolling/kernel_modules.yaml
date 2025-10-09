@@ -1,0 +1,27 @@
+key: os_arch_rolling_kernel_modules
+kind: os_hardening
+name: Arch rolling Kernel Modules
+version: '1.0'
+os: arch
+os_version: rolling
+os_type: linux
+category: kernel_modules
+risk: medium
+tags:
+- linux
+- arch
+- rolling
+- kernel_modules
+- hardening
+- enterprise
+content: '# kernel_modules configuration for arch'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,27 @@
+key: os_opensuse_15.5_kernel_modules
+kind: os_hardening
+name: Opensuse 15.5 Kernel Modules
+version: '1.0'
+os: opensuse
+os_version: '15.5'
+os_type: linux
+category: kernel_modules
+risk: medium
+tags:
+- linux
+- opensuse
+- '15.5'
+- kernel_modules
+- hardening
+- enterprise
+content: '# kernel_modules configuration for opensuse'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

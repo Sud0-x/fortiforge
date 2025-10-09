@@ -1,0 +1,29 @@
+key: ids_aide_apt_indicators_actions_objectives
+kind: ids_signature
+name: Aide Actions Objectives
+version: '1.0'
+engine: aide
+category: apt_indicators
+signature_type: actions_objectives
+risk: high
+tags:
+- ids
+- aide
+- apt_indicators
+- actions_objectives
+- detection
+- enterprise
+content: '# aide signature for actions_objectives
+
+  # Detection rule for apt_indicators'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

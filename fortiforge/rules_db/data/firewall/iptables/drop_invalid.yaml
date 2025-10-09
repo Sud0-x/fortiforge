@@ -1,0 +1,8 @@
+key: fw_drop_invalid
+kind: firewall
+engine: iptables
+name: Drop INVALID state
+version: 1
+risk: low
+tags: [firewall, iptables]
+content: "-A INPUT -m state --state INVALID -j DROP"

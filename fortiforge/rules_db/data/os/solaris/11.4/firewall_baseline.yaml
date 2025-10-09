@@ -1,0 +1,29 @@
+key: os_solaris_11.4_firewall_baseline
+kind: os_hardening
+name: Solaris 11.4 Firewall Baseline
+version: '1.0'
+os: solaris
+os_version: '11.4'
+os_type: unix
+category: firewall_baseline
+risk: medium
+tags:
+- unix
+- solaris
+- '11.4'
+- firewall_baseline
+- hardening
+- enterprise
+content: '# Firewall baseline for solaris
+
+  # Enable and configure default deny policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

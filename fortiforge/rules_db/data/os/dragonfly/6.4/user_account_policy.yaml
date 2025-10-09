@@ -1,0 +1,27 @@
+key: os_dragonfly_6.4_user_account_policy
+kind: os_hardening
+name: Dragonfly 6.4 User Account Policy
+version: '1.0'
+os: dragonfly
+os_version: '6.4'
+os_type: unix
+category: user_account_policy
+risk: medium
+tags:
+- unix
+- dragonfly
+- '6.4'
+- user_account_policy
+- hardening
+- enterprise
+content: '# user_account_policy configuration for dragonfly'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

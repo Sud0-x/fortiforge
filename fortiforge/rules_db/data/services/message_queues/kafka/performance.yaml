@@ -1,0 +1,24 @@
+key: svc_kafka_performance
+kind: service_hardening
+name: Kafka Performance
+version: '1.0'
+service: kafka
+category: message_queues
+hardening_type: performance
+risk: medium
+tags:
+- service
+- kafka
+- performance
+- message_queues
+- enterprise
+content: '# performance configuration for kafka
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

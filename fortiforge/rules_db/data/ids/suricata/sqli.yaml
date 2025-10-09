@@ -1,0 +1,9 @@
+key: ids_suricata_sqli
+kind: ids_signature
+engine: suricata
+name: Suricata simple SQLi pattern
+version: 1
+risk: low
+tags: [ids, suricata, sqli]
+content: |
+  alert http any any -> any any (msg:"SQLi UNION SELECT"; content:"union select"; http_client_body; nocase; sid:1000001; rev:1;)

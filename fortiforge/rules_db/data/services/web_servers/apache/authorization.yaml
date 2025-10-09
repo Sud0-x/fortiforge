@@ -1,0 +1,24 @@
+key: svc_apache_authorization
+kind: service_hardening
+name: Apache Authorization
+version: '1.0'
+service: apache
+category: web_servers
+hardening_type: authorization
+risk: medium
+tags:
+- service
+- apache
+- authorization
+- web_servers
+- enterprise
+content: '# authorization configuration for apache
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

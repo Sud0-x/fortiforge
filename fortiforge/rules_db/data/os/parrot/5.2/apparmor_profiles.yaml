@@ -1,0 +1,27 @@
+key: os_parrot_5.2_apparmor_profiles
+kind: os_hardening
+name: Parrot 5.2 Apparmor Profiles
+version: '1.0'
+os: parrot
+os_version: '5.2'
+os_type: linux
+category: apparmor_profiles
+risk: medium
+tags:
+- linux
+- parrot
+- '5.2'
+- apparmor_profiles
+- hardening
+- enterprise
+content: '# apparmor_profiles configuration for parrot'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

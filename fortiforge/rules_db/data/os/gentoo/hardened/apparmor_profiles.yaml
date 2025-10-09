@@ -1,0 +1,27 @@
+key: os_gentoo_hardened_apparmor_profiles
+kind: os_hardening
+name: Gentoo hardened Apparmor Profiles
+version: '1.0'
+os: gentoo
+os_version: hardened
+os_type: linux
+category: apparmor_profiles
+risk: medium
+tags:
+- linux
+- gentoo
+- hardened
+- apparmor_profiles
+- hardening
+- enterprise
+content: '# apparmor_profiles configuration for gentoo'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

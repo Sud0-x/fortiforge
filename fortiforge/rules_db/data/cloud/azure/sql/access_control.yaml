@@ -1,0 +1,28 @@
+key: cloud_azure_sql_access_control
+kind: cloud_security
+name: AZURE Sql Access Control
+version: '1.0'
+platform: azure
+service: sql
+control_type: access_control
+risk: high
+tags:
+- cloud
+- azure
+- sql
+- access_control
+- enterprise
+content: '# azure sql access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

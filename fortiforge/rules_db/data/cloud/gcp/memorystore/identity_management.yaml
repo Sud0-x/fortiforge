@@ -1,0 +1,28 @@
+key: cloud_gcp_memorystore_identity_management
+kind: cloud_security
+name: GCP Memorystore Identity Management
+version: '1.0'
+platform: gcp
+service: memorystore
+control_type: identity_management
+risk: medium
+tags:
+- cloud
+- gcp
+- memorystore
+- identity_management
+- enterprise
+content: '# gcp memorystore identity_management configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

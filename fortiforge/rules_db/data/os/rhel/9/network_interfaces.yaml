@@ -1,0 +1,27 @@
+key: os_rhel_9_network_interfaces
+kind: os_hardening
+name: Rhel 9 Network Interfaces
+version: '1.0'
+os: rhel
+os_version: '9'
+os_type: linux
+category: network_interfaces
+risk: medium
+tags:
+- linux
+- rhel
+- '9'
+- network_interfaces
+- hardening
+- enterprise
+content: '# network_interfaces configuration for rhel'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

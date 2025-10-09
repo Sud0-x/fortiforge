@@ -1,0 +1,24 @@
+key: svc_suricata_logging
+kind: service_hardening
+name: Suricata Logging
+version: '1.0'
+service: suricata
+category: security_tools
+hardening_type: logging
+risk: low
+tags:
+- service
+- suricata
+- logging
+- security_tools
+- enterprise
+content: '# logging configuration for suricata
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

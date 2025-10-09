@@ -1,0 +1,27 @@
+key: os_openbsd_7.4_sysctl_kernel
+kind: os_hardening
+name: Openbsd 7.4 Sysctl Kernel
+version: '1.0'
+os: openbsd
+os_version: '7.4'
+os_type: unix
+category: sysctl_kernel
+risk: medium
+tags:
+- unix
+- openbsd
+- '7.4'
+- sysctl_kernel
+- hardening
+- enterprise
+content: '# sysctl_kernel configuration for openbsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

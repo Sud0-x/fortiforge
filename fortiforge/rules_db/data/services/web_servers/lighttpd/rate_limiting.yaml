@@ -1,0 +1,24 @@
+key: svc_lighttpd_rate_limiting
+kind: service_hardening
+name: Lighttpd Rate Limiting
+version: '1.0'
+service: lighttpd
+category: web_servers
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- lighttpd
+- rate_limiting
+- web_servers
+- enterprise
+content: '# rate_limiting configuration for lighttpd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

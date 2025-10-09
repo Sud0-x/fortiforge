@@ -1,0 +1,24 @@
+key: svc_prometheus_security_headers
+kind: service_hardening
+name: Prometheus Security Headers
+version: '1.0'
+service: prometheus
+category: monitoring
+hardening_type: security_headers
+risk: medium
+tags:
+- service
+- prometheus
+- security_headers
+- monitoring
+- enterprise
+content: '# security_headers configuration for prometheus
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

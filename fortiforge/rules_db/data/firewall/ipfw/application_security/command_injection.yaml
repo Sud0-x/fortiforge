@@ -1,0 +1,23 @@
+key: fw_ipfw_application_security_command_injection
+kind: firewall_rule
+name: Ipfw Command Injection
+version: '1.0'
+engine: ipfw
+category: application_security
+rule_type: command_injection
+risk: medium
+tags:
+- firewall
+- ipfw
+- application_security
+- command_injection
+- network_security
+- enterprise
+content: '# ipfw rule for command_injection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

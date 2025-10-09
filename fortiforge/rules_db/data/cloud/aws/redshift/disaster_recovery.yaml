@@ -1,0 +1,28 @@
+key: cloud_aws_redshift_disaster_recovery
+kind: cloud_security
+name: AWS Redshift Disaster Recovery
+version: '1.0'
+platform: aws
+service: redshift
+control_type: disaster_recovery
+risk: medium
+tags:
+- cloud
+- aws
+- redshift
+- disaster_recovery
+- enterprise
+content: '# aws redshift disaster_recovery configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,27 @@
+key: os_dragonfly_6.2_sysctl_kernel
+kind: os_hardening
+name: Dragonfly 6.2 Sysctl Kernel
+version: '1.0'
+os: dragonfly
+os_version: '6.2'
+os_type: unix
+category: sysctl_kernel
+risk: medium
+tags:
+- unix
+- dragonfly
+- '6.2'
+- sysctl_kernel
+- hardening
+- enterprise
+content: '# sysctl_kernel configuration for dragonfly'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

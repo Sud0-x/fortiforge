@@ -1,0 +1,28 @@
+key: cloud_gcp_compute_cost_optimization
+kind: cloud_security
+name: GCP Compute Cost Optimization
+version: '1.0'
+platform: gcp
+service: compute
+control_type: cost_optimization
+risk: medium
+tags:
+- cloud
+- gcp
+- compute
+- cost_optimization
+- enterprise
+content: '# gcp compute cost_optimization configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

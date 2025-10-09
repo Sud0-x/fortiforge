@@ -1,0 +1,23 @@
+key: fw_firewalld_application_security_command_injection
+kind: firewall_rule
+name: Firewalld Command Injection
+version: '1.0'
+engine: firewalld
+category: application_security
+rule_type: command_injection
+risk: medium
+tags:
+- firewall
+- firewalld
+- application_security
+- command_injection
+- network_security
+- enterprise
+content: '# firewalld rule for command_injection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

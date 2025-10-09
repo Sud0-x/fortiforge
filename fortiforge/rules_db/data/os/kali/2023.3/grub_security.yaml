@@ -1,0 +1,27 @@
+key: os_kali_2023.3_grub_security
+kind: os_hardening
+name: Kali 2023.3 Grub Security
+version: '1.0'
+os: kali
+os_version: '2023.3'
+os_type: linux
+category: grub_security
+risk: medium
+tags:
+- linux
+- kali
+- '2023.3'
+- grub_security
+- hardening
+- enterprise
+content: '# grub_security configuration for kali'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,28 @@
+key: cloud_oracle_database_encryption
+kind: cloud_security
+name: ORACLE Database Encryption
+version: '1.0'
+platform: oracle
+service: database
+control_type: encryption
+risk: high
+tags:
+- cloud
+- oracle
+- database
+- encryption
+- enterprise
+content: '# oracle database encryption configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

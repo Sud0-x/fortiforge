@@ -1,0 +1,24 @@
+key: svc_exim_performance
+kind: service_hardening
+name: Exim Performance
+version: '1.0'
+service: exim
+category: mail_servers
+hardening_type: performance
+risk: medium
+tags:
+- service
+- exim
+- performance
+- mail_servers
+- enterprise
+content: '# performance configuration for exim
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,10 @@
+key: svc_nginx_csp
+kind: service_hardening
+service: nginx
+name: Nginx Content-Security-Policy header
+version: 1
+risk: low
+tags: [service, nginx, csp]
+content: |
+  add_header Content-Security-Policy "default-src 'self'";
+rollback: { content: "" }

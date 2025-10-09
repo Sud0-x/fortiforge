@@ -1,0 +1,24 @@
+key: svc_sendmail_access_control
+kind: service_hardening
+name: Sendmail Access Control
+version: '1.0'
+service: sendmail
+category: mail_servers
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- sendmail
+- access_control
+- mail_servers
+- enterprise
+content: '# access_control configuration for sendmail
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,28 @@
+key: cloud_vultr_instances_governance
+kind: cloud_security
+name: VULTR Instances Governance
+version: '1.0'
+platform: vultr
+service: instances
+control_type: governance
+risk: medium
+tags:
+- cloud
+- vultr
+- instances
+- governance
+- enterprise
+content: '# vultr instances governance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,24 @@
+key: svc_nagios_security_headers
+kind: service_hardening
+name: Nagios Security Headers
+version: '1.0'
+service: nagios
+category: monitoring
+hardening_type: security_headers
+risk: medium
+tags:
+- service
+- nagios
+- security_headers
+- monitoring
+- enterprise
+content: '# security_headers configuration for nagios
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

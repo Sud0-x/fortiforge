@@ -1,0 +1,31 @@
+key: compliance_hipaa_standards_transmission-security
+kind: compliance
+name: HIPAA Standards - Transmission Security
+version: '1.0'
+framework: hipaa
+category: standards
+requirement: transmission-security
+risk: high
+tags:
+- compliance
+- hipaa
+- standards
+- transmission-security
+- audit
+- enterprise
+content: '# HIPAA standards - transmission-security
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: hipaa
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - HIPAA
+  - Healthcare
+  - PHI Protection

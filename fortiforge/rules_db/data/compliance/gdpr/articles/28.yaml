@@ -1,0 +1,32 @@
+key: compliance_gdpr_articles_28
+kind: compliance
+name: GDPR Articles - 28
+version: '1.0'
+framework: gdpr
+category: articles
+requirement: '28'
+risk: high
+tags:
+- compliance
+- gdpr
+- articles
+- '28'
+- audit
+- enterprise
+content: '# GDPR articles - 28
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: gdpr
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - GDPR
+  - Privacy
+  - Data Protection
+  - EU

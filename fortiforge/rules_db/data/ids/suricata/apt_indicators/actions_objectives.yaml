@@ -1,0 +1,28 @@
+key: ids_suricata_apt_indicators_actions_objectives
+kind: ids_signature
+name: Suricata Actions Objectives
+version: '1.0'
+engine: suricata
+category: apt_indicators
+signature_type: actions_objectives
+risk: high
+tags:
+- ids
+- suricata
+- apt_indicators
+- actions_objectives
+- detection
+- enterprise
+content: alert tcp any any -> any any (msg:"Actions Objectives"; content:"malicious";
+  sid:1000000; rev:1;)
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

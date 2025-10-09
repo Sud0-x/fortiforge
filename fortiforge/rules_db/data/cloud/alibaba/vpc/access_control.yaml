@@ -1,0 +1,28 @@
+key: cloud_alibaba_vpc_access_control
+kind: cloud_security
+name: ALIBABA Vpc Access Control
+version: '1.0'
+platform: alibaba
+service: vpc
+control_type: access_control
+risk: high
+tags:
+- cloud
+- alibaba
+- vpc
+- access_control
+- enterprise
+content: '# alibaba vpc access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

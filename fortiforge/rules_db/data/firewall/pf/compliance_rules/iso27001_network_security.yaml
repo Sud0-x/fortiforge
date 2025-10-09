@@ -1,0 +1,23 @@
+key: fw_pf_compliance_rules_iso27001_network_security
+kind: firewall_rule
+name: Pf Iso27001 Network Security
+version: '1.0'
+engine: pf
+category: compliance_rules
+rule_type: iso27001_network_security
+risk: medium
+tags:
+- firewall
+- pf
+- compliance_rules
+- iso27001_network_security
+- network_security
+- enterprise
+content: '# pf rule for iso27001_network_security'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

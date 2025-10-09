@@ -1,0 +1,22 @@
+key: aws_sg_web_allow
+kind: cloud_firewall
+engine: aws_sg
+name: AWS SG Allow Web
+version: 1
+risk: low
+tags: [cloud, aws, sg, web]
+content: |
+  [
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 80,
+      "ToPort": 80,
+      "IpRanges": [{"CidrIp": "0.0.0.0/0"}]
+    },
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 443,
+      "ToPort": 443,
+      "IpRanges": [{"CidrIp": "0.0.0.0/0"}]
+    }
+  ]

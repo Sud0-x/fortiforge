@@ -1,0 +1,24 @@
+key: fw_iptables_web_security_ddos_protection
+kind: firewall_rule
+name: Iptables Ddos Protection
+version: '1.0'
+engine: iptables
+category: web_security
+rule_type: ddos_protection
+risk: high
+tags:
+- firewall
+- iptables
+- web_security
+- ddos_protection
+- network_security
+- enterprise
+content: -A INPUT -p tcp --dport 80 -m limit --limit 25/minute --limit-burst 100 -j
+  ACCEPT
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

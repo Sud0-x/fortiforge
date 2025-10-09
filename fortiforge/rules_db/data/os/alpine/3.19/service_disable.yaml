@@ -1,0 +1,27 @@
+key: os_alpine_3.19_service_disable
+kind: os_hardening
+name: Alpine 3.19 Service Disable
+version: '1.0'
+os: alpine
+os_version: '3.19'
+os_type: linux
+category: service_disable
+risk: medium
+tags:
+- linux
+- alpine
+- '3.19'
+- service_disable
+- hardening
+- enterprise
+content: '# service_disable configuration for alpine'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

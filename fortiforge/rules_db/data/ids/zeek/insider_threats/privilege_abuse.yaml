@@ -1,0 +1,29 @@
+key: ids_zeek_insider_threats_privilege_abuse
+kind: ids_signature
+name: Zeek Privilege Abuse
+version: '1.0'
+engine: zeek
+category: insider_threats
+signature_type: privilege_abuse
+risk: high
+tags:
+- ids
+- zeek
+- insider_threats
+- privilege_abuse
+- detection
+- enterprise
+content: '# zeek signature for privilege_abuse
+
+  # Detection rule for insider_threats'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

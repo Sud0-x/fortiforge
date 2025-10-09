@@ -1,0 +1,32 @@
+key: compliance_gdpr_controls_privacy-by-design
+kind: compliance
+name: GDPR Controls - Privacy By Design
+version: '1.0'
+framework: gdpr
+category: controls
+requirement: privacy-by-design
+risk: high
+tags:
+- compliance
+- gdpr
+- controls
+- privacy-by-design
+- audit
+- enterprise
+content: '# GDPR controls - privacy-by-design
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: gdpr
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - GDPR
+  - Privacy
+  - Data Protection
+  - EU

@@ -1,0 +1,27 @@
+key: os_solaris_11.4_user_account_policy
+kind: os_hardening
+name: Solaris 11.4 User Account Policy
+version: '1.0'
+os: solaris
+os_version: '11.4'
+os_type: unix
+category: user_account_policy
+risk: medium
+tags:
+- unix
+- solaris
+- '11.4'
+- user_account_policy
+- hardening
+- enterprise
+content: '# user_account_policy configuration for solaris'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

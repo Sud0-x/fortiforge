@@ -1,0 +1,35 @@
+key: os_ubuntu_20.04_ssh_hardening
+kind: os_hardening
+name: Ubuntu 20.04 Ssh Hardening
+version: '1.0'
+os: ubuntu
+os_version: '20.04'
+os_type: linux
+category: ssh_hardening
+risk: medium
+tags:
+- linux
+- ubuntu
+- '20.04'
+- ssh_hardening
+- hardening
+- enterprise
+content: '# SSH hardening for ubuntu
+
+  PermitRootLogin no
+
+  PasswordAuthentication no
+
+  Protocol 2
+
+  MaxAuthTries 3'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

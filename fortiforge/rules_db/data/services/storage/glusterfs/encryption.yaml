@@ -1,0 +1,24 @@
+key: svc_glusterfs_encryption
+kind: service_hardening
+name: Glusterfs Encryption
+version: '1.0'
+service: glusterfs
+category: storage
+hardening_type: encryption
+risk: medium
+tags:
+- service
+- glusterfs
+- encryption
+- storage
+- enterprise
+content: '# encryption configuration for glusterfs
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,28 @@
+key: cloud_alibaba_oss_identity_management
+kind: cloud_security
+name: ALIBABA Oss Identity Management
+version: '1.0'
+platform: alibaba
+service: oss
+control_type: identity_management
+risk: medium
+tags:
+- cloud
+- alibaba
+- oss
+- identity_management
+- enterprise
+content: '# alibaba oss identity_management configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

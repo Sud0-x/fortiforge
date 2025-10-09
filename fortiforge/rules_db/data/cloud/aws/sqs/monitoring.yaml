@@ -1,0 +1,28 @@
+key: cloud_aws_sqs_monitoring
+kind: cloud_security
+name: AWS Sqs Monitoring
+version: '1.0'
+platform: aws
+service: sqs
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- aws
+- sqs
+- monitoring
+- enterprise
+content: '# aws sqs monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

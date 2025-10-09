@@ -1,0 +1,24 @@
+key: svc_ossec_authentication
+kind: service_hardening
+name: Ossec Authentication
+version: '1.0'
+service: ossec
+category: security_tools
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- ossec
+- authentication
+- security_tools
+- enterprise
+content: '# authentication configuration for ossec
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,23 @@
+key: fw_ipfw_application_security_authentication_bypass
+kind: firewall_rule
+name: Ipfw Authentication Bypass
+version: '1.0'
+engine: ipfw
+category: application_security
+rule_type: authentication_bypass
+risk: medium
+tags:
+- firewall
+- ipfw
+- application_security
+- authentication_bypass
+- network_security
+- enterprise
+content: '# ipfw rule for authentication_bypass'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

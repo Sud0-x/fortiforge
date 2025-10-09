@@ -1,0 +1,28 @@
+key: cloud_aws_ec2_compliance
+kind: cloud_security
+name: AWS Ec2 Compliance
+version: '1.0'
+platform: aws
+service: ec2
+control_type: compliance
+risk: medium
+tags:
+- cloud
+- aws
+- ec2
+- compliance
+- enterprise
+content: '# aws ec2 compliance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

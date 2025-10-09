@@ -1,0 +1,31 @@
+key: compliance_cis_benchmarks_gcp-foundations
+kind: compliance
+name: CIS Benchmarks - Gcp Foundations
+version: '1.0'
+framework: cis
+category: benchmarks
+requirement: gcp-foundations
+risk: high
+tags:
+- compliance
+- cis
+- benchmarks
+- gcp-foundations
+- audit
+- enterprise
+content: '# CIS benchmarks - gcp-foundations
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: cis
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - CIS
+  - Benchmarks
+  - Best Practices

@@ -1,0 +1,29 @@
+key: ids_samhain_network_attacks_man_in_middle
+kind: ids_signature
+name: Samhain Man In Middle
+version: '1.0'
+engine: samhain
+category: network_attacks
+signature_type: man_in_middle
+risk: high
+tags:
+- ids
+- samhain
+- network_attacks
+- man_in_middle
+- detection
+- enterprise
+content: '# samhain signature for man_in_middle
+
+  # Detection rule for network_attacks'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

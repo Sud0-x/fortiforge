@@ -1,0 +1,28 @@
+key: cloud_aws_route53_backup
+kind: cloud_security
+name: AWS Route53 Backup
+version: '1.0'
+platform: aws
+service: route53
+control_type: backup
+risk: medium
+tags:
+- cloud
+- aws
+- route53
+- backup
+- enterprise
+content: '# aws route53 backup configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

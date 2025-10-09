@@ -1,0 +1,28 @@
+key: cloud_aws_iam_monitoring
+kind: cloud_security
+name: AWS Iam Monitoring
+version: '1.0'
+platform: aws
+service: iam
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- aws
+- iam
+- monitoring
+- enterprise
+content: '# aws iam monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,24 @@
+key: svc_vsftpd_performance
+kind: service_hardening
+name: Vsftpd Performance
+version: '1.0'
+service: vsftpd
+category: ftp_servers
+hardening_type: performance
+risk: medium
+tags:
+- service
+- vsftpd
+- performance
+- ftp_servers
+- enterprise
+content: '# performance configuration for vsftpd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,14 @@
+services:
+  sandbox-web-1:
+    image: ubuntu:22.04
+    container_name: sandbox-web-1
+    command: ["sleep", "infinity"]
+    networks: [sandbox]
+  sandbox-db-1:
+    image: ubuntu:22.04
+    container_name: sandbox-db-1
+    command: ["sleep", "infinity"]
+    networks: [sandbox]
+networks:
+  sandbox:
+    driver: bridge

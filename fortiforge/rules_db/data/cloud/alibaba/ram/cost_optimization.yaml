@@ -1,0 +1,28 @@
+key: cloud_alibaba_ram_cost_optimization
+kind: cloud_security
+name: ALIBABA Ram Cost Optimization
+version: '1.0'
+platform: alibaba
+service: ram
+control_type: cost_optimization
+risk: medium
+tags:
+- cloud
+- alibaba
+- ram
+- cost_optimization
+- enterprise
+content: '# alibaba ram cost_optimization configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

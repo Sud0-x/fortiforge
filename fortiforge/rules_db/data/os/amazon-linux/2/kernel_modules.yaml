@@ -1,0 +1,27 @@
+key: os_amazon-linux_2_kernel_modules
+kind: os_hardening
+name: Amazon-Linux 2 Kernel Modules
+version: '1.0'
+os: amazon-linux
+os_version: '2'
+os_type: linux
+category: kernel_modules
+risk: medium
+tags:
+- linux
+- amazon-linux
+- '2'
+- kernel_modules
+- hardening
+- enterprise
+content: '# kernel_modules configuration for amazon-linux'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

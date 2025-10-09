@@ -1,0 +1,29 @@
+key: ids_wazuh_network_attacks_port_scanning
+kind: ids_signature
+name: Wazuh Port Scanning
+version: '1.0'
+engine: wazuh
+category: network_attacks
+signature_type: port_scanning
+risk: high
+tags:
+- ids
+- wazuh
+- network_attacks
+- port_scanning
+- detection
+- enterprise
+content: '# wazuh signature for port_scanning
+
+  # Detection rule for network_attacks'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

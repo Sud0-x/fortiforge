@@ -1,0 +1,28 @@
+key: cloud_azure_service-bus_monitoring
+kind: cloud_security
+name: AZURE Service-Bus Monitoring
+version: '1.0'
+platform: azure
+service: service-bus
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- azure
+- service-bus
+- monitoring
+- enterprise
+content: '# azure service-bus monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

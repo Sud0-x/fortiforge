@@ -1,0 +1,10 @@
+key: ids_zeek_http_sqli
+kind: ids_signature
+engine: zeek
+name: Zeek HTTP SQLi pattern (demo)
+version: 1
+risk: low
+tags: [ids, zeek, sqli]
+content: |
+  # Zeek notice script placeholder
+  redef Notice::policy += set(Notice::Policy($note=Notice::Weird::activity, $priority=NOTICE_LOW));

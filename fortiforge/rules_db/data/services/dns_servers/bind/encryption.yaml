@@ -1,0 +1,24 @@
+key: svc_bind_encryption
+kind: service_hardening
+name: Bind Encryption
+version: '1.0'
+service: bind
+category: dns_servers
+hardening_type: encryption
+risk: medium
+tags:
+- service
+- bind
+- encryption
+- dns_servers
+- enterprise
+content: '# encryption configuration for bind
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

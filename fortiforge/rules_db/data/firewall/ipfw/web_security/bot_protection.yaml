@@ -1,0 +1,23 @@
+key: fw_ipfw_web_security_bot_protection
+kind: firewall_rule
+name: Ipfw Bot Protection
+version: '1.0'
+engine: ipfw
+category: web_security
+rule_type: bot_protection
+risk: high
+tags:
+- firewall
+- ipfw
+- web_security
+- bot_protection
+- network_security
+- enterprise
+content: '# ipfw rule for bot_protection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

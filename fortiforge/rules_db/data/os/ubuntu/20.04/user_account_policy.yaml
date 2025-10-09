@@ -1,0 +1,27 @@
+key: os_ubuntu_20.04_user_account_policy
+kind: os_hardening
+name: Ubuntu 20.04 User Account Policy
+version: '1.0'
+os: ubuntu
+os_version: '20.04'
+os_type: linux
+category: user_account_policy
+risk: medium
+tags:
+- linux
+- ubuntu
+- '20.04'
+- user_account_policy
+- hardening
+- enterprise
+content: '# user_account_policy configuration for ubuntu'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

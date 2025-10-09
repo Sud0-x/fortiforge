@@ -1,0 +1,28 @@
+key: cloud_azure_ad_performance
+kind: cloud_security
+name: AZURE Ad Performance
+version: '1.0'
+platform: azure
+service: ad
+control_type: performance
+risk: medium
+tags:
+- cloud
+- azure
+- ad
+- performance
+- enterprise
+content: '# azure ad performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

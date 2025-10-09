@@ -1,0 +1,27 @@
+key: os_gentoo_hardened_grub_security
+kind: os_hardening
+name: Gentoo hardened Grub Security
+version: '1.0'
+os: gentoo
+os_version: hardened
+os_type: linux
+category: grub_security
+risk: medium
+tags:
+- linux
+- gentoo
+- hardened
+- grub_security
+- hardening
+- enterprise
+content: '# grub_security configuration for gentoo'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

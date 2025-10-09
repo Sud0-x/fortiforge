@@ -1,0 +1,27 @@
+key: os_centos_9-stream_network_interfaces
+kind: os_hardening
+name: Centos 9-stream Network Interfaces
+version: '1.0'
+os: centos
+os_version: 9-stream
+os_type: linux
+category: network_interfaces
+risk: medium
+tags:
+- linux
+- centos
+- 9-stream
+- network_interfaces
+- hardening
+- enterprise
+content: '# network_interfaces configuration for centos'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

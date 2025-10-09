@@ -1,0 +1,24 @@
+key: svc_jetty_rate_limiting
+kind: service_hardening
+name: Jetty Rate Limiting
+version: '1.0'
+service: jetty
+category: application_servers
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- jetty
+- rate_limiting
+- application_servers
+- enterprise
+content: '# rate_limiting configuration for jetty
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

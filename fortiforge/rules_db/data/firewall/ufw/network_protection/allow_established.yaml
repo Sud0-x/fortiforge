@@ -1,0 +1,23 @@
+key: fw_ufw_network_protection_allow_established
+kind: firewall_rule
+name: Ufw Allow Established
+version: '1.0'
+engine: ufw
+category: network_protection
+rule_type: allow_established
+risk: medium
+tags:
+- firewall
+- ufw
+- network_protection
+- allow_established
+- network_security
+- enterprise
+content: '# ufw rule for allow_established'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

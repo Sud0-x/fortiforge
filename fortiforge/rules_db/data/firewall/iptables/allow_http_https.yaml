@@ -1,0 +1,8 @@
+key: fw_allow_http_https
+kind: firewall
+engine: iptables
+name: Allow HTTP/HTTPS
+version: 1
+risk: low
+tags: [firewall, iptables, web]
+content: "-A INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT"

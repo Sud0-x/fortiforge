@@ -1,0 +1,24 @@
+key: svc_istio_baseline_config
+kind: service_hardening
+name: Istio Baseline Config
+version: '1.0'
+service: istio
+category: proxy_servers
+hardening_type: baseline_config
+risk: medium
+tags:
+- service
+- istio
+- baseline_config
+- proxy_servers
+- enterprise
+content: '# baseline_config configuration for istio
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

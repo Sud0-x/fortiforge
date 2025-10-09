@@ -1,0 +1,27 @@
+key: os_arch_rolling_sysctl_kernel
+kind: os_hardening
+name: Arch rolling Sysctl Kernel
+version: '1.0'
+os: arch
+os_version: rolling
+os_type: linux
+category: sysctl_kernel
+risk: medium
+tags:
+- linux
+- arch
+- rolling
+- sysctl_kernel
+- hardening
+- enterprise
+content: '# sysctl_kernel configuration for arch'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

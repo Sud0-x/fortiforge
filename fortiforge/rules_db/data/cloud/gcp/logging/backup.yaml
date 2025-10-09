@@ -1,0 +1,28 @@
+key: cloud_gcp_logging_backup
+kind: cloud_security
+name: GCP Logging Backup
+version: '1.0'
+platform: gcp
+service: logging
+control_type: backup
+risk: medium
+tags:
+- cloud
+- gcp
+- logging
+- backup
+- enterprise
+content: '# gcp logging backup configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

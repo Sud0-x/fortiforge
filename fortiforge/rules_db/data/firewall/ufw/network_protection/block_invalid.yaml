@@ -1,0 +1,23 @@
+key: fw_ufw_network_protection_block_invalid
+kind: firewall_rule
+name: Ufw Block Invalid
+version: '1.0'
+engine: ufw
+category: network_protection
+rule_type: block_invalid
+risk: high
+tags:
+- firewall
+- ufw
+- network_protection
+- block_invalid
+- network_security
+- enterprise
+content: '# ufw rule for block_invalid'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

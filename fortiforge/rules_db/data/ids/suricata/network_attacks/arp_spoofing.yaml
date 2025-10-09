@@ -1,0 +1,28 @@
+key: ids_suricata_network_attacks_arp_spoofing
+kind: ids_signature
+name: Suricata Arp Spoofing
+version: '1.0'
+engine: suricata
+category: network_attacks
+signature_type: arp_spoofing
+risk: high
+tags:
+- ids
+- suricata
+- network_attacks
+- arp_spoofing
+- detection
+- enterprise
+content: alert tcp any any -> any any (msg:"Arp Spoofing"; content:"malicious"; sid:1000000;
+  rev:1;)
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

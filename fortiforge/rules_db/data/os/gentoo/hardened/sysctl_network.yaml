@@ -1,0 +1,33 @@
+key: os_gentoo_hardened_sysctl_network
+kind: os_hardening
+name: Gentoo hardened Sysctl Network
+version: '1.0'
+os: gentoo
+os_version: hardened
+os_type: linux
+category: sysctl_network
+risk: medium
+tags:
+- linux
+- gentoo
+- hardened
+- sysctl_network
+- hardening
+- enterprise
+content: '# Network hardening for gentoo
+
+  net.ipv4.ip_forward=0
+
+  net.ipv4.conf.all.accept_redirects=0
+
+  net.ipv4.conf.all.secure_redirects=0'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

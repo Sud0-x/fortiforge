@@ -1,0 +1,27 @@
+key: os_kali_2023.3_boot_security
+kind: os_hardening
+name: Kali 2023.3 Boot Security
+version: '1.0'
+os: kali
+os_version: '2023.3'
+os_type: linux
+category: boot_security
+risk: medium
+tags:
+- linux
+- kali
+- '2023.3'
+- boot_security
+- hardening
+- enterprise
+content: '# boot_security configuration for kali'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

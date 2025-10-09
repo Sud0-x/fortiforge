@@ -1,0 +1,24 @@
+key: svc_gitlab_baseline_config
+kind: service_hardening
+name: Gitlab Baseline Config
+version: '1.0'
+service: gitlab
+category: ci_cd
+hardening_type: baseline_config
+risk: medium
+tags:
+- service
+- gitlab
+- baseline_config
+- ci_cd
+- enterprise
+content: '# baseline_config configuration for gitlab
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

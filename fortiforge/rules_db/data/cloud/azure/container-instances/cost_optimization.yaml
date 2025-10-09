@@ -1,0 +1,28 @@
+key: cloud_azure_container-instances_cost_optimization
+kind: cloud_security
+name: AZURE Container-Instances Cost Optimization
+version: '1.0'
+platform: azure
+service: container-instances
+control_type: cost_optimization
+risk: medium
+tags:
+- cloud
+- azure
+- container-instances
+- cost_optimization
+- enterprise
+content: '# azure container-instances cost_optimization configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

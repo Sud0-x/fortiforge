@@ -1,0 +1,8 @@
+key: fw_block_sqli_patterns
+kind: firewall
+engine: iptables
+name: Block basic SQLi strings (HTTP)
+version: 1
+risk: medium
+tags: [firewall, iptables, web, sqli]
+content: "-A INPUT -p tcp --dport 80 -m string --string 'union select' --algo bm -j DROP"

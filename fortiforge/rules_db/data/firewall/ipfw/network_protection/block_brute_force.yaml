@@ -1,0 +1,23 @@
+key: fw_ipfw_network_protection_block_brute_force
+kind: firewall_rule
+name: Ipfw Block Brute Force
+version: '1.0'
+engine: ipfw
+category: network_protection
+rule_type: block_brute_force
+risk: high
+tags:
+- firewall
+- ipfw
+- network_protection
+- block_brute_force
+- network_security
+- enterprise
+content: '# ipfw rule for block_brute_force'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

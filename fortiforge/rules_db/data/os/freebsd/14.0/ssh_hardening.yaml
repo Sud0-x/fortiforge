@@ -1,0 +1,35 @@
+key: os_freebsd_14.0_ssh_hardening
+kind: os_hardening
+name: Freebsd 14.0 Ssh Hardening
+version: '1.0'
+os: freebsd
+os_version: '14.0'
+os_type: unix
+category: ssh_hardening
+risk: medium
+tags:
+- unix
+- freebsd
+- '14.0'
+- ssh_hardening
+- hardening
+- enterprise
+content: '# SSH hardening for freebsd
+
+  PermitRootLogin no
+
+  PasswordAuthentication no
+
+  Protocol 2
+
+  MaxAuthTries 3'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

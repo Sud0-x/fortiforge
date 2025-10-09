@@ -1,0 +1,28 @@
+key: cloud_aws_iam_disaster_recovery
+kind: cloud_security
+name: AWS Iam Disaster Recovery
+version: '1.0'
+platform: aws
+service: iam
+control_type: disaster_recovery
+risk: medium
+tags:
+- cloud
+- aws
+- iam
+- disaster_recovery
+- enterprise
+content: '# aws iam disaster_recovery configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,8 @@
+key: fw_iptables_log_drops
+kind: firewall
+engine: iptables
+name: Log dropped packets
+version: 1
+risk: low
+tags: [firewall, iptables, logging]
+content: "-A INPUT -m limit --limit 5/min -j LOG --log-prefix 'FORTIFORGE DROP: ' --log-level 4"

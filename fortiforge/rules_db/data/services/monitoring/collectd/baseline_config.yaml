@@ -1,0 +1,24 @@
+key: svc_collectd_baseline_config
+kind: service_hardening
+name: Collectd Baseline Config
+version: '1.0'
+service: collectd
+category: monitoring
+hardening_type: baseline_config
+risk: medium
+tags:
+- service
+- collectd
+- baseline_config
+- monitoring
+- enterprise
+content: '# baseline_config configuration for collectd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

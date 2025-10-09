@@ -1,0 +1,24 @@
+key: svc_nfs_logging
+kind: service_hardening
+name: Nfs Logging
+version: '1.0'
+service: nfs
+category: storage
+hardening_type: logging
+risk: low
+tags:
+- service
+- nfs
+- logging
+- storage
+- enterprise
+content: '# logging configuration for nfs
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

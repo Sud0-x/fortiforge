@@ -1,0 +1,28 @@
+key: cloud_azure_functions_governance
+kind: cloud_security
+name: AZURE Functions Governance
+version: '1.0'
+platform: azure
+service: functions
+control_type: governance
+risk: medium
+tags:
+- cloud
+- azure
+- functions
+- governance
+- enterprise
+content: '# azure functions governance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

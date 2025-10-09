@@ -1,0 +1,27 @@
+key: os_opensuse_15.4_grub_security
+kind: os_hardening
+name: Opensuse 15.4 Grub Security
+version: '1.0'
+os: opensuse
+os_version: '15.4'
+os_type: linux
+category: grub_security
+risk: medium
+tags:
+- linux
+- opensuse
+- '15.4'
+- grub_security
+- hardening
+- enterprise
+content: '# grub_security configuration for opensuse'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

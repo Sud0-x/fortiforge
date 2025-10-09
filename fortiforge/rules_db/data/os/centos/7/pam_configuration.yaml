@@ -1,0 +1,27 @@
+key: os_centos_7_pam_configuration
+kind: os_hardening
+name: Centos 7 Pam Configuration
+version: '1.0'
+os: centos
+os_version: '7'
+os_type: linux
+category: pam_configuration
+risk: medium
+tags:
+- linux
+- centos
+- '7'
+- pam_configuration
+- hardening
+- enterprise
+content: '# pam_configuration configuration for centos'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,27 @@
+key: os_kali_2023.2_systemd_hardening
+kind: os_hardening
+name: Kali 2023.2 Systemd Hardening
+version: '1.0'
+os: kali
+os_version: '2023.2'
+os_type: linux
+category: systemd_hardening
+risk: medium
+tags:
+- linux
+- kali
+- '2023.2'
+- systemd_hardening
+- hardening
+- enterprise
+content: '# systemd_hardening configuration for kali'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

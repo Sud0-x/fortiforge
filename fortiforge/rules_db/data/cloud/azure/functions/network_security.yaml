@@ -1,0 +1,28 @@
+key: cloud_azure_functions_network_security
+kind: cloud_security
+name: AZURE Functions Network Security
+version: '1.0'
+platform: azure
+service: functions
+control_type: network_security
+risk: medium
+tags:
+- cloud
+- azure
+- functions
+- network_security
+- enterprise
+content: '# azure functions network_security configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

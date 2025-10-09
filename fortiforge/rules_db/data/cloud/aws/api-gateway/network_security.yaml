@@ -1,0 +1,28 @@
+key: cloud_aws_api-gateway_network_security
+kind: cloud_security
+name: AWS Api-Gateway Network Security
+version: '1.0'
+platform: aws
+service: api-gateway
+control_type: network_security
+risk: medium
+tags:
+- cloud
+- aws
+- api-gateway
+- network_security
+- enterprise
+content: '# aws api-gateway network_security configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

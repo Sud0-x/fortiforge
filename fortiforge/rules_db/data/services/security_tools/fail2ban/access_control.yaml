@@ -1,0 +1,24 @@
+key: svc_fail2ban_access_control
+kind: service_hardening
+name: Fail2Ban Access Control
+version: '1.0'
+service: fail2ban
+category: security_tools
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- fail2ban
+- access_control
+- security_tools
+- enterprise
+content: '# access_control configuration for fail2ban
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,11 @@
+key: mysql_remove_test_db
+kind: service_hardening
+service: mysql
+name: MySQL remove test DB and anonymous
+version: 1
+risk: low
+tags: [service, mysql, hardening]
+content: |
+  # This is a placeholder for an idempotent task to drop test DB and remove anonymous users
+  # Actual commands executed by executor will confirm before applying.
+rollback: { content: "" }

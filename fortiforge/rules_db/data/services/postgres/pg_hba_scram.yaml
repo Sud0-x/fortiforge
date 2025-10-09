@@ -1,0 +1,11 @@
+key: pg_hba_local_enforce_scram
+kind: service_hardening
+service: postgres
+name: Postgres pg_hba local enforce scram
+version: 1
+risk: low
+tags: [service, postgres, pg_hba]
+content: |
+  # TYPE  DATABASE        USER            ADDRESS                 METHOD
+  local   all             all                                     scram-sha-256
+rollback: { content: "" }

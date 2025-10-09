@@ -1,0 +1,12 @@
+key: apache_baseline_hardening
+kind: service_hardening
+service: apache
+name: Apache baseline hardening
+version: 1
+risk: low
+tags: [service, apache, hardening]
+content: |
+  ServerTokens Prod
+  ServerSignature Off
+  TraceEnable Off
+rollback: { content: "" }

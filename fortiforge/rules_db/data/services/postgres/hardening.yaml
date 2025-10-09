@@ -1,0 +1,12 @@
+key: svc_postgres_hardening
+kind: service_hardening
+service: postgres
+name: Postgres secure settings
+version: 1
+risk: low
+tags: [service, postgres, hardening]
+content: |
+  ssl = on
+  log_min_duration_statement = 1000
+  password_encryption = scram-sha-256
+rollback: { content: "" }

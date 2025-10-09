@@ -1,0 +1,29 @@
+key: os_solaris_11.4_audit_rules
+kind: os_hardening
+name: Solaris 11.4 Audit Rules
+version: '1.0'
+os: solaris
+os_version: '11.4'
+os_type: unix
+category: audit_rules
+risk: medium
+tags:
+- unix
+- solaris
+- '11.4'
+- audit_rules
+- hardening
+- enterprise
+content: '# Audit rules for solaris
+
+  -a always,exit -F arch=b64 -S adjtimex,settimeofday -k time-change'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

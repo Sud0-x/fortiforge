@@ -1,0 +1,28 @@
+key: cloud_vultr_instances_disaster_recovery
+kind: cloud_security
+name: VULTR Instances Disaster Recovery
+version: '1.0'
+platform: vultr
+service: instances
+control_type: disaster_recovery
+risk: medium
+tags:
+- cloud
+- vultr
+- instances
+- disaster_recovery
+- enterprise
+content: '# vultr instances disaster_recovery configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

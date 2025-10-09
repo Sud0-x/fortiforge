@@ -1,0 +1,28 @@
+key: cloud_alibaba_oss_backup
+kind: cloud_security
+name: ALIBABA Oss Backup
+version: '1.0'
+platform: alibaba
+service: oss
+control_type: backup
+risk: medium
+tags:
+- cloud
+- alibaba
+- oss
+- backup
+- enterprise
+content: '# alibaba oss backup configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,23 @@
+key: fw_nftables_web_security_bot_protection
+kind: firewall_rule
+name: Nftables Bot Protection
+version: '1.0'
+engine: nftables
+category: web_security
+rule_type: bot_protection
+risk: high
+tags:
+- firewall
+- nftables
+- web_security
+- bot_protection
+- network_security
+- enterprise
+content: '# nftables rule for bot_protection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

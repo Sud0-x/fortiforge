@@ -1,0 +1,8 @@
+key: fw_iptables_allow_icmp
+kind: firewall
+engine: iptables
+name: Allow ICMP echo-request rate-limited
+version: 1
+risk: low
+tags: [firewall, iptables, icmp]
+content: "-A INPUT -p icmp --icmp-type echo-request -m limit --limit 1/s -j ACCEPT"

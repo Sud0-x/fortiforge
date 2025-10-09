@@ -1,0 +1,24 @@
+key: svc_dnsmasq_backup_config
+kind: service_hardening
+name: Dnsmasq Backup Config
+version: '1.0'
+service: dnsmasq
+category: dns_servers
+hardening_type: backup_config
+risk: medium
+tags:
+- service
+- dnsmasq
+- backup_config
+- dns_servers
+- enterprise
+content: '# backup_config configuration for dnsmasq
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

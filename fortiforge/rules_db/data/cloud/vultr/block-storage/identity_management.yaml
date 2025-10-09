@@ -1,0 +1,28 @@
+key: cloud_vultr_block-storage_identity_management
+kind: cloud_security
+name: VULTR Block-Storage Identity Management
+version: '1.0'
+platform: vultr
+service: block-storage
+control_type: identity_management
+risk: medium
+tags:
+- cloud
+- vultr
+- block-storage
+- identity_management
+- enterprise
+content: '# vultr block-storage identity_management configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

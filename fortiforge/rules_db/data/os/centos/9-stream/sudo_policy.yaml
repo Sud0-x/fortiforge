@@ -1,0 +1,27 @@
+key: os_centos_9-stream_sudo_policy
+kind: os_hardening
+name: Centos 9-stream Sudo Policy
+version: '1.0'
+os: centos
+os_version: 9-stream
+os_type: linux
+category: sudo_policy
+risk: medium
+tags:
+- linux
+- centos
+- 9-stream
+- sudo_policy
+- hardening
+- enterprise
+content: '# sudo_policy configuration for centos'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,28 @@
+key: cloud_gcp_gke_performance
+kind: cloud_security
+name: GCP Gke Performance
+version: '1.0'
+platform: gcp
+service: gke
+control_type: performance
+risk: medium
+tags:
+- cloud
+- gcp
+- gke
+- performance
+- enterprise
+content: '# gcp gke performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

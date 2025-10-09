@@ -1,0 +1,28 @@
+key: cloud_aws_cloudwatch_access_control
+kind: cloud_security
+name: AWS Cloudwatch Access Control
+version: '1.0'
+platform: aws
+service: cloudwatch
+control_type: access_control
+risk: high
+tags:
+- cloud
+- aws
+- cloudwatch
+- access_control
+- enterprise
+content: '# aws cloudwatch access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

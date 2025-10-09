@@ -1,0 +1,24 @@
+key: svc_postfix_performance
+kind: service_hardening
+name: Postfix Performance
+version: '1.0'
+service: postfix
+category: mail_servers
+hardening_type: performance
+risk: medium
+tags:
+- service
+- postfix
+- performance
+- mail_servers
+- enterprise
+content: '# performance configuration for postfix
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

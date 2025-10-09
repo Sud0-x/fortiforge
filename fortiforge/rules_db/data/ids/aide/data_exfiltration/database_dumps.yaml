@@ -1,0 +1,29 @@
+key: ids_aide_data_exfiltration_database_dumps
+kind: ids_signature
+name: Aide Database Dumps
+version: '1.0'
+engine: aide
+category: data_exfiltration
+signature_type: database_dumps
+risk: high
+tags:
+- ids
+- aide
+- data_exfiltration
+- database_dumps
+- detection
+- enterprise
+content: '# aide signature for database_dumps
+
+  # Detection rule for data_exfiltration'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

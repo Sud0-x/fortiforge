@@ -1,0 +1,28 @@
+key: cloud_ibm_functions_access_control
+kind: cloud_security
+name: IBM Functions Access Control
+version: '1.0'
+platform: ibm
+service: functions
+control_type: access_control
+risk: high
+tags:
+- cloud
+- ibm
+- functions
+- access_control
+- enterprise
+content: '# ibm functions access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

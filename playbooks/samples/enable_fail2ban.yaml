@@ -1,0 +1,34 @@
+- name: Enable Fail2Ban
+  description: Enable fail2ban for nginx and sshd
+  targets: ["sandbox-web-1:authorized", "sandbox-db-1:authorized"]
+  tasks:
+    - name: Install fail2ban
+      idempotent: true
+      simulate: { show_diff: false }
+      apply: { mode: shell, command: apt-get update && apt-get install -y fail2ban }
+      rollback: { mode: shell, command: apt-get remove -y fail2ban }
+    - name: Configure jail for sshd
+      idempotent: true
+      simulate: { show_diff: true }
+      apply:
+        mode: template
+        content: |
+          [sshd]
+          enabled = true
+          port    = ssh
+          filter  = sshd
+          logpath = /var/log/auth.log
+          maxretry = 5
+      rollback: { mode: template, content: "" }
+    - name: Configure jail for nginx-http-auth
+      idempotent: true
+      simulate: { show_diff: true }
+      apply:
+        mode: template
+        content: |
+          [nginx-http-auth]
+          enabled = true
+          filter = nginx-http-auth
+          logpath = /var/log/nginx/error.log
+          maxretry = 5
+      rollback: { mode: template, content: "" }

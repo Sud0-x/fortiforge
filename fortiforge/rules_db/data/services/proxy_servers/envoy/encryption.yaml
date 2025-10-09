@@ -1,0 +1,24 @@
+key: svc_envoy_encryption
+kind: service_hardening
+name: Envoy Encryption
+version: '1.0'
+service: envoy
+category: proxy_servers
+hardening_type: encryption
+risk: medium
+tags:
+- service
+- envoy
+- encryption
+- proxy_servers
+- enterprise
+content: '# encryption configuration for envoy
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

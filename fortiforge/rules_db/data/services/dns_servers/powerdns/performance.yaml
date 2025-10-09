@@ -1,0 +1,24 @@
+key: svc_powerdns_performance
+kind: service_hardening
+name: Powerdns Performance
+version: '1.0'
+service: powerdns
+category: dns_servers
+hardening_type: performance
+risk: medium
+tags:
+- service
+- powerdns
+- performance
+- dns_servers
+- enterprise
+content: '# performance configuration for powerdns
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

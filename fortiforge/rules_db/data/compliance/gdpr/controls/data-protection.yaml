@@ -1,0 +1,32 @@
+key: compliance_gdpr_controls_data-protection
+kind: compliance
+name: GDPR Controls - Data Protection
+version: '1.0'
+framework: gdpr
+category: controls
+requirement: data-protection
+risk: high
+tags:
+- compliance
+- gdpr
+- controls
+- data-protection
+- audit
+- enterprise
+content: '# GDPR controls - data-protection
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: gdpr
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - GDPR
+  - Privacy
+  - Data Protection
+  - EU

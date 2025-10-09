@@ -1,0 +1,23 @@
+key: fw_pf_web_security_geo_blocking
+kind: firewall_rule
+name: Pf Geo Blocking
+version: '1.0'
+engine: pf
+category: web_security
+rule_type: geo_blocking
+risk: high
+tags:
+- firewall
+- pf
+- web_security
+- geo_blocking
+- network_security
+- enterprise
+content: '# pf rule for geo_blocking'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

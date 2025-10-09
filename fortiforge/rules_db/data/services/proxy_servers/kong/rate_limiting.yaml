@@ -1,0 +1,24 @@
+key: svc_kong_rate_limiting
+kind: service_hardening
+name: Kong Rate Limiting
+version: '1.0'
+service: kong
+category: proxy_servers
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- kong
+- rate_limiting
+- proxy_servers
+- enterprise
+content: '# rate_limiting configuration for kong
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

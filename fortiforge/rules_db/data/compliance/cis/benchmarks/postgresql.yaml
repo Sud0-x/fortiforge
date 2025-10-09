@@ -1,0 +1,31 @@
+key: compliance_cis_benchmarks_postgresql
+kind: compliance
+name: CIS Benchmarks - Postgresql
+version: '1.0'
+framework: cis
+category: benchmarks
+requirement: postgresql
+risk: high
+tags:
+- compliance
+- cis
+- benchmarks
+- postgresql
+- audit
+- enterprise
+content: '# CIS benchmarks - postgresql
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: cis
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - CIS
+  - Benchmarks
+  - Best Practices

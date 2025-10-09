@@ -1,0 +1,28 @@
+key: cloud_azure_key-vault_access_control
+kind: cloud_security
+name: AZURE Key-Vault Access Control
+version: '1.0'
+platform: azure
+service: key-vault
+control_type: access_control
+risk: high
+tags:
+- cloud
+- azure
+- key-vault
+- access_control
+- enterprise
+content: '# azure key-vault access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

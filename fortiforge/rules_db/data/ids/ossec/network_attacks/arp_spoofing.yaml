@@ -1,0 +1,29 @@
+key: ids_ossec_network_attacks_arp_spoofing
+kind: ids_signature
+name: Ossec Arp Spoofing
+version: '1.0'
+engine: ossec
+category: network_attacks
+signature_type: arp_spoofing
+risk: high
+tags:
+- ids
+- ossec
+- network_attacks
+- arp_spoofing
+- detection
+- enterprise
+content: '# ossec signature for arp_spoofing
+
+  # Detection rule for network_attacks'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

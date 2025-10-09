@@ -1,0 +1,28 @@
+key: cloud_ibm_vpc_governance
+kind: cloud_security
+name: IBM Vpc Governance
+version: '1.0'
+platform: ibm
+service: vpc
+control_type: governance
+risk: medium
+tags:
+- cloud
+- ibm
+- vpc
+- governance
+- enterprise
+content: '# ibm vpc governance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

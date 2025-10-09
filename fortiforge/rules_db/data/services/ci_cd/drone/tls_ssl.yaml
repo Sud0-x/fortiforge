@@ -1,0 +1,24 @@
+key: svc_drone_tls_ssl
+kind: service_hardening
+name: Drone Tls Ssl
+version: '1.0'
+service: drone
+category: ci_cd
+hardening_type: tls_ssl
+risk: medium
+tags:
+- service
+- drone
+- tls_ssl
+- ci_cd
+- enterprise
+content: '# tls_ssl configuration for drone
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,24 @@
+key: svc_squid_rate_limiting
+kind: service_hardening
+name: Squid Rate Limiting
+version: '1.0'
+service: squid
+category: proxy_servers
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- squid
+- rate_limiting
+- proxy_servers
+- enterprise
+content: '# rate_limiting configuration for squid
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

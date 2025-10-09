@@ -1,0 +1,10 @@
+key: os_centos_disable_root_ssh
+kind: os_hardening
+os: centos
+name: Disable root SSH login on CentOS
+version: 1
+risk: low
+tags: [os, centos, sshd, hardening]
+content: |
+  PermitRootLogin no
+  PasswordAuthentication no

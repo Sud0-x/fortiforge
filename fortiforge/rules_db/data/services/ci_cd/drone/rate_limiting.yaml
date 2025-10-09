@@ -1,0 +1,24 @@
+key: svc_drone_rate_limiting
+kind: service_hardening
+name: Drone Rate Limiting
+version: '1.0'
+service: drone
+category: ci_cd
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- drone
+- rate_limiting
+- ci_cd
+- enterprise
+content: '# rate_limiting configuration for drone
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

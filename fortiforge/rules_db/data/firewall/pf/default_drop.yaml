@@ -1,0 +1,8 @@
+key: pf_default_drop
+kind: firewall
+engine: pf
+name: Default block inbound
+version: 1
+risk: medium
+tags: [firewall, pf]
+content: "block in all"

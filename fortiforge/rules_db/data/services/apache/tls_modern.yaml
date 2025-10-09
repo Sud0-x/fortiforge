@@ -1,0 +1,11 @@
+key: apache_tls_modern
+kind: service_hardening
+service: apache
+name: Apache modern TLS
+version: 1
+risk: low
+tags: [service, apache, tls]
+content: |
+  SSLProtocol all -SSLv2 -SSLv3 -TLSv1 -TLSv1.1
+  SSLCipherSuite HIGH:!aNULL:!MD5
+rollback: { content: "" }

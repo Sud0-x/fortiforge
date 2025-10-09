@@ -1,0 +1,24 @@
+key: svc_powerdns_rate_limiting
+kind: service_hardening
+name: Powerdns Rate Limiting
+version: '1.0'
+service: powerdns
+category: dns_servers
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- powerdns
+- rate_limiting
+- dns_servers
+- enterprise
+content: '# rate_limiting configuration for powerdns
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

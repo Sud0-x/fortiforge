@@ -1,0 +1,9 @@
+key: fw_nftables_log_drops
+kind: firewall
+engine: nftables
+name: Log dropped packets
+version: 1
+risk: low
+tags: [firewall, nftables, logging]
+content: |
+  add rule inet filter input limit rate 5/minute log prefix "FORTIFORGE DROP: " level warning

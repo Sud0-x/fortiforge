@@ -1,0 +1,27 @@
+key: os_netbsd_10.0_filesystem_permissions
+kind: os_hardening
+name: Netbsd 10.0 Filesystem Permissions
+version: '1.0'
+os: netbsd
+os_version: '10.0'
+os_type: unix
+category: filesystem_permissions
+risk: medium
+tags:
+- unix
+- netbsd
+- '10.0'
+- filesystem_permissions
+- hardening
+- enterprise
+content: '# filesystem_permissions configuration for netbsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

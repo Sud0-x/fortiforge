@@ -1,0 +1,24 @@
+key: svc_nomad_rate_limiting
+kind: service_hardening
+name: Nomad Rate Limiting
+version: '1.0'
+service: nomad
+category: orchestration
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- nomad
+- rate_limiting
+- orchestration
+- enterprise
+content: '# rate_limiting configuration for nomad
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

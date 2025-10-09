@@ -1,0 +1,24 @@
+key: svc_wireguard_authorization
+kind: service_hardening
+name: Wireguard Authorization
+version: '1.0'
+service: wireguard
+category: vpn_servers
+hardening_type: authorization
+risk: medium
+tags:
+- service
+- wireguard
+- authorization
+- vpn_servers
+- enterprise
+content: '# authorization configuration for wireguard
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

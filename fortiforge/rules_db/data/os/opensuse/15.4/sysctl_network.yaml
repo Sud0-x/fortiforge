@@ -1,0 +1,33 @@
+key: os_opensuse_15.4_sysctl_network
+kind: os_hardening
+name: Opensuse 15.4 Sysctl Network
+version: '1.0'
+os: opensuse
+os_version: '15.4'
+os_type: linux
+category: sysctl_network
+risk: medium
+tags:
+- linux
+- opensuse
+- '15.4'
+- sysctl_network
+- hardening
+- enterprise
+content: '# Network hardening for opensuse
+
+  net.ipv4.ip_forward=0
+
+  net.ipv4.conf.all.accept_redirects=0
+
+  net.ipv4.conf.all.secure_redirects=0'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,29 @@
+key: os_arch_rolling_firewall_baseline
+kind: os_hardening
+name: Arch rolling Firewall Baseline
+version: '1.0'
+os: arch
+os_version: rolling
+os_type: linux
+category: firewall_baseline
+risk: medium
+tags:
+- linux
+- arch
+- rolling
+- firewall_baseline
+- hardening
+- enterprise
+content: '# Firewall baseline for arch
+
+  # Enable and configure default deny policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

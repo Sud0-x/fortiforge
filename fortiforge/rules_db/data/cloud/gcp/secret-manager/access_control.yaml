@@ -1,0 +1,28 @@
+key: cloud_gcp_secret-manager_access_control
+kind: cloud_security
+name: GCP Secret-Manager Access Control
+version: '1.0'
+platform: gcp
+service: secret-manager
+control_type: access_control
+risk: high
+tags:
+- cloud
+- gcp
+- secret-manager
+- access_control
+- enterprise
+content: '# gcp secret-manager access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

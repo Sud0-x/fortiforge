@@ -1,0 +1,23 @@
+key: fw_pf_web_security_ddos_protection
+kind: firewall_rule
+name: Pf Ddos Protection
+version: '1.0'
+engine: pf
+category: web_security
+rule_type: ddos_protection
+risk: high
+tags:
+- firewall
+- pf
+- web_security
+- ddos_protection
+- network_security
+- enterprise
+content: '# pf rule for ddos_protection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

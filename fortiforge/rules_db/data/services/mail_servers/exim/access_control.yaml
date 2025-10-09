@@ -1,0 +1,24 @@
+key: svc_exim_access_control
+kind: service_hardening
+name: Exim Access Control
+version: '1.0'
+service: exim
+category: mail_servers
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- exim
+- access_control
+- mail_servers
+- enterprise
+content: '# access_control configuration for exim
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

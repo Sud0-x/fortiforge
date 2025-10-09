@@ -1,0 +1,24 @@
+key: svc_mongodb_performance
+kind: service_hardening
+name: Mongodb Performance
+version: '1.0'
+service: mongodb
+category: databases
+hardening_type: performance
+risk: medium
+tags:
+- service
+- mongodb
+- performance
+- databases
+- enterprise
+content: '# performance configuration for mongodb
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

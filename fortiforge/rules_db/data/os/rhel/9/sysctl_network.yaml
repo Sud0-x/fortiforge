@@ -1,0 +1,33 @@
+key: os_rhel_9_sysctl_network
+kind: os_hardening
+name: Rhel 9 Sysctl Network
+version: '1.0'
+os: rhel
+os_version: '9'
+os_type: linux
+category: sysctl_network
+risk: medium
+tags:
+- linux
+- rhel
+- '9'
+- sysctl_network
+- hardening
+- enterprise
+content: '# Network hardening for rhel
+
+  net.ipv4.ip_forward=0
+
+  net.ipv4.conf.all.accept_redirects=0
+
+  net.ipv4.conf.all.secure_redirects=0'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

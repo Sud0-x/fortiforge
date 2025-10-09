@@ -1,0 +1,31 @@
+key: compliance_hipaa_safeguards_administrative
+kind: compliance
+name: HIPAA Safeguards - Administrative
+version: '1.0'
+framework: hipaa
+category: safeguards
+requirement: administrative
+risk: high
+tags:
+- compliance
+- hipaa
+- safeguards
+- administrative
+- audit
+- enterprise
+content: '# HIPAA safeguards - administrative
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: hipaa
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - HIPAA
+  - Healthcare
+  - PHI Protection

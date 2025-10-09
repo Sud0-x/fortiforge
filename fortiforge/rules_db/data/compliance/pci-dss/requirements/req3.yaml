@@ -1,0 +1,30 @@
+key: compliance_pci-dss_requirements_req3
+kind: compliance
+name: PCI-DSS Requirements - Req3
+version: '1.0'
+framework: pci-dss
+category: requirements
+requirement: req3
+risk: high
+tags:
+- compliance
+- pci-dss
+- requirements
+- req3
+- audit
+- enterprise
+content: '# PCI-DSS requirements - req3
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: pci-dss
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - PCI DSS
+  - Payment Card Industry

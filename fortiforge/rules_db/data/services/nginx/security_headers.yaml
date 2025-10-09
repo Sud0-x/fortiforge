@@ -1,0 +1,12 @@
+key: nginx_headers_security
+kind: service_hardening
+service: nginx
+name: Nginx security headers
+version: 1
+risk: low
+tags: [service, nginx, headers]
+content: |
+  add_header X-Content-Type-Options nosniff;
+  add_header X-Frame-Options DENY;
+  add_header X-XSS-Protection "1; mode=block";
+rollback: { content: "" }

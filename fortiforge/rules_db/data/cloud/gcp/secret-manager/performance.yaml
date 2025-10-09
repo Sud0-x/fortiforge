@@ -1,0 +1,28 @@
+key: cloud_gcp_secret-manager_performance
+kind: cloud_security
+name: GCP Secret-Manager Performance
+version: '1.0'
+platform: gcp
+service: secret-manager
+control_type: performance
+risk: medium
+tags:
+- cloud
+- gcp
+- secret-manager
+- performance
+- enterprise
+content: '# gcp secret-manager performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,27 @@
+key: os_kali_2023.4_pam_configuration
+kind: os_hardening
+name: Kali 2023.4 Pam Configuration
+version: '1.0'
+os: kali
+os_version: '2023.4'
+os_type: linux
+category: pam_configuration
+risk: medium
+tags:
+- linux
+- kali
+- '2023.4'
+- pam_configuration
+- hardening
+- enterprise
+content: '# pam_configuration configuration for kali'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

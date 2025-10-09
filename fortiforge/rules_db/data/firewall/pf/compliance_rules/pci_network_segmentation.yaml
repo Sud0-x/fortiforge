@@ -1,0 +1,23 @@
+key: fw_pf_compliance_rules_pci_network_segmentation
+kind: firewall_rule
+name: Pf Pci Network Segmentation
+version: '1.0'
+engine: pf
+category: compliance_rules
+rule_type: pci_network_segmentation
+risk: medium
+tags:
+- firewall
+- pf
+- compliance_rules
+- pci_network_segmentation
+- network_security
+- enterprise
+content: '# pf rule for pci_network_segmentation'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

@@ -1,0 +1,27 @@
+key: os_centos_9-stream_sysctl_kernel
+kind: os_hardening
+name: Centos 9-stream Sysctl Kernel
+version: '1.0'
+os: centos
+os_version: 9-stream
+os_type: linux
+category: sysctl_kernel
+risk: medium
+tags:
+- linux
+- centos
+- 9-stream
+- sysctl_kernel
+- hardening
+- enterprise
+content: '# sysctl_kernel configuration for centos'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

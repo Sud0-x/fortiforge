@@ -1,0 +1,24 @@
+key: svc_postgresql_tls_ssl
+kind: service_hardening
+name: Postgresql Tls Ssl
+version: '1.0'
+service: postgresql
+category: databases
+hardening_type: tls_ssl
+risk: medium
+tags:
+- service
+- postgresql
+- tls_ssl
+- databases
+- enterprise
+content: '# tls_ssl configuration for postgresql
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

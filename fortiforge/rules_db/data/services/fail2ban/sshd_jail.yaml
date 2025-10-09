@@ -1,0 +1,15 @@
+key: fail2ban_sshd
+kind: service_config
+service: fail2ban
+name: Fail2ban sshd jail
+version: 1
+risk: low
+tags: [service, fail2ban, sshd]
+content: |
+  [sshd]
+  enabled = true
+  port    = ssh
+  filter  = sshd
+  logpath = /var/log/auth.log
+  maxretry = 5
+rollback: { content: "" }

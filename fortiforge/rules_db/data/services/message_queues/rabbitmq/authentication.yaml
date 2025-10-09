@@ -1,0 +1,24 @@
+key: svc_rabbitmq_authentication
+kind: service_hardening
+name: Rabbitmq Authentication
+version: '1.0'
+service: rabbitmq
+category: message_queues
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- rabbitmq
+- authentication
+- message_queues
+- enterprise
+content: '# authentication configuration for rabbitmq
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

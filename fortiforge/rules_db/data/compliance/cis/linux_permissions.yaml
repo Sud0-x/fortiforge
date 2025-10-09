@@ -1,0 +1,10 @@
+key: cis_linux_permissions
+kind: compliance
+benchmark: cis
+name: CIS Linux file permissions snippet
+version: 1
+risk: low
+tags: [cis, compliance]
+content: |
+  /etc/passwd 0644 root root
+  /etc/shadow 0640 root shadow

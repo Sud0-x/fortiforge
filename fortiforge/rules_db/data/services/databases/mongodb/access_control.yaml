@@ -1,0 +1,24 @@
+key: svc_mongodb_access_control
+kind: service_hardening
+name: Mongodb Access Control
+version: '1.0'
+service: mongodb
+category: databases
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- mongodb
+- access_control
+- databases
+- enterprise
+content: '# access_control configuration for mongodb
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,33 @@
+key: os_hpux_11.31_sysctl_network
+kind: os_hardening
+name: Hpux 11.31 Sysctl Network
+version: '1.0'
+os: hpux
+os_version: '11.31'
+os_type: unix
+category: sysctl_network
+risk: medium
+tags:
+- unix
+- hpux
+- '11.31'
+- sysctl_network
+- hardening
+- enterprise
+content: '# Network hardening for hpux
+
+  net.ipv4.ip_forward=0
+
+  net.ipv4.conf.all.accept_redirects=0
+
+  net.ipv4.conf.all.secure_redirects=0'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

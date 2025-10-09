@@ -1,0 +1,30 @@
+key: compliance_pci-dss_versions_3.2.1
+kind: compliance
+name: PCI-DSS Versions - 3.2.1
+version: '1.0'
+framework: pci-dss
+category: versions
+requirement: 3.2.1
+risk: high
+tags:
+- compliance
+- pci-dss
+- versions
+- 3.2.1
+- audit
+- enterprise
+content: '# PCI-DSS versions - 3.2.1
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: pci-dss
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - PCI DSS
+  - Payment Card Industry

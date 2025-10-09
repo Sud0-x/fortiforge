@@ -1,0 +1,27 @@
+key: os_openbsd_7.2_filesystem_permissions
+kind: os_hardening
+name: Openbsd 7.2 Filesystem Permissions
+version: '1.0'
+os: openbsd
+os_version: '7.2'
+os_type: unix
+category: filesystem_permissions
+risk: medium
+tags:
+- unix
+- openbsd
+- '7.2'
+- filesystem_permissions
+- hardening
+- enterprise
+content: '# filesystem_permissions configuration for openbsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,23 @@
+key: fw_firewalld_network_protection_allow_established
+kind: firewall_rule
+name: Firewalld Allow Established
+version: '1.0'
+engine: firewalld
+category: network_protection
+rule_type: allow_established
+risk: medium
+tags:
+- firewall
+- firewalld
+- network_protection
+- allow_established
+- network_security
+- enterprise
+content: '# firewalld rule for allow_established'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

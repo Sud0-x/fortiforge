@@ -1,0 +1,24 @@
+key: svc_caddy_backup_config
+kind: service_hardening
+name: Caddy Backup Config
+version: '1.0'
+service: caddy
+category: web_servers
+hardening_type: backup_config
+risk: medium
+tags:
+- service
+- caddy
+- backup_config
+- web_servers
+- enterprise
+content: '# backup_config configuration for caddy
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

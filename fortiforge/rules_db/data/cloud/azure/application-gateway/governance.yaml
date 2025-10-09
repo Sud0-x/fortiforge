@@ -1,0 +1,28 @@
+key: cloud_azure_application-gateway_governance
+kind: cloud_security
+name: AZURE Application-Gateway Governance
+version: '1.0'
+platform: azure
+service: application-gateway
+control_type: governance
+risk: medium
+tags:
+- cloud
+- azure
+- application-gateway
+- governance
+- enterprise
+content: '# azure application-gateway governance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

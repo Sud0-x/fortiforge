@@ -1,0 +1,23 @@
+key: fw_pf_web_security_rate_limit_login
+kind: firewall_rule
+name: Pf Rate Limit Login
+version: '1.0'
+engine: pf
+category: web_security
+rule_type: rate_limit_login
+risk: medium
+tags:
+- firewall
+- pf
+- web_security
+- rate_limit_login
+- network_security
+- enterprise
+content: '# pf rule for rate_limit_login'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

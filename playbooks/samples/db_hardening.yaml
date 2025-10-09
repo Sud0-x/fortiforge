@@ -1,0 +1,14 @@
+- name: DB Hardening Scenario
+  description: Harden Postgres and configure firewall
+  targets: ["sandbox-db-1:authorized"]
+  tasks:
+    - name: Apply Postgres secure settings
+      idempotent: true
+      simulate: { show_diff: true }
+      apply: { mode: template, content: "ssl=on" }
+      rollback: { mode: template, content: "" }
+    - name: Allow DB port 5432 internally
+      idempotent: true
+      simulate: { show_diff: true }
+      apply: { mode: template, content: "-A INPUT -p tcp --dport 5432 -s 10.0.0.0/8 -j ACCEPT" }
+      rollback: { mode: template, content: "-D INPUT -p tcp --dport 5432 -s 10.0.0.0/8 -j ACCEPT" }

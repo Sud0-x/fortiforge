@@ -1,0 +1,27 @@
+key: os_centos_9-stream_selinux_policies
+kind: os_hardening
+name: Centos 9-stream Selinux Policies
+version: '1.0'
+os: centos
+os_version: 9-stream
+os_type: linux
+category: selinux_policies
+risk: medium
+tags:
+- linux
+- centos
+- 9-stream
+- selinux_policies
+- hardening
+- enterprise
+content: '# selinux_policies configuration for centos'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

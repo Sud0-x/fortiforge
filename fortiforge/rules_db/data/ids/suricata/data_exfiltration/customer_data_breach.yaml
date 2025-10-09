@@ -1,0 +1,28 @@
+key: ids_suricata_data_exfiltration_customer_data_breach
+kind: ids_signature
+name: Suricata Customer Data Breach
+version: '1.0'
+engine: suricata
+category: data_exfiltration
+signature_type: customer_data_breach
+risk: high
+tags:
+- ids
+- suricata
+- data_exfiltration
+- customer_data_breach
+- detection
+- enterprise
+content: alert tcp any any -> any any (msg:"Customer Data Breach"; content:"malicious";
+  sid:1000000; rev:1;)
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

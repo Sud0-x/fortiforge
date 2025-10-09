@@ -1,0 +1,28 @@
+key: cloud_alibaba_rds_compliance
+kind: cloud_security
+name: ALIBABA Rds Compliance
+version: '1.0'
+platform: alibaba
+service: rds
+control_type: compliance
+risk: medium
+tags:
+- cloud
+- alibaba
+- rds
+- compliance
+- enterprise
+content: '# alibaba rds compliance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

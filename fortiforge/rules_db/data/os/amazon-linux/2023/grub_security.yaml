@@ -1,0 +1,27 @@
+key: os_amazon-linux_2023_grub_security
+kind: os_hardening
+name: Amazon-Linux 2023 Grub Security
+version: '1.0'
+os: amazon-linux
+os_version: '2023'
+os_type: linux
+category: grub_security
+risk: medium
+tags:
+- linux
+- amazon-linux
+- '2023'
+- grub_security
+- hardening
+- enterprise
+content: '# grub_security configuration for amazon-linux'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

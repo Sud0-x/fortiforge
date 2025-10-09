@@ -1,0 +1,27 @@
+key: os_freebsd_12.4_sysctl_kernel
+kind: os_hardening
+name: Freebsd 12.4 Sysctl Kernel
+version: '1.0'
+os: freebsd
+os_version: '12.4'
+os_type: unix
+category: sysctl_kernel
+risk: medium
+tags:
+- unix
+- freebsd
+- '12.4'
+- sysctl_kernel
+- hardening
+- enterprise
+content: '# sysctl_kernel configuration for freebsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

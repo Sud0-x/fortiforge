@@ -1,0 +1,28 @@
+key: cloud_alibaba_vpc_backup
+kind: cloud_security
+name: ALIBABA Vpc Backup
+version: '1.0'
+platform: alibaba
+service: vpc
+control_type: backup
+risk: medium
+tags:
+- cloud
+- alibaba
+- vpc
+- backup
+- enterprise
+content: '# alibaba vpc backup configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

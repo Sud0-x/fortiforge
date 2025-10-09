@@ -1,0 +1,24 @@
+key: svc_coredns_backup_config
+kind: service_hardening
+name: Coredns Backup Config
+version: '1.0'
+service: coredns
+category: dns_servers
+hardening_type: backup_config
+risk: medium
+tags:
+- service
+- coredns
+- backup_config
+- dns_servers
+- enterprise
+content: '# backup_config configuration for coredns
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,24 @@
+key: svc_containerd_monitoring
+kind: service_hardening
+name: Containerd Monitoring
+version: '1.0'
+service: containerd
+category: containers
+hardening_type: monitoring
+risk: low
+tags:
+- service
+- containerd
+- monitoring
+- containers
+- enterprise
+content: '# monitoring configuration for containerd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

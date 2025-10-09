@@ -1,0 +1,26 @@
+- name: Harden Nginx Baseline
+  description: Apply secure defaults to nginx on Ubuntu
+  targets: ["sandbox-web-1:authorized"]
+  tasks:
+    - name: Install nginx if missing
+      idempotent: true
+      simulate: { show_diff: false }
+      apply:
+        mode: shell
+        command: apt-get update && apt-get install -y nginx
+      rollback:
+        mode: shell
+        command: apt-get remove -y nginx
+    - name: Apply tls_hsts config
+      idempotent: true
+      simulate: { show_diff: true }
+      apply:
+        mode: template
+        content: |
+          server {
+            listen 443 ssl http2;
+            add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+          }
+      rollback:
+        mode: template
+        content: ""

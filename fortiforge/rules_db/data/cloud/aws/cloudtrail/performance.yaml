@@ -1,0 +1,28 @@
+key: cloud_aws_cloudtrail_performance
+kind: cloud_security
+name: AWS Cloudtrail Performance
+version: '1.0'
+platform: aws
+service: cloudtrail
+control_type: performance
+risk: medium
+tags:
+- cloud
+- aws
+- cloudtrail
+- performance
+- enterprise
+content: '# aws cloudtrail performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

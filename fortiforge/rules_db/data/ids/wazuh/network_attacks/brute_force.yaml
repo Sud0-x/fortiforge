@@ -1,0 +1,29 @@
+key: ids_wazuh_network_attacks_brute_force
+kind: ids_signature
+name: Wazuh Brute Force
+version: '1.0'
+engine: wazuh
+category: network_attacks
+signature_type: brute_force
+risk: high
+tags:
+- ids
+- wazuh
+- network_attacks
+- brute_force
+- detection
+- enterprise
+content: '# wazuh signature for brute_force
+
+  # Detection rule for network_attacks'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

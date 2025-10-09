@@ -1,0 +1,31 @@
+key: compliance_iso_standards_27017
+kind: compliance
+name: ISO Standards - 27017
+version: '1.0'
+framework: iso
+category: standards
+requirement: '27017'
+risk: high
+tags:
+- compliance
+- iso
+- standards
+- '27017'
+- audit
+- enterprise
+content: '# ISO standards - 27017
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: iso
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - ISO
+  - International
+  - Information Security

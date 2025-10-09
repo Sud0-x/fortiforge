@@ -1,0 +1,27 @@
+key: os_almalinux_9_kernel_modules
+kind: os_hardening
+name: Almalinux 9 Kernel Modules
+version: '1.0'
+os: almalinux
+os_version: '9'
+os_type: linux
+category: kernel_modules
+risk: medium
+tags:
+- linux
+- almalinux
+- '9'
+- kernel_modules
+- hardening
+- enterprise
+content: '# kernel_modules configuration for almalinux'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

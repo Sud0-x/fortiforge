@@ -1,0 +1,31 @@
+key: compliance_nist_frameworks_csf
+kind: compliance
+name: NIST Frameworks - Csf
+version: '1.0'
+framework: nist
+category: frameworks
+requirement: csf
+risk: high
+tags:
+- compliance
+- nist
+- frameworks
+- csf
+- audit
+- enterprise
+content: '# NIST frameworks - csf
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: nist
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - NIST
+  - Federal
+  - Cybersecurity Framework

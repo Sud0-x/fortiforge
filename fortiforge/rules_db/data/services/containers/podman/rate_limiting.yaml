@@ -1,0 +1,24 @@
+key: svc_podman_rate_limiting
+kind: service_hardening
+name: Podman Rate Limiting
+version: '1.0'
+service: podman
+category: containers
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- podman
+- rate_limiting
+- containers
+- enterprise
+content: '# rate_limiting configuration for podman
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

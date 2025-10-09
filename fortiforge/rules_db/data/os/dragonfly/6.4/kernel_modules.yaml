@@ -1,0 +1,27 @@
+key: os_dragonfly_6.4_kernel_modules
+kind: os_hardening
+name: Dragonfly 6.4 Kernel Modules
+version: '1.0'
+os: dragonfly
+os_version: '6.4'
+os_type: unix
+category: kernel_modules
+risk: medium
+tags:
+- unix
+- dragonfly
+- '6.4'
+- kernel_modules
+- hardening
+- enterprise
+content: '# kernel_modules configuration for dragonfly'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

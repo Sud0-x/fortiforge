@@ -1,0 +1,28 @@
+key: cloud_vultr_instances_identity_management
+kind: cloud_security
+name: VULTR Instances Identity Management
+version: '1.0'
+platform: vultr
+service: instances
+control_type: identity_management
+risk: medium
+tags:
+- cloud
+- vultr
+- instances
+- identity_management
+- enterprise
+content: '# vultr instances identity_management configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

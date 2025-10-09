@@ -1,0 +1,28 @@
+key: cloud_digitalocean_vpc_network_security
+kind: cloud_security
+name: DIGITALOCEAN Vpc Network Security
+version: '1.0'
+platform: digitalocean
+service: vpc
+control_type: network_security
+risk: medium
+tags:
+- cloud
+- digitalocean
+- vpc
+- network_security
+- enterprise
+content: '# digitalocean vpc network_security configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

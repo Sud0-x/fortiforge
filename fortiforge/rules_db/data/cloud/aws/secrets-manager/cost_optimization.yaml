@@ -1,0 +1,28 @@
+key: cloud_aws_secrets-manager_cost_optimization
+kind: cloud_security
+name: AWS Secrets-Manager Cost Optimization
+version: '1.0'
+platform: aws
+service: secrets-manager
+control_type: cost_optimization
+risk: medium
+tags:
+- cloud
+- aws
+- secrets-manager
+- cost_optimization
+- enterprise
+content: '# aws secrets-manager cost_optimization configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

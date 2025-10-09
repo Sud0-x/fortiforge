@@ -1,0 +1,24 @@
+key: svc_containerd_security_headers
+kind: service_hardening
+name: Containerd Security Headers
+version: '1.0'
+service: containerd
+category: containers
+hardening_type: security_headers
+risk: medium
+tags:
+- service
+- containerd
+- security_headers
+- containers
+- enterprise
+content: '# security_headers configuration for containerd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

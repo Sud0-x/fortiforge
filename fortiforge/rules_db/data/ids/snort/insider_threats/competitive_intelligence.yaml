@@ -1,0 +1,29 @@
+key: ids_snort_insider_threats_competitive_intelligence
+kind: ids_signature
+name: Snort Competitive Intelligence
+version: '1.0'
+engine: snort
+category: insider_threats
+signature_type: competitive_intelligence
+risk: high
+tags:
+- ids
+- snort
+- insider_threats
+- competitive_intelligence
+- detection
+- enterprise
+content: '# snort signature for competitive_intelligence
+
+  # Detection rule for insider_threats'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

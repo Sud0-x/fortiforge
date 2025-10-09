@@ -1,0 +1,28 @@
+key: cloud_ibm_compute_access_control
+kind: cloud_security
+name: IBM Compute Access Control
+version: '1.0'
+platform: ibm
+service: compute
+control_type: access_control
+risk: high
+tags:
+- cloud
+- ibm
+- compute
+- access_control
+- enterprise
+content: '# ibm compute access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

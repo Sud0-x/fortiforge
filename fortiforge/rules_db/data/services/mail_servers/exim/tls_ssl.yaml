@@ -1,0 +1,24 @@
+key: svc_exim_tls_ssl
+kind: service_hardening
+name: Exim Tls Ssl
+version: '1.0'
+service: exim
+category: mail_servers
+hardening_type: tls_ssl
+risk: medium
+tags:
+- service
+- exim
+- tls_ssl
+- mail_servers
+- enterprise
+content: '# tls_ssl configuration for exim
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

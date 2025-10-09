@@ -1,0 +1,28 @@
+key: cloud_azure_aks_compliance
+kind: cloud_security
+name: AZURE Aks Compliance
+version: '1.0'
+platform: azure
+service: aks
+control_type: compliance
+risk: medium
+tags:
+- cloud
+- azure
+- aks
+- compliance
+- enterprise
+content: '# azure aks compliance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

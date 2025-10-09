@@ -1,0 +1,23 @@
+key: fw_pf_network_protection_block_invalid
+kind: firewall_rule
+name: Pf Block Invalid
+version: '1.0'
+engine: pf
+category: network_protection
+rule_type: block_invalid
+risk: high
+tags:
+- firewall
+- pf
+- network_protection
+- block_invalid
+- network_security
+- enterprise
+content: '# pf rule for block_invalid'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

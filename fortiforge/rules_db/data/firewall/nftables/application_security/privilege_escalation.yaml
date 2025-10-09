@@ -1,0 +1,23 @@
+key: fw_nftables_application_security_privilege_escalation
+kind: firewall_rule
+name: Nftables Privilege Escalation
+version: '1.0'
+engine: nftables
+category: application_security
+rule_type: privilege_escalation
+risk: medium
+tags:
+- firewall
+- nftables
+- application_security
+- privilege_escalation
+- network_security
+- enterprise
+content: '# nftables rule for privilege_escalation'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

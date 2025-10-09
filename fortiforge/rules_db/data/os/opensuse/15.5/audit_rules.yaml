@@ -1,0 +1,29 @@
+key: os_opensuse_15.5_audit_rules
+kind: os_hardening
+name: Opensuse 15.5 Audit Rules
+version: '1.0'
+os: opensuse
+os_version: '15.5'
+os_type: linux
+category: audit_rules
+risk: medium
+tags:
+- linux
+- opensuse
+- '15.5'
+- audit_rules
+- hardening
+- enterprise
+content: '# Audit rules for opensuse
+
+  -a always,exit -F arch=b64 -S adjtimex,settimeofday -k time-change'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

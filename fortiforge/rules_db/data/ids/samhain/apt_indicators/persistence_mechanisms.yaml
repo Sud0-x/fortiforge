@@ -1,0 +1,29 @@
+key: ids_samhain_apt_indicators_persistence_mechanisms
+kind: ids_signature
+name: Samhain Persistence Mechanisms
+version: '1.0'
+engine: samhain
+category: apt_indicators
+signature_type: persistence_mechanisms
+risk: high
+tags:
+- ids
+- samhain
+- apt_indicators
+- persistence_mechanisms
+- detection
+- enterprise
+content: '# samhain signature for persistence_mechanisms
+
+  # Detection rule for apt_indicators'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

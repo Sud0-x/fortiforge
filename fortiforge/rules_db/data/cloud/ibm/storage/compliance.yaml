@@ -1,0 +1,28 @@
+key: cloud_ibm_storage_compliance
+kind: cloud_security
+name: IBM Storage Compliance
+version: '1.0'
+platform: ibm
+service: storage
+control_type: compliance
+risk: medium
+tags:
+- cloud
+- ibm
+- storage
+- compliance
+- enterprise
+content: '# ibm storage compliance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

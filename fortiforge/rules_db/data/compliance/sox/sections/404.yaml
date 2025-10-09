@@ -1,0 +1,31 @@
+key: compliance_sox_sections_404
+kind: compliance
+name: SOX Sections - 404
+version: '1.0'
+framework: sox
+category: sections
+requirement: '404'
+risk: high
+tags:
+- compliance
+- sox
+- sections
+- '404'
+- audit
+- enterprise
+content: '# SOX sections - 404
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: sox
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - SOX
+  - Financial
+  - Public Company

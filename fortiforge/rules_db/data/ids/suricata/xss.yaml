@@ -1,0 +1,9 @@
+key: ids_suricata_xss
+kind: ids_signature
+engine: suricata
+name: Suricata simple XSS pattern
+version: 1
+risk: low
+tags: [ids, suricata, xss]
+content: |
+  alert http any any -> any any (msg:"XSS SCRIPT tag"; content:"<script"; http_client_body; nocase; sid:1000002; rev:1;)

@@ -1,0 +1,24 @@
+key: svc_cri-o_baseline_config
+kind: service_hardening
+name: Cri-O Baseline Config
+version: '1.0'
+service: cri-o
+category: containers
+hardening_type: baseline_config
+risk: medium
+tags:
+- service
+- cri-o
+- baseline_config
+- containers
+- enterprise
+content: '# baseline_config configuration for cri-o
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

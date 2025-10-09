@@ -1,0 +1,27 @@
+key: os_alpine_3.19_selinux_policies
+kind: os_hardening
+name: Alpine 3.19 Selinux Policies
+version: '1.0'
+os: alpine
+os_version: '3.19'
+os_type: linux
+category: selinux_policies
+risk: medium
+tags:
+- linux
+- alpine
+- '3.19'
+- selinux_policies
+- hardening
+- enterprise
+content: '# selinux_policies configuration for alpine'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

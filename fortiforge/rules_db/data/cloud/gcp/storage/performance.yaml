@@ -1,0 +1,28 @@
+key: cloud_gcp_storage_performance
+kind: cloud_security
+name: GCP Storage Performance
+version: '1.0'
+platform: gcp
+service: storage
+control_type: performance
+risk: medium
+tags:
+- cloud
+- gcp
+- storage
+- performance
+- enterprise
+content: '# gcp storage performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

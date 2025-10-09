@@ -1,0 +1,28 @@
+key: svc_postgresql_authentication
+kind: service_hardening
+name: Postgresql Authentication
+version: '1.0'
+service: postgresql
+category: databases
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- postgresql
+- authentication
+- databases
+- enterprise
+content: 'password_encryption = scram-sha-256
+
+  ssl = on
+
+  log_connections = on
+
+  log_disconnections = on'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

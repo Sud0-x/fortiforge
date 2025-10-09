@@ -1,0 +1,27 @@
+key: os_amazon-linux_2023_service_disable
+kind: os_hardening
+name: Amazon-Linux 2023 Service Disable
+version: '1.0'
+os: amazon-linux
+os_version: '2023'
+os_type: linux
+category: service_disable
+risk: medium
+tags:
+- linux
+- amazon-linux
+- '2023'
+- service_disable
+- hardening
+- enterprise
+content: '# service_disable configuration for amazon-linux'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

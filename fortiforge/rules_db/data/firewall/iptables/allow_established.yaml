@@ -1,0 +1,8 @@
+key: fw_allow_established
+kind: firewall
+engine: iptables
+name: Allow ESTABLISHED,RELATED
+version: 1
+risk: low
+tags: [firewall, iptables]
+content: "-A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT"

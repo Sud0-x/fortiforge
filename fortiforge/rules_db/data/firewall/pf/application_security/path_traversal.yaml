@@ -1,0 +1,23 @@
+key: fw_pf_application_security_path_traversal
+kind: firewall_rule
+name: Pf Path Traversal
+version: '1.0'
+engine: pf
+category: application_security
+rule_type: path_traversal
+risk: medium
+tags:
+- firewall
+- pf
+- application_security
+- path_traversal
+- network_security
+- enterprise
+content: '# pf rule for path_traversal'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

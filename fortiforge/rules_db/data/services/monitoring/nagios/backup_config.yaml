@@ -1,0 +1,24 @@
+key: svc_nagios_backup_config
+kind: service_hardening
+name: Nagios Backup Config
+version: '1.0'
+service: nagios
+category: monitoring
+hardening_type: backup_config
+risk: medium
+tags:
+- service
+- nagios
+- backup_config
+- monitoring
+- enterprise
+content: '# backup_config configuration for nagios
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

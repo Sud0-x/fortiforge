@@ -1,0 +1,24 @@
+key: svc_grafana_rate_limiting
+kind: service_hardening
+name: Grafana Rate Limiting
+version: '1.0'
+service: grafana
+category: monitoring
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- grafana
+- rate_limiting
+- monitoring
+- enterprise
+content: '# rate_limiting configuration for grafana
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FortiForge UI</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <h1>FortiForge (defensive-only)</h1>
+    <p>Developer: Sud0-x</p>
+    <section>
+      <form id="search-form">
+        <input type="text" id="q" placeholder="Search rules (e.g., nginx tls)" />
+        <button type="submit">Search</button>
+      </form>
+      <pre id="results"></pre>
+    </section>
+    <script>
+      document.getElementById('search-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const q = document.getElementById('q').value;
+        const res = await fetch(`/api/rules/search?q=${encodeURIComponent(q)}`);
+        const data = await res.json();
+        document.getElementById('results').textContent = JSON.stringify(data, null, 2);
+      });
+    </script>
+  </body>
+</html>

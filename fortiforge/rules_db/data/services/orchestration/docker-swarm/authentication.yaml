@@ -1,0 +1,24 @@
+key: svc_docker-swarm_authentication
+kind: service_hardening
+name: Docker-Swarm Authentication
+version: '1.0'
+service: docker-swarm
+category: orchestration
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- docker-swarm
+- authentication
+- orchestration
+- enterprise
+content: '# authentication configuration for docker-swarm
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

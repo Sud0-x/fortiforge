@@ -1,0 +1,14 @@
+key: nft_default_drop
+kind: firewall
+engine: nftables
+name: Default drop policy
+version: 1
+risk: medium
+tags: [firewall, nftables]
+content: |
+  table inet filter {
+    chain input {
+      type filter hook input priority 0;
+      policy drop;
+    }
+  }

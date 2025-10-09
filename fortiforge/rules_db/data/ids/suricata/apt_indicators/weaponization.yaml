@@ -1,0 +1,28 @@
+key: ids_suricata_apt_indicators_weaponization
+kind: ids_signature
+name: Suricata Weaponization
+version: '1.0'
+engine: suricata
+category: apt_indicators
+signature_type: weaponization
+risk: high
+tags:
+- ids
+- suricata
+- apt_indicators
+- weaponization
+- detection
+- enterprise
+content: alert tcp any any -> any any (msg:"Weaponization"; content:"malicious"; sid:1000000;
+  rev:1;)
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

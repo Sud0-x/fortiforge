@@ -1,0 +1,28 @@
+key: cloud_gcp_security-command-center_encryption
+kind: cloud_security
+name: GCP Security-Command-Center Encryption
+version: '1.0'
+platform: gcp
+service: security-command-center
+control_type: encryption
+risk: high
+tags:
+- cloud
+- gcp
+- security-command-center
+- encryption
+- enterprise
+content: '# gcp security-command-center encryption configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,10 @@
+key: cis_linux_auditd_service
+kind: compliance
+benchmark: cis
+name: Ensure auditd service enabled
+version: 1
+risk: low
+tags: [cis, compliance, auditd]
+content: |
+  # Ensure auditd is enabled and running (placeholder)
+  # Actual enablement performed via executor with consent.

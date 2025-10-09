@@ -1,0 +1,27 @@
+key: os_netbsd_9.3_user_account_policy
+kind: os_hardening
+name: Netbsd 9.3 User Account Policy
+version: '1.0'
+os: netbsd
+os_version: '9.3'
+os_type: unix
+category: user_account_policy
+risk: medium
+tags:
+- unix
+- netbsd
+- '9.3'
+- user_account_policy
+- hardening
+- enterprise
+content: '# user_account_policy configuration for netbsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

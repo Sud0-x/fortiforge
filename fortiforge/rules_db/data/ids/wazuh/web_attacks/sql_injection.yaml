@@ -1,0 +1,29 @@
+key: ids_wazuh_web_attacks_sql_injection
+kind: ids_signature
+name: Wazuh Sql Injection
+version: '1.0'
+engine: wazuh
+category: web_attacks
+signature_type: sql_injection
+risk: high
+tags:
+- ids
+- wazuh
+- web_attacks
+- sql_injection
+- detection
+- enterprise
+content: '# wazuh signature for sql_injection
+
+  # Detection rule for web_attacks'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

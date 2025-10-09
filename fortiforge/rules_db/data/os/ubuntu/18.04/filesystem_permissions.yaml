@@ -1,0 +1,27 @@
+key: os_ubuntu_18.04_filesystem_permissions
+kind: os_hardening
+name: Ubuntu 18.04 Filesystem Permissions
+version: '1.0'
+os: ubuntu
+os_version: '18.04'
+os_type: linux
+category: filesystem_permissions
+risk: medium
+tags:
+- linux
+- ubuntu
+- '18.04'
+- filesystem_permissions
+- hardening
+- enterprise
+content: '# filesystem_permissions configuration for ubuntu'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

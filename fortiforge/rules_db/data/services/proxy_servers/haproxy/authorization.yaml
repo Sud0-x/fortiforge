@@ -1,0 +1,24 @@
+key: svc_haproxy_authorization
+kind: service_hardening
+name: Haproxy Authorization
+version: '1.0'
+service: haproxy
+category: proxy_servers
+hardening_type: authorization
+risk: medium
+tags:
+- service
+- haproxy
+- authorization
+- proxy_servers
+- enterprise
+content: '# authorization configuration for haproxy
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

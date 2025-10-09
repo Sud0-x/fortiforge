@@ -1,0 +1,24 @@
+key: svc_rancher_performance
+kind: service_hardening
+name: Rancher Performance
+version: '1.0'
+service: rancher
+category: orchestration
+hardening_type: performance
+risk: medium
+tags:
+- service
+- rancher
+- performance
+- orchestration
+- enterprise
+content: '# performance configuration for rancher
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,29 @@
+key: ids_ossec_apt_indicators_evasion_techniques
+kind: ids_signature
+name: Ossec Evasion Techniques
+version: '1.0'
+engine: ossec
+category: apt_indicators
+signature_type: evasion_techniques
+risk: high
+tags:
+- ids
+- ossec
+- apt_indicators
+- evasion_techniques
+- detection
+- enterprise
+content: '# ossec signature for evasion_techniques
+
+  # Detection rule for apt_indicators'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

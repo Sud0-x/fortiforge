@@ -1,0 +1,27 @@
+key: os_freebsd_14.0_service_disable
+kind: os_hardening
+name: Freebsd 14.0 Service Disable
+version: '1.0'
+os: freebsd
+os_version: '14.0'
+os_type: unix
+category: service_disable
+risk: medium
+tags:
+- unix
+- freebsd
+- '14.0'
+- service_disable
+- hardening
+- enterprise
+content: '# service_disable configuration for freebsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

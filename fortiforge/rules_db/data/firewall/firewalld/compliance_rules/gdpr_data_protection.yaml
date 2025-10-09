@@ -1,0 +1,23 @@
+key: fw_firewalld_compliance_rules_gdpr_data_protection
+kind: firewall_rule
+name: Firewalld Gdpr Data Protection
+version: '1.0'
+engine: firewalld
+category: compliance_rules
+rule_type: gdpr_data_protection
+risk: high
+tags:
+- firewall
+- firewalld
+- compliance_rules
+- gdpr_data_protection
+- network_security
+- enterprise
+content: '# firewalld rule for gdpr_data_protection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

@@ -1,0 +1,10 @@
+key: fw_ufw_enable
+kind: os_hardening
+os: ubuntu
+name: Enable UFW and default deny incoming
+version: 1
+risk: low
+tags: [os, ubuntu, ufw, firewall]
+content: |
+  # Placeholder for UFW config to set default deny incoming and allow outgoing
+  # Actual apply via executor will be gated and sandboxed.

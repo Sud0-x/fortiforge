@@ -1,0 +1,27 @@
+key: os_freebsd_14.0_user_account_policy
+kind: os_hardening
+name: Freebsd 14.0 User Account Policy
+version: '1.0'
+os: freebsd
+os_version: '14.0'
+os_type: unix
+category: user_account_policy
+risk: medium
+tags:
+- unix
+- freebsd
+- '14.0'
+- user_account_policy
+- hardening
+- enterprise
+content: '# user_account_policy configuration for freebsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

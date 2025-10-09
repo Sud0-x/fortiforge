@@ -1,0 +1,35 @@
+key: os_centos_9-stream_ssh_hardening
+kind: os_hardening
+name: Centos 9-stream Ssh Hardening
+version: '1.0'
+os: centos
+os_version: 9-stream
+os_type: linux
+category: ssh_hardening
+risk: medium
+tags:
+- linux
+- centos
+- 9-stream
+- ssh_hardening
+- hardening
+- enterprise
+content: '# SSH hardening for centos
+
+  PermitRootLogin no
+
+  PasswordAuthentication no
+
+  Protocol 2
+
+  MaxAuthTries 3'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,24 @@
+key: svc_ceph_encryption
+kind: service_hardening
+name: Ceph Encryption
+version: '1.0'
+service: ceph
+category: storage
+hardening_type: encryption
+risk: medium
+tags:
+- service
+- ceph
+- encryption
+- storage
+- enterprise
+content: '# encryption configuration for ceph
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

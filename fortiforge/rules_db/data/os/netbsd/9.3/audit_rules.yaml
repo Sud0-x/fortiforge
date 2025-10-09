@@ -1,0 +1,29 @@
+key: os_netbsd_9.3_audit_rules
+kind: os_hardening
+name: Netbsd 9.3 Audit Rules
+version: '1.0'
+os: netbsd
+os_version: '9.3'
+os_type: unix
+category: audit_rules
+risk: medium
+tags:
+- unix
+- netbsd
+- '9.3'
+- audit_rules
+- hardening
+- enterprise
+content: '# Audit rules for netbsd
+
+  -a always,exit -F arch=b64 -S adjtimex,settimeofday -k time-change'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

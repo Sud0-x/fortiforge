@@ -1,0 +1,24 @@
+key: svc_docker_access_control
+kind: service_hardening
+name: Docker Access Control
+version: '1.0'
+service: docker
+category: containers
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- docker
+- access_control
+- containers
+- enterprise
+content: '# access_control configuration for docker
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

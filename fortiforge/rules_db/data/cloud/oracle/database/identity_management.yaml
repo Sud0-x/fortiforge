@@ -1,0 +1,28 @@
+key: cloud_oracle_database_identity_management
+kind: cloud_security
+name: ORACLE Database Identity Management
+version: '1.0'
+platform: oracle
+service: database
+control_type: identity_management
+risk: medium
+tags:
+- cloud
+- oracle
+- database
+- identity_management
+- enterprise
+content: '# oracle database identity_management configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

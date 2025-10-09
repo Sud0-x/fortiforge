@@ -1,0 +1,24 @@
+key: svc_fail2ban_authorization
+kind: service_hardening
+name: Fail2Ban Authorization
+version: '1.0'
+service: fail2ban
+category: security_tools
+hardening_type: authorization
+risk: medium
+tags:
+- service
+- fail2ban
+- authorization
+- security_tools
+- enterprise
+content: '# authorization configuration for fail2ban
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

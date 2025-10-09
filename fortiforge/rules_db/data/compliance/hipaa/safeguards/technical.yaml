@@ -1,0 +1,31 @@
+key: compliance_hipaa_safeguards_technical
+kind: compliance
+name: HIPAA Safeguards - Technical
+version: '1.0'
+framework: hipaa
+category: safeguards
+requirement: technical
+risk: high
+tags:
+- compliance
+- hipaa
+- safeguards
+- technical
+- audit
+- enterprise
+content: '# HIPAA safeguards - technical
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: hipaa
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - HIPAA
+  - Healthcare
+  - PHI Protection

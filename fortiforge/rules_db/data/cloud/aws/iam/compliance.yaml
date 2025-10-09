@@ -1,0 +1,28 @@
+key: cloud_aws_iam_compliance
+kind: cloud_security
+name: AWS Iam Compliance
+version: '1.0'
+platform: aws
+service: iam
+control_type: compliance
+risk: medium
+tags:
+- cloud
+- aws
+- iam
+- compliance
+- enterprise
+content: '# aws iam compliance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

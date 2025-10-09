@@ -1,0 +1,28 @@
+key: cloud_azure_application-gateway_identity_management
+kind: cloud_security
+name: AZURE Application-Gateway Identity Management
+version: '1.0'
+platform: azure
+service: application-gateway
+control_type: identity_management
+risk: medium
+tags:
+- cloud
+- azure
+- application-gateway
+- identity_management
+- enterprise
+content: '# azure application-gateway identity_management configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

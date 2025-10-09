@@ -1,0 +1,28 @@
+key: cloud_aws_macie_performance
+kind: cloud_security
+name: AWS Macie Performance
+version: '1.0'
+platform: aws
+service: macie
+control_type: performance
+risk: medium
+tags:
+- cloud
+- aws
+- macie
+- performance
+- enterprise
+content: '# aws macie performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

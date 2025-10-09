@@ -1,0 +1,28 @@
+key: cloud_digitalocean_databases_encryption
+kind: cloud_security
+name: DIGITALOCEAN Databases Encryption
+version: '1.0'
+platform: digitalocean
+service: databases
+control_type: encryption
+risk: high
+tags:
+- cloud
+- digitalocean
+- databases
+- encryption
+- enterprise
+content: '# digitalocean databases encryption configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

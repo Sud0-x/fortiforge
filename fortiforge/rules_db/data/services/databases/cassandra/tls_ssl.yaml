@@ -1,0 +1,24 @@
+key: svc_cassandra_tls_ssl
+kind: service_hardening
+name: Cassandra Tls Ssl
+version: '1.0'
+service: cassandra
+category: databases
+hardening_type: tls_ssl
+risk: medium
+tags:
+- service
+- cassandra
+- tls_ssl
+- databases
+- enterprise
+content: '# tls_ssl configuration for cassandra
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

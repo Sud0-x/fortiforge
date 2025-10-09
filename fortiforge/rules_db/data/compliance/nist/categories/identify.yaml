@@ -1,0 +1,31 @@
+key: compliance_nist_categories_identify
+kind: compliance
+name: NIST Categories - Identify
+version: '1.0'
+framework: nist
+category: categories
+requirement: identify
+risk: high
+tags:
+- compliance
+- nist
+- categories
+- identify
+- audit
+- enterprise
+content: '# NIST categories - identify
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: nist
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - NIST
+  - Federal
+  - Cybersecurity Framework

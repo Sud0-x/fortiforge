@@ -1,0 +1,32 @@
+key: compliance_gdpr_controls_impact-assessment
+kind: compliance
+name: GDPR Controls - Impact Assessment
+version: '1.0'
+framework: gdpr
+category: controls
+requirement: impact-assessment
+risk: high
+tags:
+- compliance
+- gdpr
+- controls
+- impact-assessment
+- audit
+- enterprise
+content: '# GDPR controls - impact-assessment
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: gdpr
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - GDPR
+  - Privacy
+  - Data Protection
+  - EU

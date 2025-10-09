@@ -1,0 +1,29 @@
+key: os_ubuntu_24.04_firewall_baseline
+kind: os_hardening
+name: Ubuntu 24.04 Firewall Baseline
+version: '1.0'
+os: ubuntu
+os_version: '24.04'
+os_type: linux
+category: firewall_baseline
+risk: medium
+tags:
+- linux
+- ubuntu
+- '24.04'
+- firewall_baseline
+- hardening
+- enterprise
+content: '# Firewall baseline for ubuntu
+
+  # Enable and configure default deny policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

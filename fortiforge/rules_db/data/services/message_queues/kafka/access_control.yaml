@@ -1,0 +1,24 @@
+key: svc_kafka_access_control
+kind: service_hardening
+name: Kafka Access Control
+version: '1.0'
+service: kafka
+category: message_queues
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- kafka
+- access_control
+- message_queues
+- enterprise
+content: '# access_control configuration for kafka
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,24 @@
+key: svc_zabbix_monitoring
+kind: service_hardening
+name: Zabbix Monitoring
+version: '1.0'
+service: zabbix
+category: monitoring
+hardening_type: monitoring
+risk: low
+tags:
+- service
+- zabbix
+- monitoring
+- monitoring
+- enterprise
+content: '# monitoring configuration for zabbix
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,27 @@
+key: os_solaris_11.4_kernel_modules
+kind: os_hardening
+name: Solaris 11.4 Kernel Modules
+version: '1.0'
+os: solaris
+os_version: '11.4'
+os_type: unix
+category: kernel_modules
+risk: medium
+tags:
+- unix
+- solaris
+- '11.4'
+- kernel_modules
+- hardening
+- enterprise
+content: '# kernel_modules configuration for solaris'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

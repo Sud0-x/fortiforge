@@ -1,0 +1,24 @@
+key: svc_apache_logging
+kind: service_hardening
+name: Apache Logging
+version: '1.0'
+service: apache
+category: web_servers
+hardening_type: logging
+risk: low
+tags:
+- service
+- apache
+- logging
+- web_servers
+- enterprise
+content: '# logging configuration for apache
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

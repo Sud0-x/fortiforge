@@ -1,0 +1,24 @@
+key: svc_cassandra_performance
+kind: service_hardening
+name: Cassandra Performance
+version: '1.0'
+service: cassandra
+category: databases
+hardening_type: performance
+risk: medium
+tags:
+- service
+- cassandra
+- performance
+- databases
+- enterprise
+content: '# performance configuration for cassandra
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

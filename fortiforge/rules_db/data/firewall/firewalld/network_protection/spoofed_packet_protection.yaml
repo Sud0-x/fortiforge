@@ -1,0 +1,23 @@
+key: fw_firewalld_network_protection_spoofed_packet_protection
+kind: firewall_rule
+name: Firewalld Spoofed Packet Protection
+version: '1.0'
+engine: firewalld
+category: network_protection
+rule_type: spoofed_packet_protection
+risk: high
+tags:
+- firewall
+- firewalld
+- network_protection
+- spoofed_packet_protection
+- network_security
+- enterprise
+content: '# firewalld rule for spoofed_packet_protection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

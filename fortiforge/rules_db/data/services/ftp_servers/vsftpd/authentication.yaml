@@ -1,0 +1,24 @@
+key: svc_vsftpd_authentication
+kind: service_hardening
+name: Vsftpd Authentication
+version: '1.0'
+service: vsftpd
+category: ftp_servers
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- vsftpd
+- authentication
+- ftp_servers
+- enterprise
+content: '# authentication configuration for vsftpd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

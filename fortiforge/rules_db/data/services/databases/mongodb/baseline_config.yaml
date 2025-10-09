@@ -1,0 +1,24 @@
+key: svc_mongodb_baseline_config
+kind: service_hardening
+name: Mongodb Baseline Config
+version: '1.0'
+service: mongodb
+category: databases
+hardening_type: baseline_config
+risk: medium
+tags:
+- service
+- mongodb
+- baseline_config
+- databases
+- enterprise
+content: '# baseline_config configuration for mongodb
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

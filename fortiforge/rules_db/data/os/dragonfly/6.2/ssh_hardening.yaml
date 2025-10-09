@@ -1,0 +1,35 @@
+key: os_dragonfly_6.2_ssh_hardening
+kind: os_hardening
+name: Dragonfly 6.2 Ssh Hardening
+version: '1.0'
+os: dragonfly
+os_version: '6.2'
+os_type: unix
+category: ssh_hardening
+risk: medium
+tags:
+- unix
+- dragonfly
+- '6.2'
+- ssh_hardening
+- hardening
+- enterprise
+content: '# SSH hardening for dragonfly
+
+  PermitRootLogin no
+
+  PasswordAuthentication no
+
+  Protocol 2
+
+  MaxAuthTries 3'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

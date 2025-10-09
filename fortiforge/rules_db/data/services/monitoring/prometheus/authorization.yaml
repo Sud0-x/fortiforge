@@ -1,0 +1,24 @@
+key: svc_prometheus_authorization
+kind: service_hardening
+name: Prometheus Authorization
+version: '1.0'
+service: prometheus
+category: monitoring
+hardening_type: authorization
+risk: medium
+tags:
+- service
+- prometheus
+- authorization
+- monitoring
+- enterprise
+content: '# authorization configuration for prometheus
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

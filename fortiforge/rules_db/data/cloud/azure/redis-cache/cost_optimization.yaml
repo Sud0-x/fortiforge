@@ -1,0 +1,28 @@
+key: cloud_azure_redis-cache_cost_optimization
+kind: cloud_security
+name: AZURE Redis-Cache Cost Optimization
+version: '1.0'
+platform: azure
+service: redis-cache
+control_type: cost_optimization
+risk: medium
+tags:
+- cloud
+- azure
+- redis-cache
+- cost_optimization
+- enterprise
+content: '# azure redis-cache cost_optimization configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

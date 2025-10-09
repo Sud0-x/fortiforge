@@ -1,0 +1,27 @@
+key: os_arch_rolling_log_configuration
+kind: os_hardening
+name: Arch rolling Log Configuration
+version: '1.0'
+os: arch
+os_version: rolling
+os_type: linux
+category: log_configuration
+risk: low
+tags:
+- linux
+- arch
+- rolling
+- log_configuration
+- hardening
+- enterprise
+content: '# log_configuration configuration for arch'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

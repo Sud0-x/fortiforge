@@ -1,0 +1,28 @@
+key: cloud_azure_monitor_access_control
+kind: cloud_security
+name: AZURE Monitor Access Control
+version: '1.0'
+platform: azure
+service: monitor
+control_type: access_control
+risk: high
+tags:
+- cloud
+- azure
+- monitor
+- access_control
+- enterprise
+content: '# azure monitor access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

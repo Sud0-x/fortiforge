@@ -1,0 +1,29 @@
+key: ids_wazuh_data_exfiltration_financial_data_theft
+kind: ids_signature
+name: Wazuh Financial Data Theft
+version: '1.0'
+engine: wazuh
+category: data_exfiltration
+signature_type: financial_data_theft
+risk: high
+tags:
+- ids
+- wazuh
+- data_exfiltration
+- financial_data_theft
+- detection
+- enterprise
+content: '# wazuh signature for financial_data_theft
+
+  # Detection rule for data_exfiltration'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

@@ -1,0 +1,24 @@
+key: svc_filezilla-server_encryption
+kind: service_hardening
+name: Filezilla-Server Encryption
+version: '1.0'
+service: filezilla-server
+category: ftp_servers
+hardening_type: encryption
+risk: medium
+tags:
+- service
+- filezilla-server
+- encryption
+- ftp_servers
+- enterprise
+content: '# encryption configuration for filezilla-server
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

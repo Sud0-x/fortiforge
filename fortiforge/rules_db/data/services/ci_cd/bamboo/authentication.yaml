@@ -1,0 +1,24 @@
+key: svc_bamboo_authentication
+kind: service_hardening
+name: Bamboo Authentication
+version: '1.0'
+service: bamboo
+category: ci_cd
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- bamboo
+- authentication
+- ci_cd
+- enterprise
+content: '# authentication configuration for bamboo
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

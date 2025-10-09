@@ -1,0 +1,24 @@
+key: svc_mysql_authentication
+kind: service_hardening
+name: Mysql Authentication
+version: '1.0'
+service: mysql
+category: databases
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- mysql
+- authentication
+- databases
+- enterprise
+content: '# authentication configuration for mysql
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

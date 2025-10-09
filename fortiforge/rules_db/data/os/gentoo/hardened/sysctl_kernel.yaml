@@ -1,0 +1,27 @@
+key: os_gentoo_hardened_sysctl_kernel
+kind: os_hardening
+name: Gentoo hardened Sysctl Kernel
+version: '1.0'
+os: gentoo
+os_version: hardened
+os_type: linux
+category: sysctl_kernel
+risk: medium
+tags:
+- linux
+- gentoo
+- hardened
+- sysctl_kernel
+- hardening
+- enterprise
+content: '# sysctl_kernel configuration for gentoo'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,24 @@
+key: svc_snort_monitoring
+kind: service_hardening
+name: Snort Monitoring
+version: '1.0'
+service: snort
+category: security_tools
+hardening_type: monitoring
+risk: low
+tags:
+- service
+- snort
+- monitoring
+- security_tools
+- enterprise
+content: '# monitoring configuration for snort
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

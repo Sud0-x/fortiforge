@@ -1,0 +1,27 @@
+key: os_almalinux_8_network_interfaces
+kind: os_hardening
+name: Almalinux 8 Network Interfaces
+version: '1.0'
+os: almalinux
+os_version: '8'
+os_type: linux
+category: network_interfaces
+risk: medium
+tags:
+- linux
+- almalinux
+- '8'
+- network_interfaces
+- hardening
+- enterprise
+content: '# network_interfaces configuration for almalinux'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

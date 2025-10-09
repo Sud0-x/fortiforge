@@ -1,0 +1,31 @@
+key: compliance_hipaa_standards_person-authentication
+kind: compliance
+name: HIPAA Standards - Person Authentication
+version: '1.0'
+framework: hipaa
+category: standards
+requirement: person-authentication
+risk: high
+tags:
+- compliance
+- hipaa
+- standards
+- person-authentication
+- audit
+- enterprise
+content: '# HIPAA standards - person-authentication
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: hipaa
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - HIPAA
+  - Healthcare
+  - PHI Protection

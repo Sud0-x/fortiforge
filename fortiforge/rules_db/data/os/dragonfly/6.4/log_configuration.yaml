@@ -1,0 +1,27 @@
+key: os_dragonfly_6.4_log_configuration
+kind: os_hardening
+name: Dragonfly 6.4 Log Configuration
+version: '1.0'
+os: dragonfly
+os_version: '6.4'
+os_type: unix
+category: log_configuration
+risk: low
+tags:
+- unix
+- dragonfly
+- '6.4'
+- log_configuration
+- hardening
+- enterprise
+content: '# log_configuration configuration for dragonfly'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,33 @@
+key: os_dragonfly_6.4_sysctl_network
+kind: os_hardening
+name: Dragonfly 6.4 Sysctl Network
+version: '1.0'
+os: dragonfly
+os_version: '6.4'
+os_type: unix
+category: sysctl_network
+risk: medium
+tags:
+- unix
+- dragonfly
+- '6.4'
+- sysctl_network
+- hardening
+- enterprise
+content: '# Network hardening for dragonfly
+
+  net.ipv4.ip_forward=0
+
+  net.ipv4.conf.all.accept_redirects=0
+
+  net.ipv4.conf.all.secure_redirects=0'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

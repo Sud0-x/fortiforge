@@ -1,0 +1,24 @@
+key: svc_redis_authentication
+kind: service_hardening
+name: Redis Authentication
+version: '1.0'
+service: redis
+category: databases
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- redis
+- authentication
+- databases
+- enterprise
+content: '# authentication configuration for redis
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

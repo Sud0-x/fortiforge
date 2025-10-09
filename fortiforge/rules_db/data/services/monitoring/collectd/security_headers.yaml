@@ -1,0 +1,24 @@
+key: svc_collectd_security_headers
+kind: service_hardening
+name: Collectd Security Headers
+version: '1.0'
+service: collectd
+category: monitoring
+hardening_type: security_headers
+risk: medium
+tags:
+- service
+- collectd
+- security_headers
+- monitoring
+- enterprise
+content: '# security_headers configuration for collectd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

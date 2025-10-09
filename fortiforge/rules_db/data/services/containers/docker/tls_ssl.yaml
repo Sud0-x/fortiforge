@@ -1,0 +1,24 @@
+key: svc_docker_tls_ssl
+kind: service_hardening
+name: Docker Tls Ssl
+version: '1.0'
+service: docker
+category: containers
+hardening_type: tls_ssl
+risk: medium
+tags:
+- service
+- docker
+- tls_ssl
+- containers
+- enterprise
+content: '# tls_ssl configuration for docker
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

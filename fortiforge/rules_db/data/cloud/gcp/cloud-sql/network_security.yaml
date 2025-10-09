@@ -1,0 +1,28 @@
+key: cloud_gcp_cloud-sql_network_security
+kind: cloud_security
+name: GCP Cloud-Sql Network Security
+version: '1.0'
+platform: gcp
+service: cloud-sql
+control_type: network_security
+risk: medium
+tags:
+- cloud
+- gcp
+- cloud-sql
+- network_security
+- enterprise
+content: '# gcp cloud-sql network_security configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

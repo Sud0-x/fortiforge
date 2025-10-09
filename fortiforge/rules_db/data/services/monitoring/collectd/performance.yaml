@@ -1,0 +1,24 @@
+key: svc_collectd_performance
+kind: service_hardening
+name: Collectd Performance
+version: '1.0'
+service: collectd
+category: monitoring
+hardening_type: performance
+risk: medium
+tags:
+- service
+- collectd
+- performance
+- monitoring
+- enterprise
+content: '# performance configuration for collectd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,28 @@
+key: ids_suricata_data_exfiltration_sensitive_data_transfer
+kind: ids_signature
+name: Suricata Sensitive Data Transfer
+version: '1.0'
+engine: suricata
+category: data_exfiltration
+signature_type: sensitive_data_transfer
+risk: high
+tags:
+- ids
+- suricata
+- data_exfiltration
+- sensitive_data_transfer
+- detection
+- enterprise
+content: alert tcp any any -> any any (msg:"Sensitive Data Transfer"; content:"malicious";
+  sid:1000000; rev:1;)
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

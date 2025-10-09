@@ -1,0 +1,30 @@
+key: compliance_pci-dss_versions_4.0
+kind: compliance
+name: PCI-DSS Versions - 4.0
+version: '1.0'
+framework: pci-dss
+category: versions
+requirement: '4.0'
+risk: high
+tags:
+- compliance
+- pci-dss
+- versions
+- '4.0'
+- audit
+- enterprise
+content: '# PCI-DSS versions - 4.0
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: pci-dss
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - PCI DSS
+  - Payment Card Industry

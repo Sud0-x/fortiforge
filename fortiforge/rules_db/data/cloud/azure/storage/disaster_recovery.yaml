@@ -1,0 +1,28 @@
+key: cloud_azure_storage_disaster_recovery
+kind: cloud_security
+name: AZURE Storage Disaster Recovery
+version: '1.0'
+platform: azure
+service: storage
+control_type: disaster_recovery
+risk: medium
+tags:
+- cloud
+- azure
+- storage
+- disaster_recovery
+- enterprise
+content: '# azure storage disaster_recovery configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

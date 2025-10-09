@@ -1,0 +1,28 @@
+key: cloud_aws_ec2_performance
+kind: cloud_security
+name: AWS Ec2 Performance
+version: '1.0'
+platform: aws
+service: ec2
+control_type: performance
+risk: medium
+tags:
+- cloud
+- aws
+- ec2
+- performance
+- enterprise
+content: '# aws ec2 performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

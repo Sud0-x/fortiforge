@@ -1,0 +1,32 @@
+key: compliance_gdpr_controls_breach-notification
+kind: compliance
+name: GDPR Controls - Breach Notification
+version: '1.0'
+framework: gdpr
+category: controls
+requirement: breach-notification
+risk: high
+tags:
+- compliance
+- gdpr
+- controls
+- breach-notification
+- audit
+- enterprise
+content: '# GDPR controls - breach-notification
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: gdpr
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - GDPR
+  - Privacy
+  - Data Protection
+  - EU

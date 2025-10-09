@@ -1,0 +1,23 @@
+key: fw_pf_network_protection_fragmented_packet_protection
+kind: firewall_rule
+name: Pf Fragmented Packet Protection
+version: '1.0'
+engine: pf
+category: network_protection
+rule_type: fragmented_packet_protection
+risk: high
+tags:
+- firewall
+- pf
+- network_protection
+- fragmented_packet_protection
+- network_security
+- enterprise
+content: '# pf rule for fragmented_packet_protection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

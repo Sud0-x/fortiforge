@@ -1,0 +1,27 @@
+key: os_openbsd_7.3_log_configuration
+kind: os_hardening
+name: Openbsd 7.3 Log Configuration
+version: '1.0'
+os: openbsd
+os_version: '7.3'
+os_type: unix
+category: log_configuration
+risk: low
+tags:
+- unix
+- openbsd
+- '7.3'
+- log_configuration
+- hardening
+- enterprise
+content: '# log_configuration configuration for openbsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

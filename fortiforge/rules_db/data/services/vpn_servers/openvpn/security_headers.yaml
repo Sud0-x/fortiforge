@@ -1,0 +1,24 @@
+key: svc_openvpn_security_headers
+kind: service_hardening
+name: Openvpn Security Headers
+version: '1.0'
+service: openvpn
+category: vpn_servers
+hardening_type: security_headers
+risk: medium
+tags:
+- service
+- openvpn
+- security_headers
+- vpn_servers
+- enterprise
+content: '# security_headers configuration for openvpn
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,9 @@
+key: nft_allow_ssh
+kind: firewall
+engine: nftables
+name: Allow SSH
+version: 1
+risk: low
+tags: [firewall, nftables, ssh]
+content: |
+  add rule inet filter input tcp dport 22 accept

@@ -1,0 +1,23 @@
+key: fw_firewalld_compliance_rules_nist_network_controls
+kind: firewall_rule
+name: Firewalld Nist Network Controls
+version: '1.0'
+engine: firewalld
+category: compliance_rules
+rule_type: nist_network_controls
+risk: medium
+tags:
+- firewall
+- firewalld
+- compliance_rules
+- nist_network_controls
+- network_security
+- enterprise
+content: '# firewalld rule for nist_network_controls'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

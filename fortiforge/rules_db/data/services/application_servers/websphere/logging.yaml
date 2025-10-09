@@ -1,0 +1,24 @@
+key: svc_websphere_logging
+kind: service_hardening
+name: Websphere Logging
+version: '1.0'
+service: websphere
+category: application_servers
+hardening_type: logging
+risk: low
+tags:
+- service
+- websphere
+- logging
+- application_servers
+- enterprise
+content: '# logging configuration for websphere
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

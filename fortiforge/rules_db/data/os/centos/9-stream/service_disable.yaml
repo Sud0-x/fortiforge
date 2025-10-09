@@ -1,0 +1,27 @@
+key: os_centos_9-stream_service_disable
+kind: os_hardening
+name: Centos 9-stream Service Disable
+version: '1.0'
+os: centos
+os_version: 9-stream
+os_type: linux
+category: service_disable
+risk: medium
+tags:
+- linux
+- centos
+- 9-stream
+- service_disable
+- hardening
+- enterprise
+content: '# service_disable configuration for centos'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

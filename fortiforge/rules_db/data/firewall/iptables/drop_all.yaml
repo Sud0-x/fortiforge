@@ -1,0 +1,9 @@
+# Additional iptables templates to increase coverage
+key: fw_iptables_drop_all
+kind: firewall
+engine: iptables
+name: Drop all inbound (explicit)
+version: 1
+risk: medium
+tags: [firewall, iptables]
+content: "-A INPUT -j DROP"

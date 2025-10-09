@@ -1,0 +1,28 @@
+key: cloud_azure_storage_network_security
+kind: cloud_security
+name: AZURE Storage Network Security
+version: '1.0'
+platform: azure
+service: storage
+control_type: network_security
+risk: medium
+tags:
+- cloud
+- azure
+- storage
+- network_security
+- enterprise
+content: '# azure storage network_security configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

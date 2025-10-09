@@ -1,0 +1,31 @@
+key: compliance_hipaa_standards_audit-controls
+kind: compliance
+name: HIPAA Standards - Audit Controls
+version: '1.0'
+framework: hipaa
+category: standards
+requirement: audit-controls
+risk: high
+tags:
+- compliance
+- hipaa
+- standards
+- audit-controls
+- audit
+- enterprise
+content: '# HIPAA standards - audit-controls
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: hipaa
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - HIPAA
+  - Healthcare
+  - PHI Protection

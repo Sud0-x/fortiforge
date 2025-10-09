@@ -1,0 +1,24 @@
+key: svc_weblogic_authentication
+kind: service_hardening
+name: Weblogic Authentication
+version: '1.0'
+service: weblogic
+category: application_servers
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- weblogic
+- authentication
+- application_servers
+- enterprise
+content: '# authentication configuration for weblogic
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,28 @@
+key: cloud_aws_config_access_control
+kind: cloud_security
+name: AWS Config Access Control
+version: '1.0'
+platform: aws
+service: config
+control_type: access_control
+risk: high
+tags:
+- cloud
+- aws
+- config
+- access_control
+- enterprise
+content: '# aws config access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

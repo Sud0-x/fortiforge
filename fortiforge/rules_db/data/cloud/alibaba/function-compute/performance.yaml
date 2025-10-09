@@ -1,0 +1,28 @@
+key: cloud_alibaba_function-compute_performance
+kind: cloud_security
+name: ALIBABA Function-Compute Performance
+version: '1.0'
+platform: alibaba
+service: function-compute
+control_type: performance
+risk: medium
+tags:
+- cloud
+- alibaba
+- function-compute
+- performance
+- enterprise
+content: '# alibaba function-compute performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

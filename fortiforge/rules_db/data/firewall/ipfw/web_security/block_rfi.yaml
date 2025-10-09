@@ -1,0 +1,23 @@
+key: fw_ipfw_web_security_block_rfi
+kind: firewall_rule
+name: Ipfw Block Rfi
+version: '1.0'
+engine: ipfw
+category: web_security
+rule_type: block_rfi
+risk: high
+tags:
+- firewall
+- ipfw
+- web_security
+- block_rfi
+- network_security
+- enterprise
+content: '# ipfw rule for block_rfi'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

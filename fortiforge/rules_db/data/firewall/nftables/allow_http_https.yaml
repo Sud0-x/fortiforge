@@ -1,0 +1,9 @@
+key: nft_allow_http_https
+kind: firewall
+engine: nftables
+name: Allow HTTP/HTTPS
+version: 1
+risk: low
+tags: [firewall, nftables, web]
+content: |
+  add rule inet filter input tcp dport {80,443} accept

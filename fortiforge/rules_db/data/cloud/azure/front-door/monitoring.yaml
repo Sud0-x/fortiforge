@@ -1,0 +1,28 @@
+key: cloud_azure_front-door_monitoring
+kind: cloud_security
+name: AZURE Front-Door Monitoring
+version: '1.0'
+platform: azure
+service: front-door
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- azure
+- front-door
+- monitoring
+- enterprise
+content: '# azure front-door monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

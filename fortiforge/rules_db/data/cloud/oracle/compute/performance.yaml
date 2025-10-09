@@ -1,0 +1,28 @@
+key: cloud_oracle_compute_performance
+kind: cloud_security
+name: ORACLE Compute Performance
+version: '1.0'
+platform: oracle
+service: compute
+control_type: performance
+risk: medium
+tags:
+- cloud
+- oracle
+- compute
+- performance
+- enterprise
+content: '# oracle compute performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

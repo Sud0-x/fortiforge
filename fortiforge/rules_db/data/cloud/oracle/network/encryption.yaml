@@ -1,0 +1,28 @@
+key: cloud_oracle_network_encryption
+kind: cloud_security
+name: ORACLE Network Encryption
+version: '1.0'
+platform: oracle
+service: network
+control_type: encryption
+risk: high
+tags:
+- cloud
+- oracle
+- network
+- encryption
+- enterprise
+content: '# oracle network encryption configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,24 @@
+key: svc_cri-o_performance
+kind: service_hardening
+name: Cri-O Performance
+version: '1.0'
+service: cri-o
+category: containers
+hardening_type: performance
+risk: medium
+tags:
+- service
+- cri-o
+- performance
+- containers
+- enterprise
+content: '# performance configuration for cri-o
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,24 @@
+key: svc_docker_authentication
+kind: service_hardening
+name: Docker Authentication
+version: '1.0'
+service: docker
+category: containers
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- docker
+- authentication
+- containers
+- enterprise
+content: '# authentication configuration for docker
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

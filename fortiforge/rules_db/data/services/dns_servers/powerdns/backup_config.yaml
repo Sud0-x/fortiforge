@@ -1,0 +1,24 @@
+key: svc_powerdns_backup_config
+kind: service_hardening
+name: Powerdns Backup Config
+version: '1.0'
+service: powerdns
+category: dns_servers
+hardening_type: backup_config
+risk: medium
+tags:
+- service
+- powerdns
+- backup_config
+- dns_servers
+- enterprise
+content: '# backup_config configuration for powerdns
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

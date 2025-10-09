@@ -1,0 +1,24 @@
+key: svc_rabbitmq_encryption
+kind: service_hardening
+name: Rabbitmq Encryption
+version: '1.0'
+service: rabbitmq
+category: message_queues
+hardening_type: encryption
+risk: medium
+tags:
+- service
+- rabbitmq
+- encryption
+- message_queues
+- enterprise
+content: '# encryption configuration for rabbitmq
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

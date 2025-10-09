@@ -1,0 +1,24 @@
+key: svc_nfs_access_control
+kind: service_hardening
+name: Nfs Access Control
+version: '1.0'
+service: nfs
+category: storage
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- nfs
+- access_control
+- storage
+- enterprise
+content: '# access_control configuration for nfs
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

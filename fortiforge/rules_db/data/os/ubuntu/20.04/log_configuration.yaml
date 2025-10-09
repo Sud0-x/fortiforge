@@ -1,0 +1,27 @@
+key: os_ubuntu_20.04_log_configuration
+kind: os_hardening
+name: Ubuntu 20.04 Log Configuration
+version: '1.0'
+os: ubuntu
+os_version: '20.04'
+os_type: linux
+category: log_configuration
+risk: low
+tags:
+- linux
+- ubuntu
+- '20.04'
+- log_configuration
+- hardening
+- enterprise
+content: '# log_configuration configuration for ubuntu'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

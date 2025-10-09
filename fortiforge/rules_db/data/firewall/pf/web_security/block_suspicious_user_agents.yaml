@@ -1,0 +1,23 @@
+key: fw_pf_web_security_block_suspicious_user_agents
+kind: firewall_rule
+name: Pf Block Suspicious User Agents
+version: '1.0'
+engine: pf
+category: web_security
+rule_type: block_suspicious_user_agents
+risk: high
+tags:
+- firewall
+- pf
+- web_security
+- block_suspicious_user_agents
+- network_security
+- enterprise
+content: '# pf rule for block_suspicious_user_agents'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

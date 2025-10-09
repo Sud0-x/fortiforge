@@ -1,0 +1,29 @@
+key: ids_ossec_web_attacks_sql_injection
+kind: ids_signature
+name: Ossec Sql Injection
+version: '1.0'
+engine: ossec
+category: web_attacks
+signature_type: sql_injection
+risk: high
+tags:
+- ids
+- ossec
+- web_attacks
+- sql_injection
+- detection
+- enterprise
+content: '# ossec signature for sql_injection
+
+  # Detection rule for web_attacks'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

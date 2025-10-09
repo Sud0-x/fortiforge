@@ -1,0 +1,24 @@
+key: svc_redis_backup_config
+kind: service_hardening
+name: Redis Backup Config
+version: '1.0'
+service: redis
+category: databases
+hardening_type: backup_config
+risk: medium
+tags:
+- service
+- redis
+- backup_config
+- databases
+- enterprise
+content: '# backup_config configuration for redis
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

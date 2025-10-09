@@ -1,0 +1,28 @@
+key: cloud_gcp_memorystore_performance
+kind: cloud_security
+name: GCP Memorystore Performance
+version: '1.0'
+platform: gcp
+service: memorystore
+control_type: performance
+risk: medium
+tags:
+- cloud
+- gcp
+- memorystore
+- performance
+- enterprise
+content: '# gcp memorystore performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

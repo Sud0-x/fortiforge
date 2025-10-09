@@ -1,0 +1,27 @@
+key: os_freebsd_14.0_log_configuration
+kind: os_hardening
+name: Freebsd 14.0 Log Configuration
+version: '1.0'
+os: freebsd
+os_version: '14.0'
+os_type: unix
+category: log_configuration
+risk: low
+tags:
+- unix
+- freebsd
+- '14.0'
+- log_configuration
+- hardening
+- enterprise
+content: '# log_configuration configuration for freebsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

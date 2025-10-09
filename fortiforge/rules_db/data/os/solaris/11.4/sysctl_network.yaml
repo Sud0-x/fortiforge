@@ -1,0 +1,33 @@
+key: os_solaris_11.4_sysctl_network
+kind: os_hardening
+name: Solaris 11.4 Sysctl Network
+version: '1.0'
+os: solaris
+os_version: '11.4'
+os_type: unix
+category: sysctl_network
+risk: medium
+tags:
+- unix
+- solaris
+- '11.4'
+- sysctl_network
+- hardening
+- enterprise
+content: '# Network hardening for solaris
+
+  net.ipv4.ip_forward=0
+
+  net.ipv4.conf.all.accept_redirects=0
+
+  net.ipv4.conf.all.secure_redirects=0'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,28 @@
+key: cloud_linode_kubernetes_network_security
+kind: cloud_security
+name: LINODE Kubernetes Network Security
+version: '1.0'
+platform: linode
+service: kubernetes
+control_type: network_security
+risk: medium
+tags:
+- cloud
+- linode
+- kubernetes
+- network_security
+- enterprise
+content: '# linode kubernetes network_security configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

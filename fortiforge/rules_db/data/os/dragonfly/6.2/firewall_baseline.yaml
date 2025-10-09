@@ -1,0 +1,29 @@
+key: os_dragonfly_6.2_firewall_baseline
+kind: os_hardening
+name: Dragonfly 6.2 Firewall Baseline
+version: '1.0'
+os: dragonfly
+os_version: '6.2'
+os_type: unix
+category: firewall_baseline
+risk: medium
+tags:
+- unix
+- dragonfly
+- '6.2'
+- firewall_baseline
+- hardening
+- enterprise
+content: '# Firewall baseline for dragonfly
+
+  # Enable and configure default deny policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

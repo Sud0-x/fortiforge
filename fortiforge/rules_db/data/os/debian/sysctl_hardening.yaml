@@ -1,0 +1,13 @@
+key: os_debian_sysctl_hardening
+kind: os_hardening
+os: debian
+name: Debian sysctl hardening baseline
+version: 1
+risk: low
+tags: [os, debian, sysctl, hardening]
+content: |
+  net.ipv4.ip_forward=0
+  net.ipv4.conf.all.accept_source_route=0
+  net.ipv4.conf.all.accept_redirects=0
+  net.ipv4.conf.all.secure_redirects=1
+  net.ipv4.conf.all.log_martians=1

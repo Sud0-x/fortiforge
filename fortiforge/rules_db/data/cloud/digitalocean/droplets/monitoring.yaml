@@ -1,0 +1,28 @@
+key: cloud_digitalocean_droplets_monitoring
+kind: cloud_security
+name: DIGITALOCEAN Droplets Monitoring
+version: '1.0'
+platform: digitalocean
+service: droplets
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- digitalocean
+- droplets
+- monitoring
+- enterprise
+content: '# digitalocean droplets monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

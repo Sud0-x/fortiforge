@@ -1,0 +1,16 @@
+version: 1
+hosts:
+  - name: sandbox-web-1
+    address: sandbox-web-1
+    connection: docker
+    labels: [web, ubuntu-22.04]
+    authorized: true
+  - name: sandbox-db-1
+    address: sandbox-db-1
+    connection: docker
+    labels: [db, ubuntu-22.04]
+    authorized: true
+groups:
+  - name: prod
+    hosts: [sandbox-web-1, sandbox-db-1]
+    labels: [environment:prod]

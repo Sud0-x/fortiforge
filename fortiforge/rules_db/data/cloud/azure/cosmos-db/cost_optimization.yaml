@@ -1,0 +1,28 @@
+key: cloud_azure_cosmos-db_cost_optimization
+kind: cloud_security
+name: AZURE Cosmos-Db Cost Optimization
+version: '1.0'
+platform: azure
+service: cosmos-db
+control_type: cost_optimization
+risk: medium
+tags:
+- cloud
+- azure
+- cosmos-db
+- cost_optimization
+- enterprise
+content: '# azure cosmos-db cost_optimization configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

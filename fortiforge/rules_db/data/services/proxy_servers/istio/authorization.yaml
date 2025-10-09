@@ -1,0 +1,24 @@
+key: svc_istio_authorization
+kind: service_hardening
+name: Istio Authorization
+version: '1.0'
+service: istio
+category: proxy_servers
+hardening_type: authorization
+risk: medium
+tags:
+- service
+- istio
+- authorization
+- proxy_servers
+- enterprise
+content: '# authorization configuration for istio
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

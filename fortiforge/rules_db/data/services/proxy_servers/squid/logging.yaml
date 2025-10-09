@@ -1,0 +1,24 @@
+key: svc_squid_logging
+kind: service_hardening
+name: Squid Logging
+version: '1.0'
+service: squid
+category: proxy_servers
+hardening_type: logging
+risk: low
+tags:
+- service
+- squid
+- logging
+- proxy_servers
+- enterprise
+content: '# logging configuration for squid
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

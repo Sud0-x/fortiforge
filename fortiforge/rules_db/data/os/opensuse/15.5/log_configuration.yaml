@@ -1,0 +1,27 @@
+key: os_opensuse_15.5_log_configuration
+kind: os_hardening
+name: Opensuse 15.5 Log Configuration
+version: '1.0'
+os: opensuse
+os_version: '15.5'
+os_type: linux
+category: log_configuration
+risk: low
+tags:
+- linux
+- opensuse
+- '15.5'
+- log_configuration
+- hardening
+- enterprise
+content: '# log_configuration configuration for opensuse'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

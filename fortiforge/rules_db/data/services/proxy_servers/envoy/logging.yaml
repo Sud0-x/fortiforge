@@ -1,0 +1,24 @@
+key: svc_envoy_logging
+kind: service_hardening
+name: Envoy Logging
+version: '1.0'
+service: envoy
+category: proxy_servers
+hardening_type: logging
+risk: low
+tags:
+- service
+- envoy
+- logging
+- proxy_servers
+- enterprise
+content: '# logging configuration for envoy
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

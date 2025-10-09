@@ -1,0 +1,28 @@
+key: cloud_aws_sns_monitoring
+kind: cloud_security
+name: AWS Sns Monitoring
+version: '1.0'
+platform: aws
+service: sns
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- aws
+- sns
+- monitoring
+- enterprise
+content: '# aws sns monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

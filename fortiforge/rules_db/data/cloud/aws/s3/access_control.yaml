@@ -1,0 +1,28 @@
+key: cloud_aws_s3_access_control
+kind: cloud_security
+name: AWS S3 Access Control
+version: '1.0'
+platform: aws
+service: s3
+control_type: access_control
+risk: high
+tags:
+- cloud
+- aws
+- s3
+- access_control
+- enterprise
+content: '# aws s3 access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

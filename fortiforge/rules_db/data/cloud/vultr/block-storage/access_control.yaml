@@ -1,0 +1,28 @@
+key: cloud_vultr_block-storage_access_control
+kind: cloud_security
+name: VULTR Block-Storage Access Control
+version: '1.0'
+platform: vultr
+service: block-storage
+control_type: access_control
+risk: high
+tags:
+- cloud
+- vultr
+- block-storage
+- access_control
+- enterprise
+content: '# vultr block-storage access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,28 @@
+key: ids_suricata_insider_threats_sabotage_attempts
+kind: ids_signature
+name: Suricata Sabotage Attempts
+version: '1.0'
+engine: suricata
+category: insider_threats
+signature_type: sabotage_attempts
+risk: high
+tags:
+- ids
+- suricata
+- insider_threats
+- sabotage_attempts
+- detection
+- enterprise
+content: alert tcp any any -> any any (msg:"Sabotage Attempts"; content:"malicious";
+  sid:1000000; rev:1;)
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

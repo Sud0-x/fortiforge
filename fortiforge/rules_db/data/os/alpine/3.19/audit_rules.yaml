@@ -1,0 +1,29 @@
+key: os_alpine_3.19_audit_rules
+kind: os_hardening
+name: Alpine 3.19 Audit Rules
+version: '1.0'
+os: alpine
+os_version: '3.19'
+os_type: linux
+category: audit_rules
+risk: medium
+tags:
+- linux
+- alpine
+- '3.19'
+- audit_rules
+- hardening
+- enterprise
+content: '# Audit rules for alpine
+
+  -a always,exit -F arch=b64 -S adjtimex,settimeofday -k time-change'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

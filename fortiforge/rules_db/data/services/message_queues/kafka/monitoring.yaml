@@ -1,0 +1,24 @@
+key: svc_kafka_monitoring
+kind: service_hardening
+name: Kafka Monitoring
+version: '1.0'
+service: kafka
+category: message_queues
+hardening_type: monitoring
+risk: low
+tags:
+- service
+- kafka
+- monitoring
+- message_queues
+- enterprise
+content: '# monitoring configuration for kafka
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

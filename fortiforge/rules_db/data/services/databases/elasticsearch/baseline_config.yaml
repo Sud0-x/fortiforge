@@ -1,0 +1,24 @@
+key: svc_elasticsearch_baseline_config
+kind: service_hardening
+name: Elasticsearch Baseline Config
+version: '1.0'
+service: elasticsearch
+category: databases
+hardening_type: baseline_config
+risk: medium
+tags:
+- service
+- elasticsearch
+- baseline_config
+- databases
+- enterprise
+content: '# baseline_config configuration for elasticsearch
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

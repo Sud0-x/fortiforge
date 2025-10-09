@@ -1,0 +1,14 @@
+click>=8.1
+PyYAML>=6.0
+networkx>=3.2
+Flask>=3.0
+Jinja2>=3.1
+paramiko>=3.3
+cryptography>=42.0
+PyJWT>=2.8
+passlib[bcrypt]>=1.7
+rich>=13.7
+docker>=7.0
+# Optional NLP extras (not required for core):
+spacy>=3.7
+pytest>=8.0

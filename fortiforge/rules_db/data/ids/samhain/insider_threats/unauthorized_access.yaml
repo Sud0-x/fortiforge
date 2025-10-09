@@ -1,0 +1,29 @@
+key: ids_samhain_insider_threats_unauthorized_access
+kind: ids_signature
+name: Samhain Unauthorized Access
+version: '1.0'
+engine: samhain
+category: insider_threats
+signature_type: unauthorized_access
+risk: high
+tags:
+- ids
+- samhain
+- insider_threats
+- unauthorized_access
+- detection
+- enterprise
+content: '# samhain signature for unauthorized_access
+
+  # Detection rule for insider_threats'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

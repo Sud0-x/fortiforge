@@ -1,0 +1,28 @@
+key: cloud_ibm_vpc_performance
+kind: cloud_security
+name: IBM Vpc Performance
+version: '1.0'
+platform: ibm
+service: vpc
+control_type: performance
+risk: medium
+tags:
+- cloud
+- ibm
+- vpc
+- performance
+- enterprise
+content: '# ibm vpc performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

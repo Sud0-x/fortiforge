@@ -1,0 +1,27 @@
+key: os_ubuntu_18.04_sysctl_kernel
+kind: os_hardening
+name: Ubuntu 18.04 Sysctl Kernel
+version: '1.0'
+os: ubuntu
+os_version: '18.04'
+os_type: linux
+category: sysctl_kernel
+risk: medium
+tags:
+- linux
+- ubuntu
+- '18.04'
+- sysctl_kernel
+- hardening
+- enterprise
+content: '# sysctl_kernel configuration for ubuntu'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

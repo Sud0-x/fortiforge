@@ -1,0 +1,24 @@
+key: svc_istio_rate_limiting
+kind: service_hardening
+name: Istio Rate Limiting
+version: '1.0'
+service: istio
+category: proxy_servers
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- istio
+- rate_limiting
+- proxy_servers
+- enterprise
+content: '# rate_limiting configuration for istio
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

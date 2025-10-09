@@ -1,0 +1,29 @@
+key: ids_wazuh_network_attacks_dns_poisoning
+kind: ids_signature
+name: Wazuh Dns Poisoning
+version: '1.0'
+engine: wazuh
+category: network_attacks
+signature_type: dns_poisoning
+risk: high
+tags:
+- ids
+- wazuh
+- network_attacks
+- dns_poisoning
+- detection
+- enterprise
+content: '# wazuh signature for dns_poisoning
+
+  # Detection rule for network_attacks'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

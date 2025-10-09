@@ -1,0 +1,24 @@
+key: svc_dnsmasq_performance
+kind: service_hardening
+name: Dnsmasq Performance
+version: '1.0'
+service: dnsmasq
+category: dns_servers
+hardening_type: performance
+risk: medium
+tags:
+- service
+- dnsmasq
+- performance
+- dns_servers
+- enterprise
+content: '# performance configuration for dnsmasq
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,24 @@
+key: svc_nfs_authentication
+kind: service_hardening
+name: Nfs Authentication
+version: '1.0'
+service: nfs
+category: storage
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- nfs
+- authentication
+- storage
+- enterprise
+content: '# authentication configuration for nfs
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

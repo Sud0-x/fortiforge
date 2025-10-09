@@ -1,0 +1,23 @@
+key: fw_ufw_network_protection_icmp_flood_protection
+kind: firewall_rule
+name: Ufw Icmp Flood Protection
+version: '1.0'
+engine: ufw
+category: network_protection
+rule_type: icmp_flood_protection
+risk: high
+tags:
+- firewall
+- ufw
+- network_protection
+- icmp_flood_protection
+- network_security
+- enterprise
+content: '# ufw rule for icmp_flood_protection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

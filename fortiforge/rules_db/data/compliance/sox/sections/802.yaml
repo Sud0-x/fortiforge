@@ -1,0 +1,31 @@
+key: compliance_sox_sections_802
+kind: compliance
+name: SOX Sections - 802
+version: '1.0'
+framework: sox
+category: sections
+requirement: '802'
+risk: high
+tags:
+- compliance
+- sox
+- sections
+- '802'
+- audit
+- enterprise
+content: '# SOX sections - 802
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: sox
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - SOX
+  - Financial
+  - Public Company

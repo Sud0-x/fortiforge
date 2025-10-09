@@ -1,0 +1,28 @@
+key: cloud_oracle_compute_access_control
+kind: cloud_security
+name: ORACLE Compute Access Control
+version: '1.0'
+platform: oracle
+service: compute
+control_type: access_control
+risk: high
+tags:
+- cloud
+- oracle
+- compute
+- access_control
+- enterprise
+content: '# oracle compute access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

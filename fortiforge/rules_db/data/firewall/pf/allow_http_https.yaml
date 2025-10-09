@@ -1,0 +1,8 @@
+key: pf_allow_http_https
+kind: firewall
+engine: pf
+name: Allow HTTP/HTTPS
+version: 1
+risk: low
+tags: [firewall, pf, web]
+content: "pass in on egress proto tcp from any to any port {80,443} keep state"

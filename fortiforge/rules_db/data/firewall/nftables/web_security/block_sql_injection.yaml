@@ -1,0 +1,23 @@
+key: fw_nftables_web_security_block_sql_injection
+kind: firewall_rule
+name: Nftables Block Sql Injection
+version: '1.0'
+engine: nftables
+category: web_security
+rule_type: block_sql_injection
+risk: high
+tags:
+- firewall
+- nftables
+- web_security
+- block_sql_injection
+- network_security
+- enterprise
+content: '# nftables rule for block_sql_injection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

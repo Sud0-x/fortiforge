@@ -1,0 +1,28 @@
+key: cloud_gcp_cloud-sql_access_control
+kind: cloud_security
+name: GCP Cloud-Sql Access Control
+version: '1.0'
+platform: gcp
+service: cloud-sql
+control_type: access_control
+risk: high
+tags:
+- cloud
+- gcp
+- cloud-sql
+- access_control
+- enterprise
+content: '# gcp cloud-sql access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

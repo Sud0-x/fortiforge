@@ -1,0 +1,28 @@
+key: cloud_gcp_memorystore_backup
+kind: cloud_security
+name: GCP Memorystore Backup
+version: '1.0'
+platform: gcp
+service: memorystore
+control_type: backup
+risk: medium
+tags:
+- cloud
+- gcp
+- memorystore
+- backup
+- enterprise
+content: '# gcp memorystore backup configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

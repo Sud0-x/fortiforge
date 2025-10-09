@@ -1,0 +1,11 @@
+key: svc_sshd_auth_retries
+kind: service_hardening
+service: sshd
+name: SSHD auth retries and lockout
+version: 1
+risk: low
+tags: [service, sshd, hardening]
+content: |
+  MaxAuthTries 3
+  LoginGraceTime 30
+rollback: { content: "" }

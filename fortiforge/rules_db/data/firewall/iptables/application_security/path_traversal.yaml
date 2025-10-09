@@ -1,0 +1,23 @@
+key: fw_iptables_application_security_path_traversal
+kind: firewall_rule
+name: Iptables Path Traversal
+version: '1.0'
+engine: iptables
+category: application_security
+rule_type: path_traversal
+risk: medium
+tags:
+- firewall
+- iptables
+- application_security
+- path_traversal
+- network_security
+- enterprise
+content: '# iptables rule for path_traversal'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

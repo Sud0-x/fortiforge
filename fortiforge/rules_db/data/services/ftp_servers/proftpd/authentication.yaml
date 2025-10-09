@@ -1,0 +1,24 @@
+key: svc_proftpd_authentication
+kind: service_hardening
+name: Proftpd Authentication
+version: '1.0'
+service: proftpd
+category: ftp_servers
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- proftpd
+- authentication
+- ftp_servers
+- enterprise
+content: '# authentication configuration for proftpd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

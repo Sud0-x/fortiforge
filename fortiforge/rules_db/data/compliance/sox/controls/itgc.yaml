@@ -1,0 +1,31 @@
+key: compliance_sox_controls_itgc
+kind: compliance
+name: SOX Controls - Itgc
+version: '1.0'
+framework: sox
+category: controls
+requirement: itgc
+risk: high
+tags:
+- compliance
+- sox
+- controls
+- itgc
+- audit
+- enterprise
+content: '# SOX controls - itgc
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: sox
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - SOX
+  - Financial
+  - Public Company

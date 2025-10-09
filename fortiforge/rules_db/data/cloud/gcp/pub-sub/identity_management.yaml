@@ -1,0 +1,28 @@
+key: cloud_gcp_pub-sub_identity_management
+kind: cloud_security
+name: GCP Pub-Sub Identity Management
+version: '1.0'
+platform: gcp
+service: pub-sub
+control_type: identity_management
+risk: medium
+tags:
+- cloud
+- gcp
+- pub-sub
+- identity_management
+- enterprise
+content: '# gcp pub-sub identity_management configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

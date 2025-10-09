@@ -1,0 +1,23 @@
+key: fw_ipfw_network_protection_allow_established
+kind: firewall_rule
+name: Ipfw Allow Established
+version: '1.0'
+engine: ipfw
+category: network_protection
+rule_type: allow_established
+risk: medium
+tags:
+- firewall
+- ipfw
+- network_protection
+- allow_established
+- network_security
+- enterprise
+content: '# ipfw rule for allow_established'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

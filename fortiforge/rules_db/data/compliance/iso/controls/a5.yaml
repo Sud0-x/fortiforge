@@ -1,0 +1,31 @@
+key: compliance_iso_controls_a5
+kind: compliance
+name: ISO Controls - A5
+version: '1.0'
+framework: iso
+category: controls
+requirement: a5
+risk: high
+tags:
+- compliance
+- iso
+- controls
+- a5
+- audit
+- enterprise
+content: '# ISO controls - a5
+
+  # Compliance control implementation
+
+  # Audit evidence collection enabled'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance_framework: iso
+  audit_ready: true
+  enterprise_grade: true
+  regulation_mapping:
+  - ISO
+  - International
+  - Information Security

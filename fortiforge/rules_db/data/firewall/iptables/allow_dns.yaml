@@ -1,0 +1,8 @@
+key: fw_allow_dns
+kind: firewall
+engine: iptables
+name: Allow DNS
+version: 1
+risk: low
+tags: [firewall, iptables, dns]
+content: "-A OUTPUT -p udp --dport 53 -j ACCEPT"

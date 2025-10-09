@@ -1,0 +1,27 @@
+key: os_amazon-linux_2_network_interfaces
+kind: os_hardening
+name: Amazon-Linux 2 Network Interfaces
+version: '1.0'
+os: amazon-linux
+os_version: '2'
+os_type: linux
+category: network_interfaces
+risk: medium
+tags:
+- linux
+- amazon-linux
+- '2'
+- network_interfaces
+- hardening
+- enterprise
+content: '# network_interfaces configuration for amazon-linux'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

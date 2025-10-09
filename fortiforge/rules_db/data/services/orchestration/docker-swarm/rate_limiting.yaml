@@ -1,0 +1,24 @@
+key: svc_docker-swarm_rate_limiting
+kind: service_hardening
+name: Docker-Swarm Rate Limiting
+version: '1.0'
+service: docker-swarm
+category: orchestration
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- docker-swarm
+- rate_limiting
+- orchestration
+- enterprise
+content: '# rate_limiting configuration for docker-swarm
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

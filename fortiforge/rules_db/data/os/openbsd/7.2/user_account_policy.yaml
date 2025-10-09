@@ -1,0 +1,27 @@
+key: os_openbsd_7.2_user_account_policy
+kind: os_hardening
+name: Openbsd 7.2 User Account Policy
+version: '1.0'
+os: openbsd
+os_version: '7.2'
+os_type: unix
+category: user_account_policy
+risk: medium
+tags:
+- unix
+- openbsd
+- '7.2'
+- user_account_policy
+- hardening
+- enterprise
+content: '# user_account_policy configuration for openbsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

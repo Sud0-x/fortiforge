@@ -1,0 +1,27 @@
+key: os_rocky_8_service_disable
+kind: os_hardening
+name: Rocky 8 Service Disable
+version: '1.0'
+os: rocky
+os_version: '8'
+os_type: linux
+category: service_disable
+risk: medium
+tags:
+- linux
+- rocky
+- '8'
+- service_disable
+- hardening
+- enterprise
+content: '# service_disable configuration for rocky'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

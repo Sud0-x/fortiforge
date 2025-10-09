@@ -1,0 +1,27 @@
+key: os_netbsd_9.3_filesystem_permissions
+kind: os_hardening
+name: Netbsd 9.3 Filesystem Permissions
+version: '1.0'
+os: netbsd
+os_version: '9.3'
+os_type: unix
+category: filesystem_permissions
+risk: medium
+tags:
+- unix
+- netbsd
+- '9.3'
+- filesystem_permissions
+- hardening
+- enterprise
+content: '# filesystem_permissions configuration for netbsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

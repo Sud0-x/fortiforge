@@ -1,0 +1,28 @@
+key: cloud_azure_redis-cache_governance
+kind: cloud_security
+name: AZURE Redis-Cache Governance
+version: '1.0'
+platform: azure
+service: redis-cache
+control_type: governance
+risk: medium
+tags:
+- cloud
+- azure
+- redis-cache
+- governance
+- enterprise
+content: '# azure redis-cache governance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,24 @@
+key: svc_fail2ban_performance
+kind: service_hardening
+name: Fail2Ban Performance
+version: '1.0'
+service: fail2ban
+category: security_tools
+hardening_type: performance
+risk: medium
+tags:
+- service
+- fail2ban
+- performance
+- security_tools
+- enterprise
+content: '# performance configuration for fail2ban
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

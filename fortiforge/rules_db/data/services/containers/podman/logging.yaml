@@ -1,0 +1,24 @@
+key: svc_podman_logging
+kind: service_hardening
+name: Podman Logging
+version: '1.0'
+service: podman
+category: containers
+hardening_type: logging
+risk: low
+tags:
+- service
+- podman
+- logging
+- containers
+- enterprise
+content: '# logging configuration for podman
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

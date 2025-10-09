@@ -1,0 +1,29 @@
+key: os_debian_11_audit_rules
+kind: os_hardening
+name: Debian 11 Audit Rules
+version: '1.0'
+os: debian
+os_version: '11'
+os_type: linux
+category: audit_rules
+risk: medium
+tags:
+- linux
+- debian
+- '11'
+- audit_rules
+- hardening
+- enterprise
+content: '# Audit rules for debian
+
+  -a always,exit -F arch=b64 -S adjtimex,settimeofday -k time-change'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

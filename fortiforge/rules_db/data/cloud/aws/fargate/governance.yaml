@@ -1,0 +1,28 @@
+key: cloud_aws_fargate_governance
+kind: cloud_security
+name: AWS Fargate Governance
+version: '1.0'
+platform: aws
+service: fargate
+control_type: governance
+risk: medium
+tags:
+- cloud
+- aws
+- fargate
+- governance
+- enterprise
+content: '# aws fargate governance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

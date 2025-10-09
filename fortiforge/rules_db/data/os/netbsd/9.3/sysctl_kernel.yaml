@@ -1,0 +1,27 @@
+key: os_netbsd_9.3_sysctl_kernel
+kind: os_hardening
+name: Netbsd 9.3 Sysctl Kernel
+version: '1.0'
+os: netbsd
+os_version: '9.3'
+os_type: unix
+category: sysctl_kernel
+risk: medium
+tags:
+- unix
+- netbsd
+- '9.3'
+- sysctl_kernel
+- hardening
+- enterprise
+content: '# sysctl_kernel configuration for netbsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

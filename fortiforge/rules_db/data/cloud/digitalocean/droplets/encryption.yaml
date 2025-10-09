@@ -1,0 +1,28 @@
+key: cloud_digitalocean_droplets_encryption
+kind: cloud_security
+name: DIGITALOCEAN Droplets Encryption
+version: '1.0'
+platform: digitalocean
+service: droplets
+control_type: encryption
+risk: high
+tags:
+- cloud
+- digitalocean
+- droplets
+- encryption
+- enterprise
+content: '# digitalocean droplets encryption configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

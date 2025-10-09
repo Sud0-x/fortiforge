@@ -1,0 +1,28 @@
+key: cloud_aws_vpc_disaster_recovery
+kind: cloud_security
+name: AWS Vpc Disaster Recovery
+version: '1.0'
+platform: aws
+service: vpc
+control_type: disaster_recovery
+risk: medium
+tags:
+- cloud
+- aws
+- vpc
+- disaster_recovery
+- enterprise
+content: '# aws vpc disaster_recovery configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

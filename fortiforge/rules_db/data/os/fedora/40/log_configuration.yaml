@@ -1,0 +1,27 @@
+key: os_fedora_40_log_configuration
+kind: os_hardening
+name: Fedora 40 Log Configuration
+version: '1.0'
+os: fedora
+os_version: '40'
+os_type: linux
+category: log_configuration
+risk: low
+tags:
+- linux
+- fedora
+- '40'
+- log_configuration
+- hardening
+- enterprise
+content: '# log_configuration configuration for fedora'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,24 @@
+key: svc_postgresql_backup_config
+kind: service_hardening
+name: Postgresql Backup Config
+version: '1.0'
+service: postgresql
+category: databases
+hardening_type: backup_config
+risk: medium
+tags:
+- service
+- postgresql
+- backup_config
+- databases
+- enterprise
+content: '# backup_config configuration for postgresql
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

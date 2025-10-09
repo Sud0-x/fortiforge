@@ -1,0 +1,32 @@
+key: azure_nsg_web_allow
+kind: cloud_firewall
+engine: azure_nsg
+name: Azure NSG Allow Web
+version: 1
+risk: low
+tags: [cloud, azure, nsg, web]
+content: |
+  [
+    {
+      "name": "Allow-HTTP",
+      "priority": 100,
+      "direction": "Inbound",
+      "access": "Allow",
+      "protocol": "Tcp",
+      "sourceAddressPrefix": "*",
+      "sourcePortRange": "*",
+      "destinationAddressPrefix": "*",
+      "destinationPortRange": "80"
+    },
+    {
+      "name": "Allow-HTTPS",
+      "priority": 110,
+      "direction": "Inbound",
+      "access": "Allow",
+      "protocol": "Tcp",
+      "sourceAddressPrefix": "*",
+      "sourcePortRange": "*",
+      "destinationAddressPrefix": "*",
+      "destinationPortRange": "443"
+    }
+  ]

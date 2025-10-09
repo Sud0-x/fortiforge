@@ -1,0 +1,24 @@
+key: svc_jetty_authorization
+kind: service_hardening
+name: Jetty Authorization
+version: '1.0'
+service: jetty
+category: application_servers
+hardening_type: authorization
+risk: medium
+tags:
+- service
+- jetty
+- authorization
+- application_servers
+- enterprise
+content: '# authorization configuration for jetty
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

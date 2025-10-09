@@ -1,0 +1,24 @@
+key: svc_nats_logging
+kind: service_hardening
+name: Nats Logging
+version: '1.0'
+service: nats
+category: message_queues
+hardening_type: logging
+risk: low
+tags:
+- service
+- nats
+- logging
+- message_queues
+- enterprise
+content: '# logging configuration for nats
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

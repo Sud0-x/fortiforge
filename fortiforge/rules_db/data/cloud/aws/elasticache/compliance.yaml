@@ -1,0 +1,28 @@
+key: cloud_aws_elasticache_compliance
+kind: cloud_security
+name: AWS Elasticache Compliance
+version: '1.0'
+platform: aws
+service: elasticache
+control_type: compliance
+risk: medium
+tags:
+- cloud
+- aws
+- elasticache
+- compliance
+- enterprise
+content: '# aws elasticache compliance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

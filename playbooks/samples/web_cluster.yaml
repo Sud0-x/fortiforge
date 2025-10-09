@@ -1,0 +1,26 @@
+- name: Small web app cluster hardening
+  description: Hardens nginx, configures firewall and enables fail2ban for a web cluster
+  targets: ["sandbox-web-1:authorized"]
+  tasks:
+    - name: Apply nginx baseline
+      idempotent: true
+      simulate: { show_diff: true }
+      apply: { mode: template, content: "server_tokens off;" }
+      rollback: { mode: template, content: "" }
+    - name: Allow HTTP/HTTPS
+      idempotent: true
+      simulate: { show_diff: true }
+      apply: { mode: template, content: "-A INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT" }
+      rollback: { mode: template, content: "-D INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT" }
+    - name: Enable fail2ban nginx
+      idempotent: true
+      simulate: { show_diff: true }
+      apply:
+        mode: template
+        content: |
+          [nginx-http-auth]
+          enabled = true
+          filter = nginx-http-auth
+          logpath = /var/log/nginx/error.log
+          maxretry = 5
+      rollback: { mode: template, content: "" }

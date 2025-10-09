@@ -1,0 +1,27 @@
+{
+  "database_info": {
+    "name": "FortiForge Enterprise Security Database",
+    "developer": "Sud0-x",
+    "version": "1.0.0",
+    "generated_at": "2025-10-09T12:55:00Z",
+    "total_templates": 3591,
+    "enterprise_grade": true,
+    "production_ready": true
+  },
+  "categories": {
+    "os_hardening": "Operating system security configurations",
+    "service_hardening": "Application and service security",
+    "cloud_security": "Cloud platform security controls",
+    "compliance": "Regulatory compliance frameworks",
+    "network_security": "Firewall and network protection",
+    "ids_signatures": "Intrusion detection signatures"
+  },
+  "coverage": {
+    "operating_systems": "50+ Linux/Unix distributions",
+    "services": "200+ applications and services",
+    "cloud_platforms": "9 major cloud providers",
+    "compliance_frameworks": "7 major standards",
+    "security_controls": "1000+ network rules",
+    "detection_signatures": "500+ threat patterns"
+  }
+}

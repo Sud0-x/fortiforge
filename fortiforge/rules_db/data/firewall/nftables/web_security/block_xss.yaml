@@ -1,0 +1,23 @@
+key: fw_nftables_web_security_block_xss
+kind: firewall_rule
+name: Nftables Block Xss
+version: '1.0'
+engine: nftables
+category: web_security
+rule_type: block_xss
+risk: high
+tags:
+- firewall
+- nftables
+- web_security
+- block_xss
+- network_security
+- enterprise
+content: '# nftables rule for block_xss'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

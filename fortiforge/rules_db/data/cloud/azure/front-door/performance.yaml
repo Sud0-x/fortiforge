@@ -1,0 +1,28 @@
+key: cloud_azure_front-door_performance
+kind: cloud_security
+name: AZURE Front-Door Performance
+version: '1.0'
+platform: azure
+service: front-door
+control_type: performance
+risk: medium
+tags:
+- cloud
+- azure
+- front-door
+- performance
+- enterprise
+content: '# azure front-door performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

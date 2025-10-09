@@ -1,0 +1,27 @@
+key: os_parrot_5.1_filesystem_permissions
+kind: os_hardening
+name: Parrot 5.1 Filesystem Permissions
+version: '1.0'
+os: parrot
+os_version: '5.1'
+os_type: linux
+category: filesystem_permissions
+risk: medium
+tags:
+- linux
+- parrot
+- '5.1'
+- filesystem_permissions
+- hardening
+- enterprise
+content: '# filesystem_permissions configuration for parrot'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

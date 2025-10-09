@@ -1,0 +1,28 @@
+key: cloud_vultr_databases_encryption
+kind: cloud_security
+name: VULTR Databases Encryption
+version: '1.0'
+platform: vultr
+service: databases
+control_type: encryption
+risk: high
+tags:
+- cloud
+- vultr
+- databases
+- encryption
+- enterprise
+content: '# vultr databases encryption configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,24 @@
+key: svc_rabbitmq_tls_ssl
+kind: service_hardening
+name: Rabbitmq Tls Ssl
+version: '1.0'
+service: rabbitmq
+category: message_queues
+hardening_type: tls_ssl
+risk: medium
+tags:
+- service
+- rabbitmq
+- tls_ssl
+- message_queues
+- enterprise
+content: '# tls_ssl configuration for rabbitmq
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

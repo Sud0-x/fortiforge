@@ -1,0 +1,8 @@
+key: fw_rate_limit_ssh
+kind: firewall
+engine: iptables
+name: Rate limit SSH
+version: 1
+risk: low
+tags: [firewall, iptables, ssh]
+content: "-A INPUT -p tcp --dport 22 -m limit --limit 3/min --limit-burst 10 -j ACCEPT"

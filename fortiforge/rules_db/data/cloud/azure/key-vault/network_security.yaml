@@ -1,0 +1,28 @@
+key: cloud_azure_key-vault_network_security
+kind: cloud_security
+name: AZURE Key-Vault Network Security
+version: '1.0'
+platform: azure
+service: key-vault
+control_type: network_security
+risk: medium
+tags:
+- cloud
+- azure
+- key-vault
+- network_security
+- enterprise
+content: '# azure key-vault network_security configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

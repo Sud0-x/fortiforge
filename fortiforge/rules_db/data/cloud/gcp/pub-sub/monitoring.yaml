@@ -1,0 +1,28 @@
+key: cloud_gcp_pub-sub_monitoring
+kind: cloud_security
+name: GCP Pub-Sub Monitoring
+version: '1.0'
+platform: gcp
+service: pub-sub
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- gcp
+- pub-sub
+- monitoring
+- enterprise
+content: '# gcp pub-sub monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

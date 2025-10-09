@@ -1,0 +1,28 @@
+key: cloud_gcp_firestore_encryption
+kind: cloud_security
+name: GCP Firestore Encryption
+version: '1.0'
+platform: gcp
+service: firestore
+control_type: encryption
+risk: high
+tags:
+- cloud
+- gcp
+- firestore
+- encryption
+- enterprise
+content: '# gcp firestore encryption configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

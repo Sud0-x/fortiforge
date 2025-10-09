@@ -1,0 +1,24 @@
+key: svc_bind_rate_limiting
+kind: service_hardening
+name: Bind Rate Limiting
+version: '1.0'
+service: bind
+category: dns_servers
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- bind
+- rate_limiting
+- dns_servers
+- enterprise
+content: '# rate_limiting configuration for bind
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,27 @@
+key: os_alpine_3.19_cron_restrictions
+kind: os_hardening
+name: Alpine 3.19 Cron Restrictions
+version: '1.0'
+os: alpine
+os_version: '3.19'
+os_type: linux
+category: cron_restrictions
+risk: medium
+tags:
+- linux
+- alpine
+- '3.19'
+- cron_restrictions
+- hardening
+- enterprise
+content: '# cron_restrictions configuration for alpine'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,28 @@
+key: cloud_azure_service-bus_encryption
+kind: cloud_security
+name: AZURE Service-Bus Encryption
+version: '1.0'
+platform: azure
+service: service-bus
+control_type: encryption
+risk: high
+tags:
+- cloud
+- azure
+- service-bus
+- encryption
+- enterprise
+content: '# azure service-bus encryption configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

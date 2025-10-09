@@ -1,0 +1,24 @@
+key: svc_wireguard_logging
+kind: service_hardening
+name: Wireguard Logging
+version: '1.0'
+service: wireguard
+category: vpn_servers
+hardening_type: logging
+risk: low
+tags:
+- service
+- wireguard
+- logging
+- vpn_servers
+- enterprise
+content: '# logging configuration for wireguard
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

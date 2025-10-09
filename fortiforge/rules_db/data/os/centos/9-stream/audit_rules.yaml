@@ -1,0 +1,29 @@
+key: os_centos_9-stream_audit_rules
+kind: os_hardening
+name: Centos 9-stream Audit Rules
+version: '1.0'
+os: centos
+os_version: 9-stream
+os_type: linux
+category: audit_rules
+risk: medium
+tags:
+- linux
+- centos
+- 9-stream
+- audit_rules
+- hardening
+- enterprise
+content: '# Audit rules for centos
+
+  -a always,exit -F arch=b64 -S adjtimex,settimeofday -k time-change'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

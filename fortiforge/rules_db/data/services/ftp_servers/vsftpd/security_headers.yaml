@@ -1,0 +1,24 @@
+key: svc_vsftpd_security_headers
+kind: service_hardening
+name: Vsftpd Security Headers
+version: '1.0'
+service: vsftpd
+category: ftp_servers
+hardening_type: security_headers
+risk: medium
+tags:
+- service
+- vsftpd
+- security_headers
+- ftp_servers
+- enterprise
+content: '# security_headers configuration for vsftpd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

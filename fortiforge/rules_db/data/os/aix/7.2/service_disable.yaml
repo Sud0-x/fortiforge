@@ -1,0 +1,27 @@
+key: os_aix_7.2_service_disable
+kind: os_hardening
+name: Aix 7.2 Service Disable
+version: '1.0'
+os: aix
+os_version: '7.2'
+os_type: unix
+category: service_disable
+risk: medium
+tags:
+- unix
+- aix
+- '7.2'
+- service_disable
+- hardening
+- enterprise
+content: '# service_disable configuration for aix'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

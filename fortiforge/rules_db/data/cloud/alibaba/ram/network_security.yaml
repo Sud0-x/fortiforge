@@ -1,0 +1,28 @@
+key: cloud_alibaba_ram_network_security
+kind: cloud_security
+name: ALIBABA Ram Network Security
+version: '1.0'
+platform: alibaba
+service: ram
+control_type: network_security
+risk: medium
+tags:
+- cloud
+- alibaba
+- ram
+- network_security
+- enterprise
+content: '# alibaba ram network_security configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

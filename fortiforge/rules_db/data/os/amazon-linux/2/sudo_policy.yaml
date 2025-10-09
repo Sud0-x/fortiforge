@@ -1,0 +1,27 @@
+key: os_amazon-linux_2_sudo_policy
+kind: os_hardening
+name: Amazon-Linux 2 Sudo Policy
+version: '1.0'
+os: amazon-linux
+os_version: '2'
+os_type: linux
+category: sudo_policy
+risk: medium
+tags:
+- linux
+- amazon-linux
+- '2'
+- sudo_policy
+- hardening
+- enterprise
+content: '# sudo_policy configuration for amazon-linux'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

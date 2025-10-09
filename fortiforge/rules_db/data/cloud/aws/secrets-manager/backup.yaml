@@ -1,0 +1,28 @@
+key: cloud_aws_secrets-manager_backup
+kind: cloud_security
+name: AWS Secrets-Manager Backup
+version: '1.0'
+platform: aws
+service: secrets-manager
+control_type: backup
+risk: medium
+tags:
+- cloud
+- aws
+- secrets-manager
+- backup
+- enterprise
+content: '# aws secrets-manager backup configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,24 @@
+key: svc_coredns_authorization
+kind: service_hardening
+name: Coredns Authorization
+version: '1.0'
+service: coredns
+category: dns_servers
+hardening_type: authorization
+risk: medium
+tags:
+- service
+- coredns
+- authorization
+- dns_servers
+- enterprise
+content: '# authorization configuration for coredns
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

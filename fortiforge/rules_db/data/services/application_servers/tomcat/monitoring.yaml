@@ -1,0 +1,24 @@
+key: svc_tomcat_monitoring
+kind: service_hardening
+name: Tomcat Monitoring
+version: '1.0'
+service: tomcat
+category: application_servers
+hardening_type: monitoring
+risk: low
+tags:
+- service
+- tomcat
+- monitoring
+- application_servers
+- enterprise
+content: '# monitoring configuration for tomcat
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

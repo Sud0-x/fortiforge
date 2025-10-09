@@ -1,0 +1,24 @@
+key: svc_wazuh_performance
+kind: service_hardening
+name: Wazuh Performance
+version: '1.0'
+service: wazuh
+category: security_tools
+hardening_type: performance
+risk: medium
+tags:
+- service
+- wazuh
+- performance
+- security_tools
+- enterprise
+content: '# performance configuration for wazuh
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

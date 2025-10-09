@@ -1,0 +1,28 @@
+key: cloud_azure_cosmos-db_monitoring
+kind: cloud_security
+name: AZURE Cosmos-Db Monitoring
+version: '1.0'
+platform: azure
+service: cosmos-db
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- azure
+- cosmos-db
+- monitoring
+- enterprise
+content: '# azure cosmos-db monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

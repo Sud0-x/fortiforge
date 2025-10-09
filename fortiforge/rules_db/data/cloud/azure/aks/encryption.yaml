@@ -1,0 +1,28 @@
+key: cloud_azure_aks_encryption
+kind: cloud_security
+name: AZURE Aks Encryption
+version: '1.0'
+platform: azure
+service: aks
+control_type: encryption
+risk: high
+tags:
+- cloud
+- azure
+- aks
+- encryption
+- enterprise
+content: '# azure aks encryption configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

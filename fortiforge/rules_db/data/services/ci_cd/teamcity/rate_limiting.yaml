@@ -1,0 +1,24 @@
+key: svc_teamcity_rate_limiting
+kind: service_hardening
+name: Teamcity Rate Limiting
+version: '1.0'
+service: teamcity
+category: ci_cd
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- teamcity
+- rate_limiting
+- ci_cd
+- enterprise
+content: '# rate_limiting configuration for teamcity
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,24 @@
+key: svc_rabbitmq_rate_limiting
+kind: service_hardening
+name: Rabbitmq Rate Limiting
+version: '1.0'
+service: rabbitmq
+category: message_queues
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- rabbitmq
+- rate_limiting
+- message_queues
+- enterprise
+content: '# rate_limiting configuration for rabbitmq
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

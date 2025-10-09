@@ -1,0 +1,29 @@
+key: os_gentoo_hardened_audit_rules
+kind: os_hardening
+name: Gentoo hardened Audit Rules
+version: '1.0'
+os: gentoo
+os_version: hardened
+os_type: linux
+category: audit_rules
+risk: medium
+tags:
+- linux
+- gentoo
+- hardened
+- audit_rules
+- hardening
+- enterprise
+content: '# Audit rules for gentoo
+
+  -a always,exit -F arch=b64 -S adjtimex,settimeofday -k time-change'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

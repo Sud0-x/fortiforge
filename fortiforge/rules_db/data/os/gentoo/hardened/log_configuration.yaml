@@ -1,0 +1,27 @@
+key: os_gentoo_hardened_log_configuration
+kind: os_hardening
+name: Gentoo hardened Log Configuration
+version: '1.0'
+os: gentoo
+os_version: hardened
+os_type: linux
+category: log_configuration
+risk: low
+tags:
+- linux
+- gentoo
+- hardened
+- log_configuration
+- hardening
+- enterprise
+content: '# log_configuration configuration for gentoo'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

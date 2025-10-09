@@ -1,0 +1,27 @@
+key: os_almalinux_8_sysctl_kernel
+kind: os_hardening
+name: Almalinux 8 Sysctl Kernel
+version: '1.0'
+os: almalinux
+os_version: '8'
+os_type: linux
+category: sysctl_kernel
+risk: medium
+tags:
+- linux
+- almalinux
+- '8'
+- sysctl_kernel
+- hardening
+- enterprise
+content: '# sysctl_kernel configuration for almalinux'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

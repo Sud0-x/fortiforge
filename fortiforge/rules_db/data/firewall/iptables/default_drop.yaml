@@ -1,0 +1,8 @@
+key: fw_default_drop
+kind: firewall
+engine: iptables
+name: Default drop inbound
+version: 1
+risk: medium
+tags: [firewall, iptables]
+content: "-P INPUT DROP"

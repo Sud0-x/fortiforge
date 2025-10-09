@@ -1,0 +1,23 @@
+key: fw_nftables_compliance_rules_sox_network_monitoring
+kind: firewall_rule
+name: Nftables Sox Network Monitoring
+version: '1.0'
+engine: nftables
+category: compliance_rules
+rule_type: sox_network_monitoring
+risk: medium
+tags:
+- firewall
+- nftables
+- compliance_rules
+- sox_network_monitoring
+- network_security
+- enterprise
+content: '# nftables rule for sox_network_monitoring'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

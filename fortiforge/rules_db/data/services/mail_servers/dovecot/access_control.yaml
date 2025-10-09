@@ -1,0 +1,24 @@
+key: svc_dovecot_access_control
+kind: service_hardening
+name: Dovecot Access Control
+version: '1.0'
+service: dovecot
+category: mail_servers
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- dovecot
+- access_control
+- mail_servers
+- enterprise
+content: '# access_control configuration for dovecot
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

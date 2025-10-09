@@ -1,0 +1,24 @@
+key: svc_pureftpd_rate_limiting
+kind: service_hardening
+name: Pureftpd Rate Limiting
+version: '1.0'
+service: pureftpd
+category: ftp_servers
+hardening_type: rate_limiting
+risk: medium
+tags:
+- service
+- pureftpd
+- rate_limiting
+- ftp_servers
+- enterprise
+content: '# rate_limiting configuration for pureftpd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

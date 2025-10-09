@@ -1,0 +1,23 @@
+key: fw_nftables_network_protection_block_port_scans
+kind: firewall_rule
+name: Nftables Block Port Scans
+version: '1.0'
+engine: nftables
+category: network_protection
+rule_type: block_port_scans
+risk: high
+tags:
+- firewall
+- nftables
+- network_protection
+- block_port_scans
+- network_security
+- enterprise
+content: '# nftables rule for block_port_scans'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

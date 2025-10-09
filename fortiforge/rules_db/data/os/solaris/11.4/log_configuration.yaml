@@ -1,0 +1,27 @@
+key: os_solaris_11.4_log_configuration
+kind: os_hardening
+name: Solaris 11.4 Log Configuration
+version: '1.0'
+os: solaris
+os_version: '11.4'
+os_type: unix
+category: log_configuration
+risk: low
+tags:
+- unix
+- solaris
+- '11.4'
+- log_configuration
+- hardening
+- enterprise
+content: '# log_configuration configuration for solaris'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

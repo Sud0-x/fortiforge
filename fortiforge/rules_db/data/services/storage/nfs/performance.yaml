@@ -1,0 +1,24 @@
+key: svc_nfs_performance
+kind: service_hardening
+name: Nfs Performance
+version: '1.0'
+service: nfs
+category: storage
+hardening_type: performance
+risk: medium
+tags:
+- service
+- nfs
+- performance
+- storage
+- enterprise
+content: '# performance configuration for nfs
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

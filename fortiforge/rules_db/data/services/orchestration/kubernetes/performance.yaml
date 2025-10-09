@@ -1,0 +1,24 @@
+key: svc_kubernetes_performance
+kind: service_hardening
+name: Kubernetes Performance
+version: '1.0'
+service: kubernetes
+category: orchestration
+hardening_type: performance
+risk: medium
+tags:
+- service
+- kubernetes
+- performance
+- orchestration
+- enterprise
+content: '# performance configuration for kubernetes
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

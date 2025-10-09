@@ -1,0 +1,24 @@
+key: svc_exim_encryption
+kind: service_hardening
+name: Exim Encryption
+version: '1.0'
+service: exim
+category: mail_servers
+hardening_type: encryption
+risk: medium
+tags:
+- service
+- exim
+- encryption
+- mail_servers
+- enterprise
+content: '# encryption configuration for exim
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

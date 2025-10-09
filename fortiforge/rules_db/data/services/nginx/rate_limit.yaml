@@ -1,0 +1,15 @@
+key: svc_nginx_rate_limit
+kind: service_hardening
+service: nginx
+name: Nginx rate limit location
+version: 1
+risk: low
+tags: [service, nginx, ratelimit]
+content: |
+  limit_req_zone $binary_remote_addr zone=mylimit:10m rate=10r/s;
+  server {
+    location /login {
+      limit_req zone=mylimit burst=20;
+    }
+  }
+rollback: { content: "" }

@@ -1,0 +1,29 @@
+key: ids_aide_network_attacks_dos_attacks
+kind: ids_signature
+name: Aide Dos Attacks
+version: '1.0'
+engine: aide
+category: network_attacks
+signature_type: dos_attacks
+risk: high
+tags:
+- ids
+- aide
+- network_attacks
+- dos_attacks
+- detection
+- enterprise
+content: '# aide signature for dos_attacks
+
+  # Detection rule for network_attacks'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

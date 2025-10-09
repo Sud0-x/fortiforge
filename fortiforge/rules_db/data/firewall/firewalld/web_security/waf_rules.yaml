@@ -1,0 +1,23 @@
+key: fw_firewalld_web_security_waf_rules
+kind: firewall_rule
+name: Firewalld Waf Rules
+version: '1.0'
+engine: firewalld
+category: web_security
+rule_type: waf_rules
+risk: medium
+tags:
+- firewall
+- firewalld
+- web_security
+- waf_rules
+- network_security
+- enterprise
+content: '# firewalld rule for waf_rules'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

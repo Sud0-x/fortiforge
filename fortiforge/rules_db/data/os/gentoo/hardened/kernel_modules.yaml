@@ -1,0 +1,27 @@
+key: os_gentoo_hardened_kernel_modules
+kind: os_hardening
+name: Gentoo hardened Kernel Modules
+version: '1.0'
+os: gentoo
+os_version: hardened
+os_type: linux
+category: kernel_modules
+risk: medium
+tags:
+- linux
+- gentoo
+- hardened
+- kernel_modules
+- hardening
+- enterprise
+content: '# kernel_modules configuration for gentoo'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

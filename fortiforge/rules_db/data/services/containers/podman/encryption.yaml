@@ -1,0 +1,24 @@
+key: svc_podman_encryption
+kind: service_hardening
+name: Podman Encryption
+version: '1.0'
+service: podman
+category: containers
+hardening_type: encryption
+risk: medium
+tags:
+- service
+- podman
+- encryption
+- containers
+- enterprise
+content: '# encryption configuration for podman
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

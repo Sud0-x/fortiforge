@@ -1,0 +1,28 @@
+key: cloud_oracle_identity_compliance
+kind: cloud_security
+name: ORACLE Identity Compliance
+version: '1.0'
+platform: oracle
+service: identity
+control_type: compliance
+risk: medium
+tags:
+- cloud
+- oracle
+- identity
+- compliance
+- enterprise
+content: '# oracle identity compliance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

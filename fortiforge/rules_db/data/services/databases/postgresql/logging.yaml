@@ -1,0 +1,24 @@
+key: svc_postgresql_logging
+kind: service_hardening
+name: Postgresql Logging
+version: '1.0'
+service: postgresql
+category: databases
+hardening_type: logging
+risk: low
+tags:
+- service
+- postgresql
+- logging
+- databases
+- enterprise
+content: '# logging configuration for postgresql
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

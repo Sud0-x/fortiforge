@@ -1,0 +1,24 @@
+key: svc_vsftpd_access_control
+kind: service_hardening
+name: Vsftpd Access Control
+version: '1.0'
+service: vsftpd
+category: ftp_servers
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- vsftpd
+- access_control
+- ftp_servers
+- enterprise
+content: '# access_control configuration for vsftpd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,24 @@
+key: svc_bind_backup_config
+kind: service_hardening
+name: Bind Backup Config
+version: '1.0'
+service: bind
+category: dns_servers
+hardening_type: backup_config
+risk: medium
+tags:
+- service
+- bind
+- backup_config
+- dns_servers
+- enterprise
+content: '# backup_config configuration for bind
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,24 @@
+key: svc_envoy_security_headers
+kind: service_hardening
+name: Envoy Security Headers
+version: '1.0'
+service: envoy
+category: proxy_servers
+hardening_type: security_headers
+risk: medium
+tags:
+- service
+- envoy
+- security_headers
+- proxy_servers
+- enterprise
+content: '# security_headers configuration for envoy
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

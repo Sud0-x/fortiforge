@@ -1,0 +1,28 @@
+key: cloud_oracle_functions_access_control
+kind: cloud_security
+name: ORACLE Functions Access Control
+version: '1.0'
+platform: oracle
+service: functions
+control_type: access_control
+risk: high
+tags:
+- cloud
+- oracle
+- functions
+- access_control
+- enterprise
+content: '# oracle functions access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

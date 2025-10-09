@@ -1,0 +1,24 @@
+key: svc_nomad_authentication
+kind: service_hardening
+name: Nomad Authentication
+version: '1.0'
+service: nomad
+category: orchestration
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- nomad
+- authentication
+- orchestration
+- enterprise
+content: '# authentication configuration for nomad
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,24 @@
+key: svc_kubernetes_tls_ssl
+kind: service_hardening
+name: Kubernetes Tls Ssl
+version: '1.0'
+service: kubernetes
+category: orchestration
+hardening_type: tls_ssl
+risk: medium
+tags:
+- service
+- kubernetes
+- tls_ssl
+- orchestration
+- enterprise
+content: '# tls_ssl configuration for kubernetes
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

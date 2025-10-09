@@ -1,0 +1,11 @@
+key: os_rhel_sysctl_hardening
+kind: os_hardening
+os: rhel
+name: RHEL sysctl hardening baseline
+version: 1
+risk: low
+tags: [os, rhel, sysctl, hardening]
+content: |
+  net.ipv4.conf.all.rp_filter=1
+  net.ipv4.icmp_echo_ignore_broadcasts=1
+  kernel.kptr_restrict=2

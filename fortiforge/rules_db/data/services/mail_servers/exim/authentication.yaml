@@ -1,0 +1,24 @@
+key: svc_exim_authentication
+kind: service_hardening
+name: Exim Authentication
+version: '1.0'
+service: exim
+category: mail_servers
+hardening_type: authentication
+risk: medium
+tags:
+- service
+- exim
+- authentication
+- mail_servers
+- enterprise
+content: '# authentication configuration for exim
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

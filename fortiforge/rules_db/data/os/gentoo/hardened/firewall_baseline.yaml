@@ -1,0 +1,29 @@
+key: os_gentoo_hardened_firewall_baseline
+kind: os_hardening
+name: Gentoo hardened Firewall Baseline
+version: '1.0'
+os: gentoo
+os_version: hardened
+os_type: linux
+category: firewall_baseline
+risk: medium
+tags:
+- linux
+- gentoo
+- hardened
+- firewall_baseline
+- hardening
+- enterprise
+content: '# Firewall baseline for gentoo
+
+  # Enable and configure default deny policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

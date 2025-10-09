@@ -1,0 +1,27 @@
+key: os_freebsd_13.2_filesystem_permissions
+kind: os_hardening
+name: Freebsd 13.2 Filesystem Permissions
+version: '1.0'
+os: freebsd
+os_version: '13.2'
+os_type: unix
+category: filesystem_permissions
+risk: medium
+tags:
+- unix
+- freebsd
+- '13.2'
+- filesystem_permissions
+- hardening
+- enterprise
+content: '# filesystem_permissions configuration for freebsd'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

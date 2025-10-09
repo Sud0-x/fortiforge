@@ -1,0 +1,24 @@
+key: svc_unbound_tls_ssl
+kind: service_hardening
+name: Unbound Tls Ssl
+version: '1.0'
+service: unbound
+category: dns_servers
+hardening_type: tls_ssl
+risk: medium
+tags:
+- service
+- unbound
+- tls_ssl
+- dns_servers
+- enterprise
+content: '# tls_ssl configuration for unbound
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

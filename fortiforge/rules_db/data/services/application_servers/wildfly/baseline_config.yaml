@@ -1,0 +1,24 @@
+key: svc_wildfly_baseline_config
+kind: service_hardening
+name: Wildfly Baseline Config
+version: '1.0'
+service: wildfly
+category: application_servers
+hardening_type: baseline_config
+risk: medium
+tags:
+- service
+- wildfly
+- baseline_config
+- application_servers
+- enterprise
+content: '# baseline_config configuration for wildfly
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

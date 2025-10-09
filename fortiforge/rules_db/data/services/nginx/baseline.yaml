@@ -1,0 +1,12 @@
+key: svc_nginx_baseline_hardening
+kind: service_hardening
+service: nginx
+name: Nginx baseline hardening
+version: 1
+risk: low
+tags: [service, nginx, hardening]
+content: |
+  server_tokens off;
+  gzip on;
+  client_max_body_size 1m;
+rollback: { content: "" }

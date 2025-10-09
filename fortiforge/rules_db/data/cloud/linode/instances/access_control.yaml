@@ -1,0 +1,28 @@
+key: cloud_linode_instances_access_control
+kind: cloud_security
+name: LINODE Instances Access Control
+version: '1.0'
+platform: linode
+service: instances
+control_type: access_control
+risk: high
+tags:
+- cloud
+- linode
+- instances
+- access_control
+- enterprise
+content: '# linode instances access_control configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

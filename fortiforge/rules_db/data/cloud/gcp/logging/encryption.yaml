@@ -1,0 +1,28 @@
+key: cloud_gcp_logging_encryption
+kind: cloud_security
+name: GCP Logging Encryption
+version: '1.0'
+platform: gcp
+service: logging
+control_type: encryption
+risk: high
+tags:
+- cloud
+- gcp
+- logging
+- encryption
+- enterprise
+content: '# gcp logging encryption configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

@@ -1,0 +1,23 @@
+key: fw_ufw_web_security_block_csrf
+kind: firewall_rule
+name: Ufw Block Csrf
+version: '1.0'
+engine: ufw
+category: web_security
+rule_type: block_csrf
+risk: high
+tags:
+- firewall
+- ufw
+- web_security
+- block_csrf
+- network_security
+- enterprise
+content: '# ufw rule for block_csrf'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

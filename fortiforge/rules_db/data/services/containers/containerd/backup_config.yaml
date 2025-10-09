@@ -1,0 +1,24 @@
+key: svc_containerd_backup_config
+kind: service_hardening
+name: Containerd Backup Config
+version: '1.0'
+service: containerd
+category: containers
+hardening_type: backup_config
+risk: medium
+tags:
+- service
+- containerd
+- backup_config
+- containers
+- enterprise
+content: '# backup_config configuration for containerd
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

@@ -1,0 +1,27 @@
+key: os_gentoo_hardened_systemd_hardening
+kind: os_hardening
+name: Gentoo hardened Systemd Hardening
+version: '1.0'
+os: gentoo
+os_version: hardened
+os_type: linux
+category: systemd_hardening
+risk: medium
+tags:
+- linux
+- gentoo
+- hardened
+- systemd_hardening
+- hardening
+- enterprise
+content: '# systemd_hardening configuration for gentoo'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

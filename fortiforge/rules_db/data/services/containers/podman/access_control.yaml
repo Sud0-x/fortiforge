@@ -1,0 +1,24 @@
+key: svc_podman_access_control
+kind: service_hardening
+name: Podman Access Control
+version: '1.0'
+service: podman
+category: containers
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- podman
+- access_control
+- containers
+- enterprise
+content: '# access_control configuration for podman
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

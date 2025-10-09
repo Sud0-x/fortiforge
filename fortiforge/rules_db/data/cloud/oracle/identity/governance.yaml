@@ -1,0 +1,28 @@
+key: cloud_oracle_identity_governance
+kind: cloud_security
+name: ORACLE Identity Governance
+version: '1.0'
+platform: oracle
+service: identity
+control_type: governance
+risk: medium
+tags:
+- cloud
+- oracle
+- identity
+- governance
+- enterprise
+content: '# oracle identity governance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

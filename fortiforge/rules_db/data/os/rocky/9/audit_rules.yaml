@@ -1,0 +1,29 @@
+key: os_rocky_9_audit_rules
+kind: os_hardening
+name: Rocky 9 Audit Rules
+version: '1.0'
+os: rocky
+os_version: '9'
+os_type: linux
+category: audit_rules
+risk: medium
+tags:
+- linux
+- rocky
+- '9'
+- audit_rules
+- hardening
+- enterprise
+content: '# Audit rules for rocky
+
+  -a always,exit -F arch=b64 -S adjtimex,settimeofday -k time-change'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

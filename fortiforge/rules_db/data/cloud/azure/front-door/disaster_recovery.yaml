@@ -1,0 +1,28 @@
+key: cloud_azure_front-door_disaster_recovery
+kind: cloud_security
+name: AZURE Front-Door Disaster Recovery
+version: '1.0'
+platform: azure
+service: front-door
+control_type: disaster_recovery
+risk: medium
+tags:
+- cloud
+- azure
+- front-door
+- disaster_recovery
+- enterprise
+content: '# azure front-door disaster_recovery configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

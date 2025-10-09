@@ -1,0 +1,23 @@
+key: fw_iptables_application_security_code_injection
+kind: firewall_rule
+name: Iptables Code Injection
+version: '1.0'
+engine: iptables
+category: application_security
+rule_type: code_injection
+risk: medium
+tags:
+- firewall
+- iptables
+- application_security
+- code_injection
+- network_security
+- enterprise
+content: '# iptables rule for code_injection'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  network_impact: medium
+  performance_impact: low
+  enterprise_tested: true

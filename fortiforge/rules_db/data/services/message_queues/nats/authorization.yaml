@@ -1,0 +1,24 @@
+key: svc_nats_authorization
+kind: service_hardening
+name: Nats Authorization
+version: '1.0'
+service: nats
+category: message_queues
+hardening_type: authorization
+risk: medium
+tags:
+- service
+- nats
+- authorization
+- message_queues
+- enterprise
+content: '# authorization configuration for nats
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

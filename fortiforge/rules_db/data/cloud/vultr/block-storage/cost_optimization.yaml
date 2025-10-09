@@ -1,0 +1,28 @@
+key: cloud_vultr_block-storage_cost_optimization
+kind: cloud_security
+name: VULTR Block-Storage Cost Optimization
+version: '1.0'
+platform: vultr
+service: block-storage
+control_type: cost_optimization
+risk: medium
+tags:
+- cloud
+- vultr
+- block-storage
+- cost_optimization
+- enterprise
+content: '# vultr block-storage cost_optimization configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

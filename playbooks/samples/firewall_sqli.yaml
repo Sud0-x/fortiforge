@@ -1,0 +1,19 @@
+- name: Firewall SQLi Block
+  description: Add iptables rules to block simple SQLi patterns and allow web traffic
+  targets: ["sandbox-web-1:authorized"]
+  tasks:
+    - name: Allow established
+      idempotent: true
+      simulate: { show_diff: true }
+      apply: { mode: template, content: "-A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT" }
+      rollback: { mode: template, content: "-D INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT" }
+    - name: Allow HTTP/HTTPS
+      idempotent: true
+      simulate: { show_diff: true }
+      apply: { mode: template, content: "-A INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT" }
+      rollback: { mode: template, content: "-D INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT" }
+    - name: Block basic SQLi patterns (string match)
+      idempotent: true
+      simulate: { show_diff: true }
+      apply: { mode: template, content: "-A INPUT -p tcp --dport 80 -m string --string 'union select' --algo bm -j DROP" }
+      rollback: { mode: template, content: "-D INPUT -p tcp --dport 80 -m string --string 'union select' --algo bm -j DROP" }

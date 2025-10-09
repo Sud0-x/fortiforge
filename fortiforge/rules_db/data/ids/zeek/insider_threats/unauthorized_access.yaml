@@ -1,0 +1,29 @@
+key: ids_zeek_insider_threats_unauthorized_access
+kind: ids_signature
+name: Zeek Unauthorized Access
+version: '1.0'
+engine: zeek
+category: insider_threats
+signature_type: unauthorized_access
+risk: high
+tags:
+- ids
+- zeek
+- insider_threats
+- unauthorized_access
+- detection
+- enterprise
+content: '# zeek signature for unauthorized_access
+
+  # Detection rule for insider_threats'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  false_positive_rate: low
+  detection_accuracy: high
+  enterprise_validated: true
+  threat_intel_sources:
+  - mitre_attack
+  - nist_nvd
+  - cve_database

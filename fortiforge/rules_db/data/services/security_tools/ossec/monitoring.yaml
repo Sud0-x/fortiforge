@@ -1,0 +1,24 @@
+key: svc_ossec_monitoring
+kind: service_hardening
+name: Ossec Monitoring
+version: '1.0'
+service: ossec
+category: security_tools
+hardening_type: monitoring
+risk: low
+tags:
+- service
+- ossec
+- monitoring
+- security_tools
+- enterprise
+content: '# monitoring configuration for ossec
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

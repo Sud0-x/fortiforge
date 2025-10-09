@@ -1,0 +1,28 @@
+key: cloud_vultr_instances_performance
+kind: cloud_security
+name: VULTR Instances Performance
+version: '1.0'
+platform: vultr
+service: instances
+control_type: performance
+risk: medium
+tags:
+- cloud
+- vultr
+- instances
+- performance
+- enterprise
+content: '# vultr instances performance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

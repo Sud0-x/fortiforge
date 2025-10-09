@@ -1,0 +1,28 @@
+key: cloud_oracle_compute_monitoring
+kind: cloud_security
+name: ORACLE Compute Monitoring
+version: '1.0'
+platform: oracle
+service: compute
+control_type: monitoring
+risk: medium
+tags:
+- cloud
+- oracle
+- compute
+- monitoring
+- enterprise
+content: '# oracle compute monitoring configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

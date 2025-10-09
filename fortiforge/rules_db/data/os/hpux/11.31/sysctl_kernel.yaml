@@ -1,0 +1,27 @@
+key: os_hpux_11.31_sysctl_kernel
+kind: os_hardening
+name: Hpux 11.31 Sysctl Kernel
+version: '1.0'
+os: hpux
+os_version: '11.31'
+os_type: unix
+category: sysctl_kernel
+risk: medium
+tags:
+- unix
+- hpux
+- '11.31'
+- sysctl_kernel
+- hardening
+- enterprise
+content: '# sysctl_kernel configuration for hpux'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  compliance:
+  - cis
+  - nist
+  - iso27001
+  enterprise_grade: true
+  production_ready: true

@@ -1,0 +1,8 @@
+key: fw_pf_log_drops
+kind: firewall
+engine: pf
+name: Log dropped packets
+version: 1
+risk: low
+tags: [firewall, pf, logging]
+content: "block log all"

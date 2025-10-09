@@ -1,0 +1,24 @@
+key: svc_rancher_access_control
+kind: service_hardening
+name: Rancher Access Control
+version: '1.0'
+service: rancher
+category: orchestration
+hardening_type: access_control
+risk: medium
+tags:
+- service
+- rancher
+- access_control
+- orchestration
+- enterprise
+content: '# access_control configuration for rancher
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

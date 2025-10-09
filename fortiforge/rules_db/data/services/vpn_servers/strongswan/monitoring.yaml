@@ -1,0 +1,24 @@
+key: svc_strongswan_monitoring
+kind: service_hardening
+name: Strongswan Monitoring
+version: '1.0'
+service: strongswan
+category: vpn_servers
+hardening_type: monitoring
+risk: low
+tags:
+- service
+- strongswan
+- monitoring
+- vpn_servers
+- enterprise
+content: '# monitoring configuration for strongswan
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low

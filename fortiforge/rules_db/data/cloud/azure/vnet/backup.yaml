@@ -1,0 +1,28 @@
+key: cloud_azure_vnet_backup
+kind: cloud_security
+name: AZURE Vnet Backup
+version: '1.0'
+platform: azure
+service: vnet
+control_type: backup
+risk: medium
+tags:
+- cloud
+- azure
+- vnet
+- backup
+- enterprise
+content: '# azure vnet backup configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

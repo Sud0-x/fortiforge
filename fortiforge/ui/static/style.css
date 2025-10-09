@@ -1,0 +1,5 @@
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; padding: 1rem 2rem; }
+h1 { color: #1b4d3e; }
+pre { background: #f4f4f4; padding: 1rem; border-radius: 8px; overflow: auto; }
+button { background: #1b4d3e; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+input { padding: 0.5rem; width: 300px; }

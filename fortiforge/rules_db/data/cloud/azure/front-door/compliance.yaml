@@ -1,0 +1,28 @@
+key: cloud_azure_front-door_compliance
+kind: cloud_security
+name: AZURE Front-Door Compliance
+version: '1.0'
+platform: azure
+service: front-door
+control_type: compliance
+risk: medium
+tags:
+- cloud
+- azure
+- front-door
+- compliance
+- enterprise
+content: '# azure front-door compliance configuration
+
+  # Enterprise security policy'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  cloud_native: true
+  enterprise_grade: true
+  cost_impact: low
+  compliance:
+  - cis
+  - nist
+  - iso27001

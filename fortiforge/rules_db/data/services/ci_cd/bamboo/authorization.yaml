@@ -1,0 +1,24 @@
+key: svc_bamboo_authorization
+kind: service_hardening
+name: Bamboo Authorization
+version: '1.0'
+service: bamboo
+category: ci_cd
+hardening_type: authorization
+risk: medium
+tags:
+- service
+- bamboo
+- authorization
+- ci_cd
+- enterprise
+content: '# authorization configuration for bamboo
+
+  # Enterprise-grade security settings'
+rollback:
+  content: ''
+metadata:
+  author: Sud0-x
+  enterprise_grade: true
+  production_tested: true
+  performance_impact: low
