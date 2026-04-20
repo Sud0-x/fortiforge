@@ -14,7 +14,7 @@ FortiForge is an **enterprise-grade defensive security automation & orchestratio
 ### ✅ **Natural Language Security Automation**
 - **Intent-to-Action**: Convert plain English to executable security plans
 - **3,649+ Templates**: Comprehensive coverage across OS, services, cloud, compliance
-- **Multi-Platform**: Support for 50+ OS distributions, 200+ services, 9 cloud providers 
+- **Multi-Platform**: Support for 50+ OS distributions, 200+ services, 9 cloud providers
 
 ### 🔒 **Enterprise Security Controls**
 - **Simulation-First**: All operations default to safe dry-run mode
